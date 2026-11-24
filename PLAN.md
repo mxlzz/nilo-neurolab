@@ -24,3 +24,5 @@ Tras H o evidencia independiente nueva, capacidad no trivial no resuelta por bas
 Informe por capacidades, evidencia, límites y costo. Continuar/corregir/replantear/retroceder/detener. No exigir arquitectura final ni resultado positivo. N headless e independiente; H usa el original como referencia histórica.
 
 Nota de cierre NL-M: la evidencia necesaria para H08c.0 está preservada y comprobada. Las brechas de archivo históricas están en evidence/ARCHIVE_COVERAGE.json; recuperar si una conclusión depende de ellas y se dispone de vía autorizada, antes de utilizarla. No condicionan la unidad documental inmediata.
+
+Actualización H08c.0 (24/11): unidad documental completada, [protocolo H08c.1](protocols/H08c.1.md). H08c.1 pendiente de preflight privado e instrumental. No ensayos iniciados. No cambia alcance ni gates históricos.
