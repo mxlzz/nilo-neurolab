@@ -1,0 +1,49 @@
+name: NeuroLab approved migration
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/transfer-neurolab.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: neurolab-migration
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy exact snapshot without activating historical workflows
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 migration/transfer.py
+      - name: Commit exact source snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add inherited MIGRATION_MANIFEST.json
+          git commit -m "Preserve pinned NeuroLab research snapshot"
+          git push origin HEAD:main
+  evidence:
+    needs: snapshot
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Preserve public derived evidence and provenance
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 migration/archive.py
+      - name: Commit safe recovered evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evidence
+          git commit -m "Preserve NeuroLab derived evidence and archive manifest"
+          git push origin HEAD:main
