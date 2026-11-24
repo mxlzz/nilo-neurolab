@@ -1,0 +1,11 @@
+# Método
+
+Conservar protocolo original y errata E09.00R. H: fuentes primarias técnicas, GEN/EXE con hash/edición/procedencia, observación original, secundarias, hipótesis rotuladas. Modelo preexistente vs observación, predicción discriminante y contrafactual; no llamar intervención causal a contrafactual computado. No generalizar Build47/dad1 a todas versiones.
+
+N: problema identificable bajo flujo permitido; sin target, source_tick, delay efectivo, clases o etiquetas del evaluador no disponibles al otro brazo. Baselines con igual información, pasos y presupuesto: reactivos/tabla/LRU/1-NN según pregunta. Medir techo antes de implementar; STOP si margen imposible. Desarrollo y confirmación separados; reservas históricas no se consumen. Prerregistrar hipótesis, métricas, márgenes, tamaños, exclusiones, controles, parada y costos. No ajustar post hoc; rotular exploratorio. Comparación pareada por mundo/sujeto, no ticks/slots. Distinguir fracaso instrumental, falta de oportunidad, hipótesis negativa y no ejecutado.
+
+Adquisición no equivale a cambio de peso; retención requiere ACTIVE-NOREWARD, sin congelar dinámica ni forcing, controlar residuo de premio, distinguir estabilidad y flexibilidad. Transferencia en condiciones nuevas y sin etiquetas privilegiadas. Medir interferencia, latencia, estado/costo, ablaciones y falsos positivos; no promediar bancos incompatibles.
+
+H: observadores de lectura, documentar perturbación temporal del depurador. Original aislado y autorizado, sin modificar ejecutable/genoma ni eludir comprobaciones. Copias temporales legítimas, borrar del runner, no publicar archivos, credenciales, IDs privados ni logs sensibles. Juego no es dependencia de N.
+
+Por unidad: leer objetivo/estado/plan, revisar antecedentes, declarar criterio, realizar mínimo trabajo, guardar método, fuentes, versiones, semillas, datos, código, hashes, CI y negativos. Verificar lectura GitHub antes de STATE al final. No repetir para rescatar gates. Auditar alineación/valor marginal al cierre, registrar decisión; auditor distinto preferible, no llamar independiente a autoevaluación. Sin gasto pago ni cambio sustantivo sin autorización.

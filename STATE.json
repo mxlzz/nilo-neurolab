@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project": "mxlzz/nilo-neurolab",
+  "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
+  "status": "migration_in_progress",
+  "stage": "NL-M",
+  "current_task": "NL-M2-M4",
+  "next_action": "Verificar snapshot y evidencia, reconciliar origen, cerrar auditoría documental antes de habilitar H08c.0",
+  "scientific_next": "H08c.0",
+  "scientific_state": {
+    "H": "active_local_mechanisms_verified",
+    "H08b19": "passed_local_witness",
+    "N": "STOP",
+    "E09": "closed_partial_negative",
+    "NR01": "STOP",
+    "G05_NX01": "STOP_baseline_ceiling",
+    "G05": "not_passed",
+    "R_ACT_I3c": "not_passed",
+    "G09": "not_passed",
+    "G00_H": "open",
+    "G_H6_CLOCK": "open"
+  },
+  "reserved_seeds": [
+    "1400..1419",
+    "24000..24019",
+    "26000..26019"
+  ],
+  "blockers": [
+    "migración pendiente de lectura y verificación"
+  ],
+  "future_execution_dependency": "Acceso privado original y secretos Actions en destino no verificados; no impide H08c.0 documental",
+  "audit_refs": [
+    "AUDIT.md"
+  ],
+  "last_confirmed_non_state_write": null
+}
