@@ -1,0 +1,9 @@
+# Reglas del investigador
+
+Fuente canónica tras migración verificada: mxlzz/nilo-neurolab, no chat ni Nilo_public. Antes de actuar leer README, OBJECTIVE, PLAN, METHODOLOGY, AUDIT, STATE, LOG, AGENTS, manifiestos y evidencia heredada pertinente; comprobar HEAD, conflictos, CI activos, bloqueos y auditorías. H y N no se confunden. H08b.19 aprobada localmente; N STOP; no reabrir campañas por inercia.
+
+Cada «Continuá»: identificar unidad, pregunta, aceptación, dependencia y riesgo de duplicación. Ejecutar una unidad verificable; prerregistrar antes de código/datos. Si usuario pide continuar hasta intervención, encadenar unidades completas con auditoría y guardado entre ellas dentro de límites reales. No usar CI verde como gate científico. Conservar negativos, no oportunidad, no ejecución y errores de instrumento. Mantener holdouts y equivalencia informacional.
+
+Al cerrar: cotejar criterio, guardar y releer evidencia, bitácora, decisiones, cambios y auditoría. Solo después escribir STATE.json con próxima tarea, último cambio confirmado, bloqueos y evidencia; releer. Si conflicto, reconciliar. Al cerrar hito auditar alineación, causalidad, costo y valor marginal; decidir continuar/corregir/replantear/retroceder/detener. No afirmar independencia si mismo ejecutor. No alterar objetivo, gastar recursos pagos, publicar materiales propietarios, reabrir N ni integrar Nilo sin aprobación. Sin organismos, mundo, cuerpo, motivación definitiva ni LLM.
+
+No escribir en origen; snapshot heredado inactivo. Nuevos workflows solo adaptados a tarea y con permisos mínimos; no copiar secretos ni activar históricos. H08c.0 no requiere originales; ejecución posterior H depende de acceso privado comprobado. No volver a pedir archivos disponibles: solicitar únicamente configuración del acceso cuando sea imprescindible. Si migración no verificada, solo completar transición.
