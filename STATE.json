@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "migration_in_progress",
-  "stage": "NL-M",
-  "current_task": "NL-M2-M4",
-  "next_action": "Verificar snapshot y evidencia, reconciliar origen, cerrar auditoría documental antes de habilitar H08c.0",
+  "status": "ready",
+  "stage": "H08c",
+  "current_task": "H08c.0",
+  "next_action": "Diseñar documentalmente un ensayo causal de adquisición y retención en C1 Build47. Leer H08b.18 y H08b.19, revisar CAOS/CDR y alternativas nativas (TRIG aún no probado); distinguir estímulo, forcing y evaluación libre, controlar actividad, contingencia, química residual e identidad; fijar observables, criterios y stop. Entregar protocolo H08c.1 o dictamen de imposibilidad. No ejecutar ni reabrir N.",
   "scientific_next": "H08c.0",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
@@ -25,12 +25,38 @@
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [
-    "migración pendiente de lectura y verificación"
-  ],
-  "future_execution_dependency": "Acceso privado original y secretos Actions en destino no verificados; no impide H08c.0 documental",
+  "blockers": [],
+  "future_execution_dependency": "Antes de H08c.1 verificar acceso privado a los originales autorizados, sus hashes, entorno y secretos del nuevo repositorio; no necesario para H08c.0.",
   "audit_refs": [
-    "AUDIT.md"
+    "AUDIT.md",
+    "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": null
+  "last_confirmed_non_state_write": "932bf8cbf03d84e1e9424b6e7c02acc868e2894c",
+  "evidence_refs": [
+    "MIGRATION_MANIFEST.json",
+    "evidence/ARCHIVE_MANIFEST.json",
+    "evidence/ARCHIVE_COVERAGE.json",
+    "inherited/docs/neurolab/H08B_18_RESULTADO_ESCRITURA_DISCRIMINANTE_20261124.md",
+    "inherited/docs/neurolab/H08B_19_RESULTADO_CONSOLIDACION_LTW_20261124.md",
+    "inherited/docs/neurolab/resultados/h08b_18_discriminating_observation_20261124.json",
+    "inherited/docs/neurolab/resultados/h08b_19_ltw_consolidation_20261124.json"
+  ],
+  "migration": {
+    "status": "operational_verified_archive_partial",
+    "source_files": 514,
+    "exact_blobs": 513,
+    "privacy_exception": 1,
+    "source_runs": 979,
+    "archive_manifest_runs": 605,
+    "uncovered_runs": 374,
+    "archived_artifacts_verified": 532,
+    "known_unarchived_artifacts": 15,
+    "archived_logs": 559,
+    "known_unarchived_logs": 18,
+    "historical_logs_excluded_privacy": 28,
+    "coverage": "evidence/ARCHIVE_COVERAGE.json",
+    "simulation": "documentary_pass",
+    "new_repo_experiment_execution": "not_tested"
+  },
+  "updated_at": "2026-11-24"
 }
