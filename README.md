@@ -7,4 +7,6 @@ Investigación del aprendizaje neuronal artificial, aislada del mundo, cuerpo, m
 - [Instrucciones para ChatGPT](PROJECT_INSTRUCTIONS.md).
 - [Protocolo histórico](inherited/docs/neurolab/README.md), [estado histórico](inherited/docs/neurolab/ESTADO_Y_CONTINUIDAD.md), [puertas originales](inherited/docs/neurolab/E09_00R_RECONCILIACION_GATES_20261122.md).
 
-Origen: [Nilo_public, corte fijado](https://github.com/mxlzz/Nilo_public/commit/c0c06c95c176eb9c0e0df71853313d16acda0f27). El destino se convierte en fuente operativa al verificar el traspaso. H activa; N STOP. No repetir experimentos. Leer STATE.json antes de «Continuá».
+Origen: [Nilo_public, corte fijado](https://github.com/mxlzz/Nilo_public/commit/c0c06c95c176eb9c0e0df71853313d16acda0f27). **Repositorio operativo canónico: main de nilo-neurolab.** Traspaso de investigación verificado; cobertura binaria histórica parcial. H activa; N STOP. No repetir experimentos. Leer STATE.json antes de «Continuá».
+
+- [Manifiesto snapshot](MIGRATION_MANIFEST.json), [archivo](evidence/ARCHIVE_MANIFEST.json), [cobertura](evidence/ARCHIVE_COVERAGE.json) y [verificación](evidence/MIGRATION_VERIFICATION.md).

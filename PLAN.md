@@ -2,7 +2,7 @@
 
 Los IDs y puertas E00–E09, H y NR01 históricos se conservan. E09 terminada parcial/negativa, G09 abierta. N STOP (NR01 y NX01 cerrados en su configuración); G05 y R-ACT-I3c no superadas. H08b.19 aprobada localmente. G00-H y G-H6-CLOCK abiertas. No empezar E00 ni reentrenar miniC1.
 
-## NL-M — traspaso
+## NL-M — traspaso operativo verificado; cobertura histórica parcial
 M1 reconciliar HEAD y trabajos activos; M2 copiar archivos seleccionados y verificar hashes; M3 preservar evidencia y metadatos con privacidad; M4 verificar continuidad, dependencias y acceso privado. Aceptación: snapshot exacto o excepciones justificadas, manifiesto de artefactos/logs, documentación releída, fuente única y próxima unidad inequívoca. Si faltan secretos para H, registrar bloqueo de ejecución; H08c.0 documental puede avanzar. Auditoría antes de activar.
 
 ## H08c.0 — primera unidad científica (documental)
@@ -22,3 +22,5 @@ Tras H o evidencia independiente nueva, capacidad no trivial no resuelta por bas
 
 ## Cierre
 Informe por capacidades, evidencia, límites y costo. Continuar/corregir/replantear/retroceder/detener. No exigir arquitectura final ni resultado positivo. N headless e independiente; H usa el original como referencia histórica.
+
+Nota de cierre NL-M: la evidencia necesaria para H08c.0 está preservada y comprobada. Las brechas de archivo históricas están en evidence/ARCHIVE_COVERAGE.json; recuperar si una conclusión depende de ellas y se dispone de vía autorizada, antes de utilizarla. No condicionan la unidad documental inmediata.

@@ -9,3 +9,6 @@ Inventariar runs específicos NeuroLab, separar validación general Nilo. Archiv
 Secretos históricos NEUROLAB_CD_FILE_ID y NEUROLAB_DATA_FILE_ID no se transfieren automáticamente; no leer/mostrar valores, verificar disponibilidad antes de H08c.1. No volver a pedir originales si ya existen; solicitar configuración segura cuando corresponda. H08c.0 documental no depende de secretos. No activar workflows antiguos, adaptar futuros a tarea, permisos y limpieza.
 
 M4: releer archivos y manifiestos, comparar hashes/enlaces, comprobar origen, simular continuidad y actualizar STATE al final. Si archivo de evidencia aún en curso, conservar estado de migración y registrar run. No ejecutar ciencia durante traslado.
+
+## Cierre operativo
+Fuente canónica main de nilo-neurolab. Snapshot y documentos verificados; 979 ejecuciones registradas, archivo parcial. Ver [cobertura](evidence/ARCHIVE_COVERAGE.json) para faltantes y [verificación](evidence/MIGRATION_VERIFICATION.md) para decisión. La recuperación adicional de evidencia es pendiente no bloqueante para H08c.0, no repetir ciencia. No publicar logs privados ni binarios; secretos no verificados en destino.
