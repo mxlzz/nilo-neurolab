@@ -27,7 +27,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add inherited MIGRATION_MANIFEST.json
           git commit -m "Preserve pinned NeuroLab research snapshot"
-          git push origin HEAD:main
+          for attempt in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$(git ls-remote origin refs/heads/main | cut -f1)" = "$(git rev-parse HEAD)" ]; then exit 0; fi
+            sleep 4
+          done
+          exit 1
   evidence:
     needs: snapshot
     runs-on: ubuntu-24.04
@@ -46,4 +51,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add evidence
           git commit -m "Preserve NeuroLab derived evidence and archive manifest"
-          git push origin HEAD:main
+          for attempt in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$(git ls-remote origin refs/heads/main | cut -f1)" = "$(git rev-parse HEAD)" ]; then exit 0; fi
+            sleep 4
+          done
+          exit 1
