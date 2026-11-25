@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D6_0_documentary_complete_approval_required",
+  "status": "H08d_D6_1_running",
   "stage": "H08d",
-  "current_task": "H08d.D6.0_closed",
-  "next_action": "Solicitar aprobación D6.1 (1 job estándar gratuito/8min/1 arranque, captura180s/4MiB). Piloto integrado 2A/2B/2sham, firma, contactos, WTA, reset, oportunidad de STW; no ejecutar antes de aprobación ni repetir si no factible. H08c.1/N STOP.",
-  "scientific_next": "H08d.D6.1_pending_approval",
+  "current_task": "H08d.D6.1",
+  "next_action": "Leer CI 45618843971 y artefactos. Comprobar fixture, topología, 6 brazos, firma Concept, WTA, contactos/reset/química y oportunidad virtual STW. Cerrar sin reintento; si GO diseñar adquisición/retención causal, si no proponer cierre H parcial. N STOP.",
+  "scientific_next": "H08d.D6.1",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,14 @@
     "26000..26019"
   ],
   "blockers": [
-    "D5.1 causa histórica no atribuida, reset contextual observado y registrado como variable de control.",
-    "Oportunidad de aprendizaje integrada no demostrada; marcador sham y costo de captura pendientes de validación previa.",
-    "D6.1 requiere aprobación de nuevo contrato y presupuesto."
+    "Validación previa del fixture y marcador, tiempo de captura y oportunidad integrada pendientes."
   ],
-  "future_execution_dependency": "Aprobación del piloto D6.1 acotado, ningún archivo o credencial adicional.",
+  "future_execution_dependency": "Resultado D6.1, no nuevos insumos",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "abbb94e0f2b654c53ae2a2fb38ab7c490af3a169",
+  "last_confirmed_non_state_write": "6a531c881c3b99053833d50f239c3c757b8d75c0",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -89,7 +87,8 @@
     "evidence/H08d_D5x.1_observations.json",
     "evidence/H08d_D5x.1_result.md",
     "experiments/verify_h08d_d5x_result.py",
-    "protocols/H08d_D6.md"
+    "protocols/H08d_D6.md",
+    "protocols/H08d_D6.1.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -303,7 +302,7 @@
     "injected_witnesses": 0
   },
   "h08d_D6": {
-    "outcome": "documentary_complete_not_executed",
+    "outcome": "running",
     "proposed_budget": {
       "jobs_max": 1,
       "runner_minutes_max": 8,
@@ -319,6 +318,14 @@
       "S",
       "A"
     ],
-    "jobs_consumed": 0
+    "jobs_consumed": 0,
+    "run": 45618843971
+  },
+  "active_run": {
+    "id": 45618843971,
+    "unit": "H08d.D6.1",
+    "commit": "6a531c881c3b99053833d50f239c3c757b8d75c0",
+    "status": "queued",
+    "max_runner_minutes": 8
   }
 }
