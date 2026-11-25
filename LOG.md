@@ -47,3 +47,5 @@
 - D4.0 PASS documental: mapa candidato GeneralSense8/9→Perception40/41; umbral10, predicción output22,11,4,0... a partir de pulso32. Layout condicionado a flags/counts runtime. Contrato D4.1 propuesto 1 job/8min/1 arranque con dos pulsos separados y captura mínima, no ejecutado.
 
 - Usuario aprueba D4.1. Prerregistro de lectura sincronizada L5→L0, A/B separados por actividad real; sin reset/recompensa. Verificación estática de puntos CDB y límites.
+
+- D4.1 PASS local CI 45595011701: 34 ciclos regulares, 16 basal cero y 18/18 predicciones exactas de L5→L0; mapa 8→40,9→41 verificado. Artefacto descargado hash/CRC y recálculo separado. 157s, 1/1 job y arranque. Sin premio ni reset; no inferir Concept/Decision ni aprendizaje. D5.0 documental siguiente.

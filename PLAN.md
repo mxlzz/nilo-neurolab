@@ -73,3 +73,5 @@ D3.1 PASS local [resultado](evidence/H08d_D3.1_result.md), presupuesto cerrado. 
 [D4.0 y propuesta D4.1](protocols/H08d_D4.md). Mapa y predicción cuantitativa verificados estáticamente; dinámica pendiente. 1 job/8min/1 arranque propuestos, sin nuevos refuerzos ni reset. No ejecutar sin aprobación.
 
 D4.1 aprobada. [Especificación](protocols/H08d_D4.1.md): layout, dos pulsos separados, predicción exacta, un job/8 min/1 arranque.
+
+D4.1 PASS local [resultado](evidence/H08d_D4.1_result.md). Dos canales aislados en L5/L0, 18/18 coincidencias y 16 basal válidos. Presupuesto cerrado. D5.0 documental: conectividad y representación Concept, contrato mínimo. H08c.1 y N STOP.

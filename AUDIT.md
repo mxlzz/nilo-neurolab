@@ -67,3 +67,5 @@ D3.1 cierre (autoverificación): 9/9 predicciones exactas con 8 ciclos basales, 
 D4.0 autoverificación: mapa derivado del bucle original y flags/counts genéticos, no selección post hoc. Gate exige layout efectivo y predicción de copia/umbral, canales opuestos y separación local; no sustituye gate H08c.1, no inferir Concept/Decision ni lavado. No ejecutado.
 
 D4.1 previa: ampliar D3 solo con layout, COPY/PERCEPTION y segundo pulso condicionado a A y basal adicional. No medir Concept ni aprendizaje, no aumentar presupuesto. H08c.1/N STOP.
+
+D4.1 cierre (autoverificación): 34 ciclos contiguos, 18/18 predicciones de propagación exactas y 16/16 basal cero, layout efectivo. Una sesión; no prueba exclusividad global, Concept, Decision contingente, química o aprendizaje. Recálculo separado, no réplica. 157s, 1 job/1 arranque, presupuesto agotado. GO documental D5, sin nueva ejecución hasta aprobación.
