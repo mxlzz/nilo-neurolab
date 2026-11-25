@@ -35,3 +35,5 @@
 - H08d.D1 PASS local: CI 45521849436, 20 ciclos regulares completos, 20/20 predicciones, dos ganadores (1:17,2:3), sin estímulo ni premio. ZIP derivado exacto archivado y cotejado; recálculo independiente de implementación 20/20. H08d cierra 3/3 jobs, 214s, 1 original. D2 no ejecutada; siguiente contrato requiere aprobación por límite alcanzado. H08c.1 y N STOP intactos.
 
 - Usuario aprueba D2 tras cierre H08d. Prerregistro de control nativo S8/S9/A8/B9 y presupuesto 1 job/8 min, sin CDB ni premio. H08c.1/N STOP intactos.
+
+- D2 PASS local 4/4, CI 45527460904, 2 pulsos exactos 0→32, 2 sham 0→0. A persiste en lecturas de B; ticks no medidos, CHEM51/54/55 no cero, ins# sin respuesta. Artefacto hash/CRC verificados. 137s, 1/1 job. H08c.1/N STOP. Próxima revisión estática para separación temporal antes de integración.

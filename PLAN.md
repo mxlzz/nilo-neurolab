@@ -59,3 +59,5 @@ H08d cerrado: D0 FAIL, D0b PASS, D1 PASS local, D2 no ejecutada por límite 3 jo
 
 ## H08d.D2 — campaña independiente aprobada
 [Contrato](protocols/H08d_D2.md): entrega TRIG aislada vía DDE CELL, cuatro brazos y un arranque / 8 min. STOP al fallo; no inferir propagación ni aprendizaje.
+
+D2 PASS local de entrega [evidencia](evidence/H08d_D2_result.md); presupuesto cerrado. A y B no separados temporalmente, no lavado. Revisar estáticamente GeneralSense/Perception y TRIG; contrato de observación mínima de actividad y decaimiento antes de otro ensayo.

@@ -1,0 +1,552 @@
+{
+  "arms": [
+    {
+      "after": {
+        "bytes": 14,
+        "end_us": 86621772,
+        "ok": true,
+        "start_us": 86616443,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "arm": "S8",
+      "before": {
+        "bytes": 14,
+        "end_us": 86616424,
+        "ok": true,
+        "start_us": 86611018,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cell": 8,
+      "classification": "pass",
+      "context": {
+        "aslp": {
+          "bytes": 2,
+          "end_us": 85093842,
+          "ok": true,
+          "start_us": 85087760,
+          "value": 0
+        },
+        "cage": {
+          "bytes": 2,
+          "end_us": 85087756,
+          "ok": true,
+          "start_us": 85081774,
+          "value": 0
+        },
+        "chem 49": {
+          "bytes": 2,
+          "end_us": 85057377,
+          "ok": true,
+          "start_us": 85051664,
+          "value": 0
+        },
+        "chem 50": {
+          "bytes": 2,
+          "end_us": 85063456,
+          "ok": true,
+          "start_us": 85057410,
+          "value": 0
+        },
+        "chem 51": {
+          "bytes": 2,
+          "end_us": 85070012,
+          "ok": true,
+          "start_us": 85063460,
+          "value": 2
+        },
+        "chem 54": {
+          "bytes": 2,
+          "end_us": 85075791,
+          "ok": true,
+          "start_us": 85070043,
+          "value": 4
+        },
+        "chem 55": {
+          "bytes": 2,
+          "end_us": 85081741,
+          "ok": true,
+          "start_us": 85075795,
+          "value": 1
+        },
+        "dead": {
+          "bytes": 2,
+          "end_us": 86605505,
+          "ok": true,
+          "start_us": 86599806,
+          "value": 0
+        },
+        "ins#": {
+          "end_us": 86599798,
+          "error": 16386,
+          "ok": false,
+          "stage": "request",
+          "start_us": 85093846
+        }
+      },
+      "identity_after": true,
+      "identity_before": true,
+      "other_after": {
+        "bytes": 14,
+        "end_us": 86627173,
+        "ok": true,
+        "start_us": 86621776,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "other_before": {
+        "bytes": 14,
+        "end_us": 86611012,
+        "ok": true,
+        "start_us": 86605515,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "passed": true,
+      "pulse": false
+    },
+    {
+      "after": {
+        "bytes": 14,
+        "end_us": 90208385,
+        "ok": true,
+        "start_us": 90202628,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "arm": "S9",
+      "before": {
+        "bytes": 14,
+        "end_us": 90202605,
+        "ok": true,
+        "start_us": 90197023,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cell": 9,
+      "classification": "pass",
+      "context": {
+        "aslp": {
+          "bytes": 2,
+          "end_us": 88687461,
+          "ok": true,
+          "start_us": 88682242,
+          "value": 0
+        },
+        "cage": {
+          "bytes": 2,
+          "end_us": 88682238,
+          "ok": true,
+          "start_us": 88676965,
+          "value": 0
+        },
+        "chem 49": {
+          "bytes": 2,
+          "end_us": 88655554,
+          "ok": true,
+          "start_us": 88650544,
+          "value": 0
+        },
+        "chem 50": {
+          "bytes": 2,
+          "end_us": 88660798,
+          "ok": true,
+          "start_us": 88655558,
+          "value": 0
+        },
+        "chem 51": {
+          "bytes": 2,
+          "end_us": 88666380,
+          "ok": true,
+          "start_us": 88660801,
+          "value": 2
+        },
+        "chem 54": {
+          "bytes": 2,
+          "end_us": 88671763,
+          "ok": true,
+          "start_us": 88666384,
+          "value": 4
+        },
+        "chem 55": {
+          "bytes": 2,
+          "end_us": 88676961,
+          "ok": true,
+          "start_us": 88671767,
+          "value": 1
+        },
+        "dead": {
+          "bytes": 2,
+          "end_us": 90191796,
+          "ok": true,
+          "start_us": 90185960,
+          "value": 0
+        },
+        "ins#": {
+          "end_us": 90185953,
+          "error": 16386,
+          "ok": false,
+          "stage": "request",
+          "start_us": 88687465
+        }
+      },
+      "identity_after": true,
+      "identity_before": true,
+      "other_after": {
+        "bytes": 14,
+        "end_us": 90213582,
+        "ok": true,
+        "start_us": 90208391,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "other_before": {
+        "bytes": 14,
+        "end_us": 90197017,
+        "ok": true,
+        "start_us": 90191806,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "passed": true,
+      "pulse": false
+    },
+    {
+      "after": {
+        "bytes": 16,
+        "end_us": 93803982,
+        "ok": true,
+        "start_us": 93798782,
+        "value": [
+          32,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "arm": "A8",
+      "before": {
+        "bytes": 14,
+        "end_us": 93797923,
+        "ok": true,
+        "start_us": 93792592,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cell": 8,
+      "classification": "pass",
+      "context": {
+        "aslp": {
+          "bytes": 2,
+          "end_us": 92275884,
+          "ok": true,
+          "start_us": 92270334,
+          "value": 0
+        },
+        "cage": {
+          "bytes": 2,
+          "end_us": 92270330,
+          "ok": true,
+          "start_us": 92264934,
+          "value": 0
+        },
+        "chem 49": {
+          "bytes": 2,
+          "end_us": 92243026,
+          "ok": true,
+          "start_us": 92238034,
+          "value": 0
+        },
+        "chem 50": {
+          "bytes": 2,
+          "end_us": 92248349,
+          "ok": true,
+          "start_us": 92243029,
+          "value": 0
+        },
+        "chem 51": {
+          "bytes": 2,
+          "end_us": 92253606,
+          "ok": true,
+          "start_us": 92248353,
+          "value": 2
+        },
+        "chem 54": {
+          "bytes": 2,
+          "end_us": 92259512,
+          "ok": true,
+          "start_us": 92253609,
+          "value": 4
+        },
+        "chem 55": {
+          "bytes": 2,
+          "end_us": 92264930,
+          "ok": true,
+          "start_us": 92259516,
+          "value": 1
+        },
+        "dead": {
+          "bytes": 2,
+          "end_us": 93787181,
+          "ok": true,
+          "start_us": 93780901,
+          "value": 0
+        },
+        "ins#": {
+          "end_us": 93780894,
+          "error": 16386,
+          "ok": false,
+          "stage": "request",
+          "start_us": 92275887
+        }
+      },
+      "identity_after": true,
+      "identity_before": true,
+      "other_after": {
+        "bytes": 14,
+        "end_us": 93809381,
+        "ok": true,
+        "start_us": 93803987,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "other_before": {
+        "bytes": 14,
+        "end_us": 93792588,
+        "ok": true,
+        "start_us": 93787190,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "passed": true,
+      "pulse": true
+    },
+    {
+      "after": {
+        "bytes": 16,
+        "end_us": 97385930,
+        "ok": true,
+        "start_us": 97380824,
+        "value": [
+          32,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "arm": "B9",
+      "before": {
+        "bytes": 14,
+        "end_us": 97379936,
+        "ok": true,
+        "start_us": 97374452,
+        "value": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cell": 9,
+      "classification": "pass",
+      "context": {
+        "aslp": {
+          "bytes": 2,
+          "end_us": 95872577,
+          "ok": true,
+          "start_us": 95867038,
+          "value": 0
+        },
+        "cage": {
+          "bytes": 2,
+          "end_us": 95867034,
+          "ok": true,
+          "start_us": 95861646,
+          "value": 0
+        },
+        "chem 49": {
+          "bytes": 2,
+          "end_us": 95839276,
+          "ok": true,
+          "start_us": 95833648,
+          "value": 0
+        },
+        "chem 50": {
+          "bytes": 2,
+          "end_us": 95844763,
+          "ok": true,
+          "start_us": 95839280,
+          "value": 0
+        },
+        "chem 51": {
+          "bytes": 2,
+          "end_us": 95850143,
+          "ok": true,
+          "start_us": 95844767,
+          "value": 2
+        },
+        "chem 54": {
+          "bytes": 2,
+          "end_us": 95856107,
+          "ok": true,
+          "start_us": 95850147,
+          "value": 4
+        },
+        "chem 55": {
+          "bytes": 2,
+          "end_us": 95861642,
+          "ok": true,
+          "start_us": 95856111,
+          "value": 1
+        },
+        "dead": {
+          "bytes": 2,
+          "end_us": 97368752,
+          "ok": true,
+          "start_us": 97362946,
+          "value": 0
+        },
+        "ins#": {
+          "end_us": 97362938,
+          "error": 16386,
+          "ok": false,
+          "stage": "request",
+          "start_us": 95872580
+        }
+      },
+      "identity_after": true,
+      "identity_before": true,
+      "other_after": {
+        "bytes": 16,
+        "end_us": 97391377,
+        "ok": true,
+        "start_us": 97385934,
+        "value": [
+          32,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "other_before": {
+        "bytes": 16,
+        "end_us": 97374447,
+        "ok": true,
+        "start_us": 97368761,
+        "value": [
+          32,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "passed": true,
+      "pulse": true
+    }
+  ],
+  "classification": "PASS_local_delivery",
+  "order": [
+    "S8",
+    "S9",
+    "A8",
+    "B9"
+  ],
+  "pass": true,
+  "reward_pulses": 0,
+  "stage": "H08d.D2",
+  "subject_created": true,
+  "trig_attempts": 2
+}
