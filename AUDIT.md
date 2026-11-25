@@ -105,3 +105,5 @@ H09.1 previa a ejecución: aprobación confirmada. Relectura estática y fuente 
 
 ## H09.1 cierre (autoverificación)
 NO OPORTUNIDAD, no fallo instrumental: 25/25 WTA, inventario válido, un destino basal disponible. Criterio de dos destinos impide empezar, no resultado de aprendizaje. Observación seleccionada TRIG8 y cadencia no ejecutadas; fixture no demuestra su viabilidad nativa. Recálculo separado de inventario y WTA, sin auditor independiente. Exploratorio solapamiento estructural con segundo destino, no prueba oportunidad causal. Presupuesto cerrado. Próxima revisión documental de alternativa que mida cambio contextual de preferencia dominante; no relajar gate ni repetir, aprobación para nuevo contrato, N STOP.
+
+H09 revisión de valor marginal: considerar cambio de preferencia dominante por contingencia inhibitoria con controles contra supresión global, no respuesta y deriva, basado en C1 clase1 y evidencia previa. Resultado H09.1 no reclasificado, no atribuir aprendizaje. Margen de decisión, química y presupuesto pueden impedir contraste: auditar factibilidad antes de código; nuevo contrato requiere aprobación. N STOP. Autoverificación.

@@ -109,3 +109,5 @@ H09.1 [contrato cuantificado propuesto](protocols/H09.1.md): inventario de bloqu
 H09.1 aprobado por usuario; [especificación de implementación](protocols/H09.1_implementation.md). Presupuesto congelado; fixture antes de originales, sin reintento.
 
 H09.1 [cierre NO OPORTUNIDAD](evidence/H09.1_result.md). Instrumento basal y 4096 contactos válidos, 25/25 WTA, solo Decision1 elegible (23/24); 0/36 slots, sin TRIG ni reward. No reintentar ni habilitar H09.2. Evaluación documental de contraste de modificación contextual de preferencia dominante antes de decidir continuidad; N STOP.
+
+[Revisión de preferencia dominante](protocols/H09_REVIEW_DOMINANT_PREFERENCE.md): nuevo contraste candidato de inhibición contextual, no H09.2 ni reapertura H09.1. Antes de ejecución, sensibilidad/costo y capacidad de medir especificidad, alternativas y lavado; nuevo contrato y aprobación. Si no justifica, método natural o cierre H parcial. N STOP.

@@ -77,3 +77,5 @@
 - Usuario aprueba H09.1. Especificación de implementación previa a código: inventario 34 bloques por lectura, selección offline, scripts activados solo RB, fixture y diagnósticos sanitizados, seis brazos y feedback inocuo, presupuesto intacto.
 
 - H09.1 CI45627910012, 164s/1 job/1 arranque, fixture PASS, transporte original válido, 25 ciclos WTA exactos, 4096 contactos, solo Decision1 elegible 23/24 (1 sin decisión), NO OPORTUNIDAD no_common_pair. 0 exposiciones/feedback/reward. ZIP CRC/hash y recálculo separado, proyección compacta. Exploratorio: segundo Decision2 23/23, 10 fuentes excitatorias comunes y 15 inhibición1/excitación2. No rescatar gate.
+
+- Revisión posterior H09.1: contraste de inhibición contextual candidato (CHEM50 clase1, fuente histórica Grand/Cliff), no recompensa de acción en techo, no buscar segunda ganadora por repetición. Relectura exploratoria confirma contactos inhibitorios disponibles pero STW0 en 65 de fuente silenciosa; margen alto. Examen documental de sensibilidad antes de otro contrato. Sin nuevo CI.
