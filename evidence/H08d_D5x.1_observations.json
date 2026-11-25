@@ -1,0 +1,233 @@
+{
+  "stage": "H08d.D5x.1",
+  "run": 45607721471,
+  "job": 139182836328,
+  "commit": "c89f22067c4b4892da68821ee810f9606b9c8f06",
+  "artifact": 15017848493,
+  "zip_bytes": 8293,
+  "zip_sha256": "b7c50e89c7f6c62feef692db0a3d1f14aaa57d435097b70529bccae200bfc7a0",
+  "json_bytes": 321784,
+  "json_sha256": "fdb746cd84f3d840133c67979b1eb18aa92094f01139f0a04467682192d17840",
+  "archive_scope": "Compact exact projection of the 34 L5/L0 cycle phases and all 32 clear pairs with observed order and change markers. Full original derived artifact downloaded and CRC/hash verified, not archived byte-for-byte in GitHub by this commit.",
+  "runner_seconds": 151,
+  "trace_ms": 22140,
+  "raw_bytes": 31419,
+  "pass": false,
+  "classification": "no_opportunity",
+  "d4_pass": true,
+  "subject_created": true,
+  "trig_attempts": 2,
+  "reward_pulses": 0,
+  "gate_checks": {
+    "ack": true,
+    "full_prediction": true,
+    "identity": true,
+    "transport": true
+  },
+  "event_counts": {
+    "COPY": 34,
+    "END": 1,
+    "ENDC": 34,
+    "LAYOUT": 34,
+    "PERCEPTION": 34,
+    "POST": 34,
+    "PRE": 34,
+    "PULSE_POST": 2,
+    "PULSE_PRE": 2,
+    "READY": 1
+  },
+  "diagnostics": {},
+  "observer_error": null,
+  "returncode": 0,
+  "timeout": false,
+  "brain": "B1",
+  "route": "regular",
+  "ticks": [
+    484,
+    517
+  ],
+  "segment_lengths": [
+    8,
+    17,
+    9
+  ],
+  "layout": [
+    9,
+    112,
+    16,
+    40,
+    16,
+    40,
+    32,
+    16,
+    40,
+    640,
+    0,
+    2,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0
+  ],
+  "meta": [
+    32,
+    0,
+    24,
+    0,
+    0,
+    112,
+    10,
+    0,
+    0,
+    0
+  ],
+  "frames_format": "34 rows x32 unsigned bytes; implicit tick484+row; PRE/POST/COPY/PERCEPTION each 8 bytes, order L5:8 output/state,L5:9 output/state,L0:40 output/state,L0:41 output/state",
+  "frames_bytes": 1088,
+  "frames_sha256": "796ec1512624b7ed48cd2f63684d4f3cd2449589cf16db1924b86938d17fecc5",
+  "frames_zlib_b64": "eNrt0jEKwDAMQ1ElmIApeEtn3/+UDThg4TFr85eHdgH/zn07SQ9fpNPIGT5ITUkLBakOUkMgHUKOslfSSSl71RvZy15twlb27T7k8CEfcRcG6w==",
+  "reset": {
+    "tick": 488,
+    "ordered_after": "ENDC 487",
+    "ordered_before": "LAYOUT 488",
+    "marker_count": 66,
+    "valid_groups": 1,
+    "incomplete_groups": 0,
+    "candidate_class": 2,
+    "change_pre": [
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "change_post": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "old_present": true,
+    "new_present": true,
+    "new_applied": true,
+    "clear_index12_pre": [
+      12,
+      5,
+      12,
+      0,
+      183,
+      175
+    ],
+    "clear_index12_post": [
+      12,
+      0,
+      0
+    ],
+    "all_pairs_same_tick_brain": true,
+    "all_args": [
+      5,
+      "index",
+      0
+    ],
+    "all_indices_ordered": true,
+    "clear_format": "32 rows x4 bytes implicit index; output/state PRE then output/state POST",
+    "clear_bytes": 128,
+    "clear_sha256": "4e6464dcad24b72bdb3f9aa09452d3ececf6412093f982c86fffff83854c12fa",
+    "clear_zlib_b64": "eNpjYCANbF/PQFUAAG+xAWc=",
+    "injected_channel_witnesses": []
+  },
+  "pulse_marks": {
+    "args": [
+      [
+        5,
+        8,
+        32
+      ],
+      [
+        5,
+        9,
+        32
+      ]
+    ],
+    "pre": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "post": [
+      [
+        32,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        32,
+        32,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "in_cycle": [
+      0,
+      0
+    ],
+    "ack": [
+      [
+        32,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        32,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "identity_before_after": [
+      true,
+      true
+    ],
+    "dde_basal_both_channels_zero": true
+  },
+  "results": {
+    "D4_matched": [
+      9,
+      9
+    ],
+    "basal_cycles": 16,
+    "clear_pairs": 32,
+    "active_clear_indices": [
+      12
+    ],
+    "injected_channel_resets": 0
+  }
+}

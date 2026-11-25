@@ -59,3 +59,5 @@
 - D5.1 CI 45603170075 cerrado FAIL condicional. Escaneo 640, candidatos232/237/4, 54/54 Concept, A3 y B1 salidas positivas propias, opuesto cero; D4 A9/9 B1/9 por desaparición L5:9 entre tick503 y504. Artefacto descargado hash/CRC, proyección compacta conservada, recálculo separado. 164s/1 job/1 arranque, sin reintentar; D6 automático no habilitado. H08c.1/N STOP.
 
 - Usuario autoriza diagnóstico breve de extinción D5.1. D5x.0: identificado bucle de reset por cambio de objeto atendido (0x409c70..0x409e32); D5x.1 preregistrado para contrastar con escritura real, 1 job/8min/1 arranque, sin reintento.
+
+- D5x CI 45607721471: 151s/1 job/1 arranque, NO OPORTUNIDAD formal; D4 18/18, 34 ciclos regulares, 16 basal. Cambio de objeto atendido tick488 y 32 pares CLEAR nativos; L5:12 activo183/175→0/0, 8/9 cero. Artefacto descargado CRC/hash verificado, proyección exacta, recálculo local. No causa retrospectiva D5.1, no reintentar. D6.0 documental siguiente.
