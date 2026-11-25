@@ -2,13 +2,13 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H_partial_synthesis_complete_strategic_approval_required",
-  "stage": "H_partial_synthesis",
-  "current_task": "H_partial_synthesis_closed",
-  "next_action": "Solicitar aprobación de cierre parcial H y examen exclusivamente documental de factibilidad de nueva hipótesis N: crédito temporal a través de cambios de contexto. Sin ejecución, implementación ni uso de reservas. N STOP hasta aprobación explícita.",
-  "scientific_next": "strategic_approval_N_candidate_documentary_or_H_pause",
+  "status": "H_reframe_approved_H09_0_documentary_complete",
+  "stage": "H09",
+  "current_task": "H09.0_closed",
+  "next_action": "Diseñar contrato cuantificado H09.1 de factibilidad Concept8→Decision libre: reutilizar observadores, seleccionar por topología, validar instrumento, ventanas sham/AB, oportunidad y química, fijar costo/STOP. No ejecutar sin autorización del nuevo contrato. H08c.1 y D6 cerradas; N STOP.",
+  "scientific_next": "H09.1_documentary_pilot_contract",
   "scientific_state": {
-    "H": "paused_partial_mechanisms_verified_integration_unresolved",
+    "H": "active_documentary_reframe_direct_associative_learning",
     "H08b19": "passed_local_witness",
     "N": "STOP",
     "E09": "closed_partial_negative",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "D6 captura instrumental incompleta y precondición topológica ausente; no adquisición ni retención integrada demostradas.",
-    "H campaña agotada; no reintentar sin contrato nuevo.",
-    "N STOP, puertas G05/R-ACT-I3c/G09 no superadas; aprobación estratégica requerida."
+    "TRIG8 nativo, estabilidad de representación, oportunidades de elección libre y lectura sincronizada todavía no validadas.",
+    "Retención activa exige verificar ausencia de refuerzo endógeno y no congelar dinámica.",
+    "Nuevo contrato H09.1 y autorización antes de ejecución."
   ],
-  "future_execution_dependency": "Aprobación explícita de decisión estratégica y alcance documental N; implementación/ensayos requieren contrato posterior.",
+  "future_execution_dependency": "H09.1 especificación y aprobación; sin nuevo archivo ni credencial por ahora",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "7b5867f194df683d0f02dd89380a924a831f02ac",
+  "last_confirmed_non_state_write": "f61705d8ddaedf68ec8aecc895251d6bc8837bf1",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -94,7 +94,8 @@
     "evidence/H08d_D6.1_observations.json",
     "evidence/H08d_D6.1_result.md",
     "experiments/verify_h08d_d6_result.py",
-    "evidence/H_PARTIAL_SYNTHESIS_20261125.md"
+    "evidence/H_PARTIAL_SYNTHESIS_20261125.md",
+    "protocols/H_REFRAME_20261125.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -347,13 +348,20 @@
     }
   },
   "strategic_review": {
-    "status": "recommendation_pending",
-    "recommendation": "pause_H_partial_and_review_new_N_hypothesis_documentary_only",
+    "status": "superseded_by_user_approved_H_reframe",
+    "recommendation": "direct_H_associative_learning_documentary_reframe",
     "new_question": "Context-conditioned temporal credit across observable context changes without loss of valid delayed rewards or active retention",
     "h08d_jobs": 9,
     "h08d_runner_seconds": 1129,
     "h08d_original_starts": 7,
     "independent_audit": false,
     "experiments_authorized": false
+  },
+  "h09": {
+    "status": "H09.0_documentary_complete",
+    "candidate": "native_TRIG8_to_free_Decision",
+    "jobs_consumed": 0,
+    "original_starts": 0,
+    "execution_authorized": false
   }
 }
