@@ -1,0 +1,323 @@
+{
+  "active_snapshot_count": 9,
+  "chem_local": 31,
+  "conditional": true,
+  "cue_output": 32,
+  "margin_max": 126,
+  "margin_median": 102,
+  "margin_min": 42,
+  "margins": [
+    103,
+    102,
+    101,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    42,
+    86,
+    105,
+    119,
+    126,
+    118,
+    112,
+    108,
+    106,
+    104
+  ],
+  "results": {
+    "all": {
+      "1": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 9,
+            "max_output_difference": 28
+          }
+        }
+      },
+      "3": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 1,
+            "max_direct": 16,
+            "max_output_difference": 49
+          }
+        }
+      },
+      "6": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 1,
+            "max_direct": 23,
+            "max_output_difference": 70
+          }
+        }
+      },
+      "9": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 2,
+            "max_direct": 29,
+            "max_output_difference": 88
+          }
+        }
+      }
+    },
+    "positive": {
+      "1": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 5,
+            "max_output_difference": 16
+          }
+        }
+      },
+      "3": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 8,
+            "max_output_difference": 25
+          }
+        }
+      },
+      "6": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 12,
+            "max_output_difference": 37
+          }
+        }
+      },
+      "9": {
+        "retention": {
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          },
+          "512": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 0,
+            "max_ltw_at_probe": 5,
+            "max_output_difference": 0,
+            "max_stw_at_probe": 5
+          }
+        },
+        "train": {
+          "6": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "128": {
+            "margins_strictly_exceeded": 0,
+            "max_direct": 1,
+            "max_output_difference": 4
+          },
+          "512": {
+            "margins_strictly_exceeded": 1,
+            "max_direct": 15,
+            "max_output_difference": 46
+          }
+        }
+      }
+    }
+  },
+  "source_count": 44,
+  "stage": "H09.P",
+  "start_tick": 501
+}

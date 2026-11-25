@@ -110,3 +110,6 @@ H09 revisión de valor marginal: considerar cambio de preferencia dominante por 
 
 ## H09.S cierre (autoverificación)
 Criterio previo cumplido: cota condicional de inhibición con fuente32, local31 y conexiones fijas incluso incluyendo fuerza0, no cubre margen basal mínimo; no prueba imposibilidad general ni causalidad. Corrección de saturación auxiliar antes de cierre sin alterar resultado principal; hashes, roundtrip y script reproducible. Cero arranques, N STOP. Evaluar opción poblacional solo documental, no otro contrato por inercia; no auditor independiente.
+
+## H09.P cierre (autoverificación)
+Criterio STOP predefinido cumplido: cota favorable k9/512 alcanza solo2/23 márgenes durante entrenamiento, ninguna tras lavado y probe, no resultado causal ni imposibilidad global. Error GraphQL de ref reconciliado; script y resultado verificables. Patrón natural no demostrado con datos disponibles; propuesta de una última factibilidad de solo lectura (H09.N0), no habilita entrenamiento, presupuesto y aprobación nueva. N STOP, H09.1/S no reclasificadas. Sin auditor independiente.
