@@ -7,3 +7,5 @@
 - 24/11/2026 — H08c.0 PASS documental. Consultadas CAOS/CDR y evidencia .14/.15/.18/.19, observadores heredados. Protocolo H08c.1 fijado en protocols/H08c.1.md: TRIG sensorial candidato, control sham, identidad/firma de Concept, decisión libre post-WTA, lavado y límites. No ejecutado. Próxima H08c.1 preflight acceso privado y observación; H08c.2 contrato provisional, N STOP. Autoverificación, no auditor independiente.
 
 - 24/11/2026 — H08c.1 preflight parcial: acceso Drive y tres huellas exactas, ZIP CD localizado pero conector 413 (256 MiB). Candidato estático post-WTA 0x404911; sin ejecución. Workflow de presencia de configuración sin valores ni descarga. Ver evidence/H08c.1_PREFLIGHT_20261124.md.
+
+- CI #45516662183 concluida: ambos secretos de configuración ausentes; bloqueo de aprovisionamiento. Cero sesiones científicas. Requiere configuración del usuario, no archivos nuevos.
