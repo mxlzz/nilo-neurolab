@@ -2,13 +2,13 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H09_N0_running",
+  "status": "H09_N0_closed_no_opportunity_partial_H_closure_recommended",
   "stage": "H09",
-  "current_task": "H09.N0",
-  "next_action": "Leer CI45652045072 y artefacto. Verificar fixture, 256 ciclos, firmas/inventarios, recurrencia A/B, decisiones/margen y química Q. Cerrar sin reintento; si no oportunidad recomendar cierre H parcial. N STOP.",
-  "scientific_next": "H09.N0",
+  "current_task": "H09.N0_closed",
+  "next_action": "Solicitar aprobación estratégica de cierre parcial H tras última observación H09.N0; no más originales, no H09.2 ni reabrir N sin aprobación. Conservar resultados y considerar preguntas funcionales nuevas únicamente tras revisión de alternativas.",
+  "scientific_next": "H_partial_closure_strategic_approval",
   "scientific_state": {
-    "H": "active_documentary_reframe_direct_associative_learning",
+    "H": "campaign_paused_partial_mechanisms_verified_association_unresolved",
     "H08b19": "passed_local_witness",
     "N": "STOP",
     "E09": "closed_partial_negative",
@@ -31,14 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "Resultado de fixture y observación natural pendientes."
+    "H09.N0: B ausente en descubrimiento y Q false en 256 ciclos, no contraste causal habilitado.",
+    "H09.1/S/P cerradas, presupuesto de última observación agotado. No reintento.",
+    "Adquisición causal y retención activa originales no contrastadas; N STOP y G05/R-ACT-I3c/G09 no superadas."
   ],
-  "future_execution_dependency": "Resultado de H09.N0 autorizado",
+  "future_execution_dependency": "Decisión estratégica explícita del usuario sobre cierre parcial H y orientación posterior",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "5d21300b37eb87b9d751ad3575cd94b6fc13e935",
+  "last_confirmed_non_state_write": "f1c3aebe6b4a4924ba5317cff8eceb601f07610d",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -109,7 +111,10 @@
     "evidence/H09.P_result.json",
     "evidence/H09.P_result.md",
     "protocols/H09.N0.md",
-    "protocols/H09.N0_implementation.md"
+    "protocols/H09.N0_implementation.md",
+    "evidence/H09.N0_observations.json",
+    "evidence/H09.N0_result.md",
+    "experiments/verify_h09_n0_result.py"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -362,8 +367,8 @@
     }
   },
   "strategic_review": {
-    "status": "superseded_by_user_approved_H_reframe",
-    "recommendation": "direct_H_associative_learning_documentary_reframe",
+    "status": "partial_H_closure_recommended_after_final_natural_observation",
+    "recommendation": "close_H_campaign_partially_preserve_mechanisms_no_further_native_pilot",
     "new_question": "Context-conditioned temporal credit across observable context changes without loss of valid delayed rewards or active retention",
     "h08d_jobs": 9,
     "h08d_runner_seconds": 1129,
@@ -435,22 +440,29 @@
       "ci_jobs": 0
     },
     "natural": {
-      "status": "running",
+      "status": "NO_OPPORTUNITY",
       "jobs_max": 1,
       "runner_minutes_max": 8,
       "original_starts_max": 1,
       "cycles_max": 256,
       "trace_seconds_max": 180,
       "combined_capture_mib_max": 4,
-      "execution_authorized": true,
-      "run": 45652045072
+      "execution_authorized": false,
+      "run": 45652045072,
+      "jobs_consumed": 1,
+      "original_starts": 1,
+      "runner_seconds_consumed": 278,
+      "artifact": 15041272646,
+      "fixture_pass": true,
+      "transport": true,
+      "complete_cycles": 256,
+      "distinct_supports": 28,
+      "endpoint_source_changes": 84,
+      "pattern_A_size": 31,
+      "pattern_B": null,
+      "recurrence": false,
+      "Q": false,
+      "reward_pulses": 0
     }
-  },
-  "active_run": {
-    "id": 45652045072,
-    "unit": "H09.N0",
-    "commit": "5d21300b37eb87b9d751ad3575cd94b6fc13e935",
-    "status": "queued",
-    "max_runner_minutes": 8
   }
 }
