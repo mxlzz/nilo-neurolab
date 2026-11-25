@@ -44,3 +44,5 @@ Corrección única CDB batch, patrón de transporte heredado, no atribuir causal
 Dos fallos instrumentales, 2/3 arranques, ~7 min. Segunda corrección no permitió recuperar eventos aunque CDB ready y salida local; causa exacta no identificada. No hay evidencia de capacidad/incapacidad de aprendizaje. Déficit de diseño: complejidad del parser y ausencia de diagnóstico sanitizado mínimo de líneas; no ocultar. Tercer arranque sin valor para gate; no ejecutar. H08b.18/.19 intactas. Decisión sustantiva requerida antes de nueva campaña. [Cierre](evidence/H08c.1_STOP.md).
 
 H08d autorizado. Se identifica diferencia de escape y parser entre instrumentos, hipótesis no causa demostrada. Probar con CDB real sobre fixture propio antes de originales. Presupuesto y STOP explícitos; sin cambios de alcance o gate.
+
+H08d.D0: el diseño de control compartió marcadores entre variantes y la negativa contaminó el conteo, por lo que no supera su propio gate. Diagnóstico reproducido en fixture real, no prueba retrospectiva de causalidad en C1. STOP formal; D0b es nueva pregunta de aislamiento, con el mismo criterio estricto, sin ampliar presupuesto ni alcance. D2 diferida.

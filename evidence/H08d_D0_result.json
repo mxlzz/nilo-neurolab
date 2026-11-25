@@ -1,0 +1,43 @@
+{
+  "bytes": 3736,
+  "categories": [],
+  "end": false,
+  "expected": [
+    11,
+    22,
+    33
+  ],
+  "forms": [
+    "NL_D0_READY",
+    "NL_D0_HIT",
+    "NL_D0_LEGACY 11",
+    "NL_D0_SINGLE 11 NL_D0_HIT",
+    "NL_D0_LEGACY 22",
+    "NL_D0_SINGLE 22 NL_D0_HIT",
+    "NL_D0_LEGACY 33",
+    "NL_D0_SINGLE 33 NL_D0_END"
+  ],
+  "hit": 1,
+  "legacy_anchored": [
+    11,
+    22,
+    33
+  ],
+  "legacy_flexible": [
+    11,
+    22,
+    33
+  ],
+  "lines": 69,
+  "originals_used": false,
+  "pass": false,
+  "returncode": 0,
+  "single_anchored": [],
+  "single_flexible": [
+    11,
+    22,
+    33
+  ],
+  "stage": "D0",
+  "target": "project_fixture_x86"
+}
