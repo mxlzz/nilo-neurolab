@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D5_1_running",
+  "status": "H08d_D5_1_FAIL_conditional_divergence_partial_concept_witness",
   "stage": "H08d",
-  "current_task": "H08d.D5.1",
-  "next_action": "Leer CI 45603170075 y artefacto. Verificar selección por conectividad, dos pulsos, 18 ciclos y predicción de los tres candidatos; cerrar sin reintentar, auditar valor marginal antes de D6. H08c.1/N STOP.",
-  "scientific_next": "H08d.D5.1",
+  "current_task": "H08d.D5.1_closed",
+  "next_action": "Solicitar decisión: autorizar diseño de un único contraste integrado de oportunidad de aprendizaje (D6 replanteado, sin repetir D5 ni cambiar su gate) o cerrar H parcialmente y sintetizar. D6 automático no habilitado; no ejecutar nuevo job sin nuevo contrato aprobado. H08c.1 y N STOP.",
+  "scientific_next": "strategic_decision_integrated_D6_or_H_partial_closure",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,20 +23,24 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation_D5.1_running"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation_D5.1_FAIL_conditional_divergence_partial_concept_witness"
   },
   "reserved_seeds": [
     "1400..1419",
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [],
-  "future_execution_dependency": "D5.1 local Concept representation before integrated Decision",
+  "blockers": [
+    "B se extingue prematuramente en GeneralSense9: 32/21→0/0 entre muestras consecutivas; causa no observada, D4 subgate B1/9 en D5.1.",
+    "Concept diferencial local observado 54/54 condicional, pero gate D5.1 formal FAIL; no prueba de Decision contingente, adquisición o retención.",
+    "Presupuesto D5.1 agotado; no reintentar. Replanteo integrado requiere aprobación."
+  ],
+  "future_execution_dependency": "Decisión estratégica aprobada; D6 no automático, sin archivos nuevos.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "f73f7b6ff112cf46618fadb72c38a1c2c89ebdf2",
+  "last_confirmed_non_state_write": "783c1f1366e0c3853e1d2e7509c531a434b39e1c",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -77,7 +81,10 @@
     "evidence/H08d_D4.1_result.md",
     "experiments/verify_h08d_d4_result.py",
     "protocols/H08d_D5.md",
-    "protocols/H08d_D5.1.md"
+    "protocols/H08d_D5.1.md",
+    "evidence/H08d_D5.1_observations.json",
+    "evidence/H08d_D5.1_result.md",
+    "experiments/verify_h08d_d5_result.py"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -231,22 +238,33 @@
     "valid_pulses": 2
   },
   "h08d_D5": {
-    "outcome": "running",
+    "outcome": "FAIL_conditional_divergence_partial_concept_witness",
     "candidate_selection": "lowest_index_singleton_source40_source41_and_control_before_stimulus",
     "proposed_budget": {
       "jobs_max": 1,
       "runner_minutes_max": 8,
       "original_starts_max": 1
     },
-    "jobs_consumed": 0,
-    "run": 45603170075
-  },
-  "active_run": {
-    "id": 45603170075,
-    "unit": "H08d.D5.1",
-    "commit": "f73f7b6ff112cf46618fadb72c38a1c2c89ebdf2",
-    "status": "queued",
-    "max_runner_minutes": 8
+    "jobs_consumed": 1,
+    "run": 45603170075,
+    "runner_seconds_consumed": 164,
+    "original_starts_consumed": 1,
+    "artifact": 15016358150,
+    "regular_cycles": 34,
+    "basal_cycles": 16,
+    "valid_pulses": 2,
+    "selected": [
+      232,
+      237,
+      4
+    ],
+    "concept_conditional_matches": 54,
+    "concept_conditional_total": 54,
+    "d4_matched": [
+      9,
+      1
+    ],
+    "first_divergence_tick": 504
   },
   "strategic_limit": "H es instrumento, no destino; D5→D6→contraste causal adquisición/retención si factible→síntesis, sin reconstrucción integral ni reabrir N; auditar valor marginal y cerrar H parcial si no justifica continuar."
 }
