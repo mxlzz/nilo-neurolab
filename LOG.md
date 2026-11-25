@@ -19,3 +19,5 @@
 - H08c.1 sesión 1 CI 45518372778 terminada: artefacto hash verificado, sujeto creado, cero eventos/ensayos; observer_wait_timeout. Fallo instrumental, no negativo neuronal. Consumido 1/3 arranques. Revisar corrección batch, no replicar instrumento fallido.
 
 - Única corrección instrumental H08c.1: CDB batch con parser de snapshots acotados y gc automático, sin cambiar contrato. Sesión 2 solo; sesión 3 condicional a PASS completo.
+
+- H08c.1 sesión 2 CI 45519467547 concluida, artefacto SHA256 verificado: ready=true, 448673 B de salida, cero eventos parseados, cero ensayos, observer_wait_timeout. STOP instrumental; sesión 3 no ejecutada por imposibilidad de cumplir gate conjunto. H08c.2/3 no ejecutadas; N STOP. Ver evidence/H08c.1_STOP.md.

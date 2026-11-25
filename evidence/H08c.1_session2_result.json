@@ -1,0 +1,66 @@
+{
+  "alternate": [],
+  "classification": "instrumental_incomplete",
+  "debugger_detached": false,
+  "event_counts": {},
+  "frames": [],
+  "instrument_error": "observer_wait_timeout",
+  "markers": {},
+  "observer_diagnostics": {
+    "categories": [],
+    "cdb_return": 0,
+    "raw_bytes": 448673,
+    "raw_lines": 5873,
+    "ready": true
+  },
+  "order": [
+    "A",
+    "S",
+    "B",
+    "B",
+    "S",
+    "A",
+    "S",
+    "S",
+    "A",
+    "A",
+    "B",
+    "B"
+  ],
+  "purpose": "instrumental feasibility replication with batch correction",
+  "seed": 10802,
+  "session": 2,
+  "subject_created": true,
+  "summary": {
+    "actions": [],
+    "all_checks": false,
+    "alternate_events": 0,
+    "baseline_winners": {},
+    "free_winners": {},
+    "gate_checks": {
+      "active_wash": false,
+      "free_actions": false,
+      "identities_transport": false,
+      "input": false,
+      "opportunities": false,
+      "readout": false,
+      "signature": false
+    },
+    "heldout_classification": {
+      "A": [],
+      "B": []
+    },
+    "input_correct": {
+      "A": 0,
+      "B": 0
+    },
+    "longest_wash": 0,
+    "opportunities": {},
+    "regular_frames": 0,
+    "sham_classification": [],
+    "sham_false_positive": 0,
+    "valid_trials": 0
+  },
+  "trials": [],
+  "triggers": []
+}

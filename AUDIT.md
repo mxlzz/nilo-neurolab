@@ -39,3 +39,6 @@ H08c.1 sesión 1 preregistro técnico: validación WTA exacta, identidad y marca
 H08c.1 sesión 1 NO supera gate (CI verde, cero eventos). Artefacto cotejado, sujeto creado y limpieza confirmada. No se conocen causas exactas de timeout. Una corrección instrumental permitida, no tuning ni cambio de criterios. Ver evidence/H08c.1_session1_result.md.
 
 Corrección única CDB batch, patrón de transporte heredado, no atribuir causalmente timeout a buffering. Tests sintéticos nuevos y control de captura; si falla, STOP. No afirmación de equivalencia dinámica hasta validar datos.
+
+## H08c.1 cierre STOP (autoverificación)
+Dos fallos instrumentales, 2/3 arranques, ~7 min. Segunda corrección no permitió recuperar eventos aunque CDB ready y salida local; causa exacta no identificada. No hay evidencia de capacidad/incapacidad de aprendizaje. Déficit de diseño: complejidad del parser y ausencia de diagnóstico sanitizado mínimo de líneas; no ocultar. Tercer arranque sin valor para gate; no ejecutar. H08b.18/.19 intactas. Decisión sustantiva requerida antes de nueva campaña. [Cierre](evidence/H08c.1_STOP.md).
