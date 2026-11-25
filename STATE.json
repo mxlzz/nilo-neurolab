@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D5x_closed_no_opportunity_native_reset_observed",
+  "status": "H08d_D6_0_documentary_complete_approval_required",
   "stage": "H08d",
-  "current_task": "H08d.D5x.1_closed",
-  "next_action": "Diseñar contraste integrado D6.0 documental orientado a oportunidad de decisión y aprendizaje: señales reales, reset contextual, selección libre, contactos y química. No ejecutar sin nuevo contrato aprobado. D5.1 FAIL, H08c.1/N STOP.",
-  "scientific_next": "H08d.D6.0_documentary_integrated_design",
+  "current_task": "H08d.D6.0_closed",
+  "next_action": "Solicitar aprobación D6.1 (1 job estándar gratuito/8min/1 arranque, captura180s/4MiB). Piloto integrado 2A/2B/2sham, firma, contactos, WTA, reset, oportunidad de STW; no ejecutar antes de aprobación ni repetir si no factible. H08c.1/N STOP.",
+  "scientific_next": "H08d.D6.1_pending_approval",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "Causa exacta retrospectiva D5.1 no probada; reset contextual positivo observado en otro canal/sesión.",
-    "Concept→Decision y oportunidad de aprendizaje aún no verificados.",
-    "Presupuesto D5x agotado; no repetir ni ampliar microdiagnóstico."
+    "D5.1 causa histórica no atribuida, reset contextual observado y registrado como variable de control.",
+    "Oportunidad de aprendizaje integrada no demostrada; marcador sham y costo de captura pendientes de validación previa.",
+    "D6.1 requiere aprobación de nuevo contrato y presupuesto."
   ],
-  "future_execution_dependency": "D6.0 documental y aprobación de nuevo contrato",
+  "future_execution_dependency": "Aprobación del piloto D6.1 acotado, ningún archivo o credencial adicional.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "ec082d9cecd1c68c5a37f7e0d70b2041585f1ef5",
+  "last_confirmed_non_state_write": "abbb94e0f2b654c53ae2a2fb38ab7c490af3a169",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -88,7 +88,8 @@
     "protocols/H08d_D5x.md",
     "evidence/H08d_D5x.1_observations.json",
     "evidence/H08d_D5x.1_result.md",
-    "experiments/verify_h08d_d5x_result.py"
+    "experiments/verify_h08d_d5x_result.py",
+    "protocols/H08d_D6.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -300,5 +301,24 @@
       "tick": 488
     },
     "injected_witnesses": 0
+  },
+  "h08d_D6": {
+    "outcome": "documentary_complete_not_executed",
+    "proposed_budget": {
+      "jobs_max": 1,
+      "runner_minutes_max": 8,
+      "original_starts_max": 1,
+      "trace_seconds_max": 180,
+      "capture_mib_max": 4
+    },
+    "planned_arms": [
+      "A",
+      "S",
+      "B",
+      "B",
+      "S",
+      "A"
+    ],
+    "jobs_consumed": 0
   }
 }
