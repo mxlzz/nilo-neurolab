@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H09_1_running",
+  "status": "H09_1_closed_no_opportunity_single_dominant_decision",
   "stage": "H09",
-  "current_task": "H09.1",
-  "next_action": "Leer CI 45627910012 y artefacto, verificar fixture, inventario, T/F/O/Q y límites. Cerrar sin reintento; si factible preparar H09.2 documental, si no auditar valor marginal. N STOP.",
-  "scientific_next": "H09.1",
+  "current_task": "H09.1_closed",
+  "next_action": "Revisar documentalmente contraste distinto de modificación de preferencia dominante (especificidad contextual, castigo contingente vs yoked, margen de WTA y lavado), o cierre H parcial. No ejecutar sin contrato nuevo aprobado. H09.2 no habilitada, N STOP.",
+  "scientific_next": "H09_review_dominant_preference_alternative_documentary",
   "scientific_state": {
     "H": "active_documentary_reframe_direct_associative_learning",
     "H08b19": "passed_local_witness",
@@ -31,14 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "Validación fixture y factibilidad nativa pendientes."
+    "H09.1 solo Decision1 gana en basal; falta segundo destino, no exposiciones.",
+    "TRIG8/feedback y plasticidad causal no medidos; CHEM51 positiva en basal, lavado no probado.",
+    "Presupuesto H09.1 agotado, no reintentar."
   ],
-  "future_execution_dependency": "Resultado del piloto autorizado",
+  "future_execution_dependency": "Decisión de continuidad tras revisión documental",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "7fc3cb5e3ea5f87797a7e0699a718c87806d00a2",
+  "last_confirmed_non_state_write": "b4ee0ff502c59448a2559947272af272accea479",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -95,7 +97,10 @@
     "evidence/H_PARTIAL_SYNTHESIS_20261125.md",
     "protocols/H_REFRAME_20261125.md",
     "protocols/H09.1.md",
-    "protocols/H09.1_implementation.md"
+    "protocols/H09.1_implementation.md",
+    "evidence/H09.1_observations.json",
+    "evidence/H09.1_result.md",
+    "experiments/verify_h09_1_result.py"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -358,11 +363,11 @@
     "experiments_authorized": false
   },
   "h09": {
-    "status": "H09.1_running",
+    "status": "H09.1_NO_OPPORTUNITY",
     "candidate": "native_TRIG8_to_free_Decision",
-    "jobs_consumed": 0,
-    "original_starts": 0,
-    "execution_authorized": true,
+    "jobs_consumed": 1,
+    "original_starts": 1,
+    "execution_authorized": false,
     "proposed_budget": {
       "jobs_max": 1,
       "runner_minutes_max": 8,
@@ -383,13 +388,17 @@
     "planned_trig": 24,
     "planned_sham_slots": 12,
     "planned_reward": 0,
-    "run": 45627910012
-  },
-  "active_run": {
-    "id": 45627910012,
-    "unit": "H09.1",
-    "commit": "7fc3cb5e3ea5f87797a7e0699a718c87806d00a2",
-    "status": "in_progress",
-    "max_runner_minutes": 8
+    "run": 45627910012,
+    "runner_seconds_consumed": 164,
+    "artifact": 15029722128,
+    "fixture_pass": true,
+    "transport": true,
+    "complete_cycles": 25,
+    "inventory_rows": 4096,
+    "eligible_destinations": [
+      1
+    ],
+    "trig_attempts": 0,
+    "exposures": 0
   }
 }
