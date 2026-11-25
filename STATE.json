@@ -2,13 +2,13 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H09_N0_closed_no_opportunity_partial_H_closure_recommended",
-  "stage": "H09",
-  "current_task": "H09.N0_closed",
-  "next_action": "Solicitar aprobación estratégica de cierre parcial H tras última observación H09.N0; no más originales, no H09.2 ni reabrir N sin aprobación. Conservar resultados y considerar preguntas funcionales nuevas únicamente tras revisión de alternativas.",
-  "scientific_next": "H_partial_closure_strategic_approval",
+  "status": "H_partial_closed_N_selective_revision_proposed_approval_required",
+  "stage": "strategic_orientation",
+  "current_task": "H_partial_closure_and_N_orientation_documentary_closed",
+  "next_action": "Solicitar aprobación explícita de nueva pregunta N: revisión selectiva, retención activa y recuperación en contextos recurrentes con cambios parciales. Si aprueba, definir diagnóstico identificabilidad/techo/costo y baselines simples; no diseñar red hasta demostrar contraste discriminante y aprobar contrato posterior. H cerrada parcial, no originales, reservas intactas.",
+  "scientific_next": "N_selective_revision_diagnostic_pending_approval",
   "scientific_state": {
-    "H": "campaign_paused_partial_mechanisms_verified_association_unresolved",
+    "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
     "N": "STOP",
     "E09": "closed_partial_negative",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "H09.N0: B ausente en descubrimiento y Q false en 256 ciclos, no contraste causal habilitado.",
-    "H09.1/S/P cerradas, presupuesto de última observación agotado. No reintento.",
-    "Adquisición causal y retención activa originales no contrastadas; N STOP y G05/R-ACT-I3c/G09 no superadas."
+    "N STOP hasta aprobación explícita de nueva pregunta discriminante.",
+    "Identificabilidad, margen respecto a baselines fuertes y presupuesto comparable aún no demostrados.",
+    "H adquisición causal/retención originales no contrastadas; G05/R-ACT-I3c/G09 no superadas."
   ],
-  "future_execution_dependency": "Decisión estratégica explícita del usuario sobre cierre parcial H y orientación posterior",
+  "future_execution_dependency": "Aprobación de nueva pregunta N y diagnóstico previo, no arquitectura ni confirmación",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "f1c3aebe6b4a4924ba5317cff8eceb601f07610d",
+  "last_confirmed_non_state_write": "8ae3ffb78513366b827af1ce1c2a5873985734e1",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -114,7 +114,9 @@
     "protocols/H09.N0_implementation.md",
     "evidence/H09.N0_observations.json",
     "evidence/H09.N0_result.md",
-    "experiments/verify_h09_n0_result.py"
+    "experiments/verify_h09_n0_result.py",
+    "evidence/H_CLOSURE_20261125.md",
+    "protocols/N_NEXT_ORIENTATION_20261125.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -367,14 +369,15 @@
     }
   },
   "strategic_review": {
-    "status": "partial_H_closure_recommended_after_final_natural_observation",
-    "recommendation": "close_H_campaign_partially_preserve_mechanisms_no_further_native_pilot",
+    "status": "H_partial_closed_user_approved_new_N_question_proposed",
+    "recommendation": "selective_revision_retention_recurrent_contexts_baseline_first",
     "new_question": "Context-conditioned temporal credit across observable context changes without loss of valid delayed rewards or active retention",
     "h08d_jobs": 9,
     "h08d_runner_seconds": 1129,
     "h08d_original_starts": 7,
     "independent_audit": false,
-    "experiments_authorized": false
+    "experiments_authorized": false,
+    "execution_authorized": false
   },
   "h09": {
     "status": "H09.1_NO_OPPORTUNITY",
@@ -464,5 +467,13 @@
       "Q": false,
       "reward_pulses": 0
     }
+  },
+  "n_orientation": {
+    "status": "documentary_proposal_pending_approval",
+    "candidate": "selective_revision_retention_recurrent_contexts",
+    "delay": "immediate_initially_delayed_credit_separate_extension",
+    "baseline_first": true,
+    "experiments_authorized": false,
+    "old_reservations_untouched": true
   }
 }
