@@ -1,0 +1,117 @@
+name: NeuroLab H08d D6 integrated learning opportunity pilot
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/neurolab-h08d-d6.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mount:
+    runs-on: windows-2022
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate integrated gates before originals
+        shell: pwsh
+        run: |
+          python -m py_compile experiments/h08d_d6.py
+          if ($LASTEXITCODE -ne 0) { throw 'Compilation failed' }
+          python -u experiments/h08d_d6.py --self-test
+          if ($LASTEXITCODE -ne 0) { throw 'Synthetic test failed' }
+      - name: Compile owned x86 fixture
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $vswhere = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio\Installer\vswhere.exe'
+          $vs = & $vswhere -latest -products '*' -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
+          if (-not $vs) { throw 'MSVC x86 unavailable' }
+          $vc = Join-Path $vs 'VC\Auxiliary\Build\vcvars32.bat'
+          $batch = Join-Path $env:RUNNER_TEMP 'nl-build-fixture.cmd'
+          @"
+          @call "$vc" >nul
+          @if errorlevel 1 exit /b 1
+          @cl /nologo /Od /Zi /Fe:fixture.exe experiments\h08d_fixture.c /link /DEBUG /PDB:fixture.pdb
+          "@ | Set-Content -Path $batch -Encoding ascii
+          cmd.exe /d /c $batch
+          if ($LASTEXITCODE -ne 0 -or -not (Test-Path fixture.exe)) { throw 'Fixture build failed' }
+      - name: Validate debugger script transport on owned fixture
+        shell: pwsh
+        run: |
+          python -u experiments/h08d_d6.py --fixture fixture.exe
+          if ($LASTEXITCODE -ne 0) { throw 'D6 fixture gate failed' }
+      - name: Verify originals and measure integrated opportunity
+        shell: pwsh
+        env:
+          NEUROLAB_CD_FILE_ID: ${{ secrets.NEUROLAB_CD_FILE_ID }}
+          NEUROLAB_DATA_FILE_ID: ${{ secrets.NEUROLAB_DATA_FILE_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $root = Join-Path $env:RUNNER_TEMP ('neurolab-cd-' + [guid]::NewGuid().ToString('N'))
+          New-Item -ItemType Directory -Path $root | Out-Null
+          $env:NL_CD_TEMP = $root
+          $iso = Join-Path $root 'original.iso'
+          $mounted = $false
+          try {
+            @'
+          import hashlib, json, os, pathlib, re, shutil, sys, urllib.request, zipfile
+          root=pathlib.Path(os.environ["NL_CD_TEMP"])
+          fid=os.environ.pop("NEUROLAB_CD_FILE_ID","")
+          if not re.fullmatch(r"[A-Za-z0-9_-]{10,200}",fid):sys.exit("secret absent")
+          archive=root/"media.zip"; h=hashlib.sha256(); n=0
+          try:
+              with urllib.request.urlopen("https://drive.usercontent.google.com/download?id="+fid+"&export=download&confirm=t",timeout=90) as a,archive.open("wb") as b:
+                  while block:=a.read(1024*1024):
+                      n+=len(block)
+                      if n>591498236:raise ValueError()
+                      h.update(block);b.write(block)
+          except Exception:
+              sys.exit("transfer unavailable (details suppressed)")
+          if n!=591498236 or h.hexdigest()!="91805784212380b804ec5c3889f2524ff358379c6a0a964e5dadba147c5498af":
+              sys.exit("archive fingerprint mismatch")
+          with zipfile.ZipFile(archive) as z:
+              found=[i for i in z.infolist() if pathlib.PurePosixPath(i.filename).name=="Creatures.iso" and i.file_size==591384576]
+              if len(found)!=1:sys.exit("unique expected ISO not found")
+              ih=hashlib.sha256()
+              with z.open(found[0]) as a,(root/"original.iso").open("wb") as b:
+                  while block:=a.read(1024*1024):ih.update(block);b.write(block)
+          archive.unlink()
+          if ih.hexdigest()!="555ac57e00d2080268da75ef6063708a7ad20f56f9fd79f0507ab3505c91b297":
+              sys.exit("ISO fingerprint mismatch")
+          print(json.dumps({"stage":"verified_image","bytes":591384576,"iso_sha256":ih.hexdigest()}))
+          '@ | python -u -
+            if ($LASTEXITCODE -ne 0) { throw 'Original CD fingerprint gate failed' }
+            Remove-Item Env:NEUROLAB_CD_FILE_ID
+            try {
+              $disk = Mount-DiskImage -ImagePath $iso -StorageType ISO -Access ReadOnly -PassThru
+              $mounted = $true
+              $vol = $disk | Get-Volume | Select-Object -First 1
+              if (-not $vol.DriveLetter) { throw 'No drive letter assigned' }
+              $cd = "$($vol.DriveLetter):\"
+              $driveInfo = [System.IO.DriveInfo]::new($cd)
+              [ordered]@{stage='mounted';type=$driveInfo.DriveType.ToString();label=$vol.FileSystemLabel;filesystem=$vol.FileSystem;read_only_requested=$true} | ConvertTo-Json -Compress
+              if ($vol.FileSystemLabel -ne 'CREATURES' -or $driveInfo.DriveType.ToString() -ne 'CDRom') { throw 'Unexpected mounted medium identity' }
+              $env:NL_MOUNTED_CD = $cd
+              python -u experiments/h08d_d6.py
+              if ($LASTEXITCODE -ne 0) { throw 'D6 did not pass' }
+            } catch {
+              [ordered]@{stage='mount_or_inspection_failed';error_type=$_.Exception.GetType().Name;hresult=$_.Exception.HResult} | ConvertTo-Json -Compress
+              throw 'D6 did not pass'
+            }
+          } finally {
+            if ($mounted) { Dismount-DiskImage -ImagePath $iso -ErrorAction Stop | Out-Null; Write-Host 'PASS: original ISO dismounted' }
+            Remove-Item -LiteralPath $root -Recurse -Force
+            Write-Host 'PASS: temporary CD files removed'
+          }
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: h08d-d6-derived
+          path: |
+            h08d-d6-result.json
+            h08d-d6-fixture-result.json
+          if-no-files-found: warn
+          retention-days: 30
