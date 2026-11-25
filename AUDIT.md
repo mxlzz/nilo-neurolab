@@ -79,3 +79,5 @@ D5.1 revisión previa: relectura estática y fuentes CDB, control por topología
 
 ## D5.1 cierre y valor marginal
 Formal FAIL por upstream B, no por instrumento; evidencia Concept selectiva condicional 54/54 y topología estable, un sujeto, control negativo sin oportunidad positiva. No confundir con aprendizaje, ni ausencia de premio administrado con química cero. No explicar causa de desaparición entre fases sin observación. Presupuesto agotado, no repetir. D6 automático no autorizado. Recomendar decidir entre único contraste integrado con estímulo efectivamente observado y controles de oportunidad de aprendizaje, o cierre H parcial; no nueva microcampaña por inercia. Autoverificación.
+
+D5x previa: valor directo para separación sensorial/crédito temporal; hipótesis estática fuerte de reset contextual, no prueba de causa pasada. Contraste focalizado de callsite, control temporal e identidad, sin nueva campaña microscópica extensa; N STOP y D5.1 FAIL intactos.

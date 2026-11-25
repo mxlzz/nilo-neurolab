@@ -85,3 +85,6 @@ Creatures es instrumento de contraste, no destino de NeuroLab. Prioridad: D5 rep
 D5.1 aprobada. [Especificación](protocols/H08d_D5.1.md): extensión mínima D4, selección ciega por topología, dos pulsos, 1 job/8min/1 arranque.
 
 D5.1 formal FAIL, testigo Concept positivo parcial: [resultado](evidence/H08d_D5.1_result.md). A/B selectivos y 54/54 predicciones condicionales, B pierde entrada antes del segundo tick (D4 A9/9 B1/9). No rescatar gate ni repetir. D6 automático no habilitado. Decisión requerida: aprobar contraste integrado orientado a oportunidad de aprendizaje con entradas reales y controles o cierre H parcial/síntesis.
+
+## D5x — diagnóstico de extinción sensorial autorizado
+[Contrato](protocols/H08d_D5x.md). Candidato estático: cambio del objeto atendido borra GeneralSense, Decision y Source. Un job/8min/1 arranque para observar borrado nativo, sin repetir D5 ni forzar atención. STOP/no oportunidad al cierre.

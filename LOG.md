@@ -57,3 +57,5 @@
 - D5.1 preregistro de implementación: escaneo único de 640 células Concept, tres candidatos fijados antes de estímulo, observación de contactos y predicción; D4 reutilizado.
 
 - D5.1 CI 45603170075 cerrado FAIL condicional. Escaneo 640, candidatos232/237/4, 54/54 Concept, A3 y B1 salidas positivas propias, opuesto cero; D4 A9/9 B1/9 por desaparición L5:9 entre tick503 y504. Artefacto descargado hash/CRC, proyección compacta conservada, recálculo separado. 164s/1 job/1 arranque, sin reintentar; D6 automático no habilitado. H08c.1/N STOP.
+
+- Usuario autoriza diagnóstico breve de extinción D5.1. D5x.0: identificado bucle de reset por cambio de objeto atendido (0x409c70..0x409e32); D5x.1 preregistrado para contrastar con escritura real, 1 job/8min/1 arranque, sin reintento.
