@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D0b_running",
+  "status": "H08d_D1_ready",
   "stage": "H08d",
-  "current_task": "H08d.D0b",
-  "next_action": "Leer CI 45521574554 y artefacto. Si D0b PASS exacto, D1; si FAIL STOP. D2 diferida. No repetir D0.",
-  "scientific_next": "H08d.D0b",
+  "current_task": "H08d.D1",
+  "next_action": "Prerregistrar e implementar D1 lectura post-WTA mínima, cuatro breakpoints, máximo 20 ciclos y 8 min runner. Último job. D2 diferida, no aprendizaje ni N.",
+  "scientific_next": "H08d.D1",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,7 +23,7 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0b_queued_after_D0_formal_FAIL"
+    "H08d": "D0b_PASS_D1_ready"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -36,7 +36,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "54ef5e7e98bfdc485554a3cef4c0bf98a73e6c72",
+  "last_confirmed_non_state_write": "5f201d84adf596b0e16f1f747d9d8224f804abab",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -56,7 +56,9 @@
     "protocols/H08d.md",
     "evidence/H08d_D0_result.json",
     "evidence/H08d_D0_result.md",
-    "protocols/H08d_D0b.md"
+    "protocols/H08d_D0b.md",
+    "evidence/H08d_D0b_result.json",
+    "evidence/H08d_D0b_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -109,8 +111,8 @@
     "runner_minutes_max": 20,
     "original_starts_max": 2,
     "original_starts_consumed": 0,
-    "jobs_consumed": 1,
-    "runner_seconds_consumed": 36
+    "jobs_consumed": 2,
+    "runner_seconds_consumed": 72
   },
   "h08d_D0": {
     "run": 45521328544,
@@ -119,11 +121,10 @@
     "legacy_anchored": 3,
     "single_anchored": 0
   },
-  "active_run": {
-    "id": 45521574554,
-    "unit": "H08d.D0b",
-    "commit": "54ef5e7e98bfdc485554a3cef4c0bf98a73e6c72",
-    "status": "queued",
-    "max_runner_minutes": 4
+  "h08d_D0b": {
+    "run": 45521574554,
+    "artifact": 14980131875,
+    "outcome": "PASS",
+    "hits": 3
   }
 }
