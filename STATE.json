@@ -2,13 +2,13 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D6_1_instrumental_incomplete_topology_missing",
-  "stage": "H08d",
-  "current_task": "H08d.D6.1_closed",
-  "next_action": "Completar síntesis documental H parcial, contrastar alternativas y proponer decisión estratégica. No ejecutar más originales ni abrir N sin aprobación. D5.1 FAIL, D5x NO OPORTUNIDAD, H08c.1 STOP.",
-  "scientific_next": "H_partial_synthesis_strategic_review",
+  "status": "H_partial_synthesis_complete_strategic_approval_required",
+  "stage": "H_partial_synthesis",
+  "current_task": "H_partial_synthesis_closed",
+  "next_action": "Solicitar aprobación de cierre parcial H y examen exclusivamente documental de factibilidad de nueva hipótesis N: crédito temporal a través de cambios de contexto. Sin ejecución, implementación ni uso de reservas. N STOP hasta aprobación explícita.",
+  "scientific_next": "strategic_approval_N_candidate_documentary_or_H_pause",
   "scientific_state": {
-    "H": "active_local_mechanisms_verified",
+    "H": "paused_partial_mechanisms_verified_integration_unresolved",
     "H08b19": "passed_local_witness",
     "N": "STOP",
     "E09": "closed_partial_negative",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "D6 captura instrumental incompleta D6_malformed1; línea malformada no preservada.",
-    "Inventario Concept completo sin singleton A40; no Decision scan ni exposiciones.",
-    "Presupuesto D6.1 agotado, no reintentar. Adquisición/retención original no demostradas."
+    "D6 captura instrumental incompleta y precondición topológica ausente; no adquisición ni retención integrada demostradas.",
+    "H campaña agotada; no reintentar sin contrato nuevo.",
+    "N STOP, puertas G05/R-ACT-I3c/G09 no superadas; aprobación estratégica requerida."
   ],
-  "future_execution_dependency": "Síntesis H parcial y decisión estratégica aprobada",
+  "future_execution_dependency": "Aprobación explícita de decisión estratégica y alcance documental N; implementación/ensayos requieren contrato posterior.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "686bc5066a05f5088d6fc8b2c7de4f2f12aa8da1",
+  "last_confirmed_non_state_write": "7b5867f194df683d0f02dd89380a924a831f02ac",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -93,7 +93,8 @@
     "protocols/H08d_D6.1.md",
     "evidence/H08d_D6.1_observations.json",
     "evidence/H08d_D6.1_result.md",
-    "experiments/verify_h08d_d6_result.py"
+    "experiments/verify_h08d_d6_result.py",
+    "evidence/H_PARTIAL_SYNTHESIS_20261125.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -344,5 +345,15 @@
     "diagnostics": {
       "D6_malformed": 1
     }
+  },
+  "strategic_review": {
+    "status": "recommendation_pending",
+    "recommendation": "pause_H_partial_and_review_new_N_hypothesis_documentary_only",
+    "new_question": "Context-conditioned temporal credit across observable context changes without loss of valid delayed rewards or active retention",
+    "h08d_jobs": 9,
+    "h08d_runner_seconds": 1129,
+    "h08d_original_starts": 7,
+    "independent_audit": false,
+    "experiments_authorized": false
   }
 }
