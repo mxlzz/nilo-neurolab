@@ -43,3 +43,6 @@ Sesión 1 cerrada como fallo instrumental; quedan dos sesiones, ambas deben supe
 Sesión 2: [corrección instrumental](protocols/H08c.1_batch_correction.md), mismos criterios, máximo 15 min. Sesión 3 únicamente tras PASS completo de sesión 2.
 
 H08c.1 STOP instrumental tras corrección única. H08c.2/H08c.3 NO ejecutadas. Sesión 3 no ejecutada. Siguiente: revisión de continuidad y decisión aprobada (cerrar H con límites o nuevo contrato instrumental acotado, solo si justificado); N STOP. No retomar por inercia.
+
+## H08d — replanteo instrumental autorizado
+[Contrato](protocols/H08d.md). D0 transporte real con fixture propio, D1 lectura mínima WTA, D2 entrega nativa independiente. Cada etapa condicionada a anterior; máximo 20 min/2 originales, STOP al fallo. H08c.1 STOP histórico no reabre, H08c.2/3 no ejecutadas, N STOP.

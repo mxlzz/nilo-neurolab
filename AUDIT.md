@@ -42,3 +42,5 @@ Corrección única CDB batch, patrón de transporte heredado, no atribuir causal
 
 ## H08c.1 cierre STOP (autoverificación)
 Dos fallos instrumentales, 2/3 arranques, ~7 min. Segunda corrección no permitió recuperar eventos aunque CDB ready y salida local; causa exacta no identificada. No hay evidencia de capacidad/incapacidad de aprendizaje. Déficit de diseño: complejidad del parser y ausencia de diagnóstico sanitizado mínimo de líneas; no ocultar. Tercer arranque sin valor para gate; no ejecutar. H08b.18/.19 intactas. Decisión sustantiva requerida antes de nueva campaña. [Cierre](evidence/H08c.1_STOP.md).
+
+H08d autorizado. Se identifica diferencia de escape y parser entre instrumentos, hipótesis no causa demostrada. Probar con CDB real sobre fixture propio antes de originales. Presupuesto y STOP explícitos; sin cambios de alcance o gate.

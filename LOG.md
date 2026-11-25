@@ -21,3 +21,5 @@
 - Única corrección instrumental H08c.1: CDB batch con parser de snapshots acotados y gc automático, sin cambiar contrato. Sesión 2 solo; sesión 3 condicional a PASS completo.
 
 - H08c.1 sesión 2 CI 45519467547 concluida, artefacto SHA256 verificado: ready=true, 448673 B de salida, cero eventos parseados, cero ensayos, observer_wait_timeout. STOP instrumental; sesión 3 no ejecutada por imposibilidad de cumplir gate conjunto. H08c.2/3 no ejecutadas; N STOP. Ver evidence/H08c.1_STOP.md.
+
+- Usuario aprueba replanteo instrumental. H08d D0/D1/D2 secuenciales, presupuesto 20 min/2 originales máximo. D0 fixture propio, no originales; contraste real de gramática CDB y parser antes de lectura neuronal.
