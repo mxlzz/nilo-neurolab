@@ -61,3 +61,6 @@ H08d cerrado: D0 FAIL, D0b PASS, D1 PASS local, D2 no ejecutada por límite 3 jo
 [Contrato](protocols/H08d_D2.md): entrega TRIG aislada vía DDE CELL, cuatro brazos y un arranque / 8 min. STOP al fallo; no inferir propagación ni aprendizaje.
 
 D2 PASS local de entrega [evidencia](evidence/H08d_D2_result.md); presupuesto cerrado. A y B no separados temporalmente, no lavado. Revisar estáticamente GeneralSense/Perception y TRIG; contrato de observación mínima de actividad y decaimiento antes de otro ensayo.
+
+## H08d.D3 — separación temporal
+[D3.0 y contrato propuesto D3.1](protocols/H08d_D3.md): PASS documental. Predicción matemática y fases del original verificadas estáticamente, no dinámicamente. Próxima prueba aislada de decaimiento con un pulso, mínimo 8 ciclos basales y 9 posteriores, identidad y ruta. No ejecutar hasta aprobación de nuevo presupuesto.
