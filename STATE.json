@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D6_1_running",
+  "status": "H08d_D6_1_instrumental_incomplete_topology_missing",
   "stage": "H08d",
-  "current_task": "H08d.D6.1",
-  "next_action": "Leer CI 45618843971 y artefactos. Comprobar fixture, topología, 6 brazos, firma Concept, WTA, contactos/reset/química y oportunidad virtual STW. Cerrar sin reintento; si GO diseñar adquisición/retención causal, si no proponer cierre H parcial. N STOP.",
-  "scientific_next": "H08d.D6.1",
+  "current_task": "H08d.D6.1_closed",
+  "next_action": "Completar síntesis documental H parcial, contrastar alternativas y proponer decisión estratégica. No ejecutar más originales ni abrir N sin aprobación. D5.1 FAIL, D5x NO OPORTUNIDAD, H08c.1 STOP.",
+  "scientific_next": "H_partial_synthesis_strategic_review",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,7 +23,7 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation_D5.1_FAIL_conditional_divergence_partial_concept_witness_D5x_NO_OPPORTUNITY_native_reset_observed"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation_D5.1_FAIL_conditional_divergence_partial_concept_witness_D5x_NO_OPPORTUNITY_native_reset_observed__D6.1_instrumental_incomplete_no_topological_candidate"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -31,14 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "Validación previa del fixture y marcador, tiempo de captura y oportunidad integrada pendientes."
+    "D6 captura instrumental incompleta D6_malformed1; línea malformada no preservada.",
+    "Inventario Concept completo sin singleton A40; no Decision scan ni exposiciones.",
+    "Presupuesto D6.1 agotado, no reintentar. Adquisición/retención original no demostradas."
   ],
-  "future_execution_dependency": "Resultado D6.1, no nuevos insumos",
+  "future_execution_dependency": "Síntesis H parcial y decisión estratégica aprobada",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "6a531c881c3b99053833d50f239c3c757b8d75c0",
+  "last_confirmed_non_state_write": "686bc5066a05f5088d6fc8b2c7de4f2f12aa8da1",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -88,7 +90,10 @@
     "evidence/H08d_D5x.1_result.md",
     "experiments/verify_h08d_d5x_result.py",
     "protocols/H08d_D6.md",
-    "protocols/H08d_D6.1.md"
+    "protocols/H08d_D6.1.md",
+    "evidence/H08d_D6.1_observations.json",
+    "evidence/H08d_D6.1_result.md",
+    "experiments/verify_h08d_d6_result.py"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -302,7 +307,7 @@
     "injected_witnesses": 0
   },
   "h08d_D6": {
-    "outcome": "running",
+    "outcome": "instrumental_incomplete_topology_missing",
     "proposed_budget": {
       "jobs_max": 1,
       "runner_minutes_max": 8,
@@ -318,14 +323,26 @@
       "S",
       "A"
     ],
-    "jobs_consumed": 0,
-    "run": 45618843971
-  },
-  "active_run": {
-    "id": 45618843971,
-    "unit": "H08d.D6.1",
-    "commit": "6a531c881c3b99053833d50f239c3c757b8d75c0",
-    "status": "queued",
-    "max_runner_minutes": 8
+    "jobs_consumed": 1,
+    "run": 45618843971,
+    "runner_seconds_consumed": 162,
+    "original_starts_consumed": 1,
+    "artifact": 15022658226,
+    "fixture_pass": true,
+    "scan_rows": 640,
+    "concept_select": [
+      640,
+      236,
+      7
+    ],
+    "eligible_singletons": 142,
+    "source40_singletons": 0,
+    "source41_singletons": 2,
+    "completed_arms": 0,
+    "trig_attempts": 0,
+    "complete_cycles": 0,
+    "diagnostics": {
+      "D6_malformed": 1
+    }
   }
 }
