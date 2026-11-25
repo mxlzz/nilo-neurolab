@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H_reframe_approved_H09_0_documentary_complete",
+  "status": "H09_1_contract_documentary_complete_approval_required",
   "stage": "H09",
-  "current_task": "H09.0_closed",
-  "next_action": "Diseñar contrato cuantificado H09.1 de factibilidad Concept8→Decision libre: reutilizar observadores, seleccionar por topología, validar instrumento, ventanas sham/AB, oportunidad y química, fijar costo/STOP. No ejecutar sin autorización del nuevo contrato. H08c.1 y D6 cerradas; N STOP.",
-  "scientific_next": "H09.1_documentary_pilot_contract",
+  "current_task": "H09.1_contract_closed",
+  "next_action": "Solicitar aprobación específica de H09.1: 1 job estándar gratuito/8min/1 arranque, 180s/512 ciclos/4MiB; seis brazos, seis slots cada uno, 24 TRIG8 a32, 12 sham, 6 feedback inocuo, sin premio. Tras aprobación implementar observador mínimo, fixture obligatorio y ejecutar solo si pasa. No repetir. N STOP.",
+  "scientific_next": "H09.1_pilot_implementation_pending_approval",
   "scientific_state": {
     "H": "active_documentary_reframe_direct_associative_learning",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "TRIG8 nativo, estabilidad de representación, oportunidades de elección libre y lectura sincronizada todavía no validadas.",
-    "Retención activa exige verificar ausencia de refuerzo endógeno y no congelar dinámica.",
-    "Nuevo contrato H09.1 y autorización antes de ejecución."
+    "Lectura acotada por bloques y marcador PUTV no comprobados dinámicamente en original.",
+    "Cadencia de 36 slots, oportunidad STW y lavado químico no verificados.",
+    "Aprobación de nuevo contrato y presupuesto antes de CI."
   ],
-  "future_execution_dependency": "H09.1 especificación y aprobación; sin nuevo archivo ni credencial por ahora",
+  "future_execution_dependency": "Aprobación explícita H09.1; sin nuevos archivos ni credenciales por ahora",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "f61705d8ddaedf68ec8aecc895251d6bc8837bf1",
+  "last_confirmed_non_state_write": "bf22d2463036476476e216f110e112d8d06625ca",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -95,7 +95,8 @@
     "evidence/H08d_D6.1_result.md",
     "experiments/verify_h08d_d6_result.py",
     "evidence/H_PARTIAL_SYNTHESIS_20261125.md",
-    "protocols/H_REFRAME_20261125.md"
+    "protocols/H_REFRAME_20261125.md",
+    "protocols/H09.1.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -358,10 +359,30 @@
     "experiments_authorized": false
   },
   "h09": {
-    "status": "H09.0_documentary_complete",
+    "status": "H09.1_contract_documentary_complete",
     "candidate": "native_TRIG8_to_free_Decision",
     "jobs_consumed": 0,
     "original_starts": 0,
-    "execution_authorized": false
+    "execution_authorized": false,
+    "proposed_budget": {
+      "jobs_max": 1,
+      "runner_minutes_max": 8,
+      "original_starts_max": 1,
+      "trace_seconds_max": 180,
+      "cycles_max": 512,
+      "combined_capture_mib_max": 4
+    },
+    "planned_arms": [
+      "A",
+      "S",
+      "B",
+      "B",
+      "S",
+      "A"
+    ],
+    "slots_per_arm": 6,
+    "planned_trig": 24,
+    "planned_sham_slots": 12,
+    "planned_reward": 0
   }
 }
