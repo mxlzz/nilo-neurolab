@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D4_1_running",
+  "status": "H08d_D4_1_PASS_local_propagation",
   "stage": "H08d",
-  "current_task": "H08d.D4.1",
-  "next_action": "Leer CI 45595011701 y artefacto; verificar mapa runtime, dos pulsos separados y 18 ciclos. Cerrar sin reintentar. H08c.1/N STOP.",
-  "scientific_next": "H08d.D4.1",
+  "current_task": "H08d.D4.1_closed",
+  "next_action": "Diseñar D5.0 documental: examinar Concept ANDTYPE0, conectividad de Perception y firma funcional. No ejecutar otro job sin contrato aprobado. H08c.1 y N STOP.",
+  "scientific_next": "H08d.D5_documentary_design",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,20 +23,24 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_running"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation"
   },
   "reserved_seeds": [
     "1400..1419",
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [],
-  "future_execution_dependency": "D4.1 local synchronized propagation gate before Concept",
+  "blockers": [
+    "Propagación funcional a Concept y Decision dependiente de contexto sin verificar.",
+    "Lavado químico y aprendizaje no verificados.",
+    "Presupuesto D4.1 cerrado."
+  ],
+  "future_execution_dependency": "D5 documental y aprobación de ejecución",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "8eed1f9f875334c17545b16be15df7fcdadaa11d",
+  "last_confirmed_non_state_write": "99bc3bdb733da8c973e1b7853f0ebeb48cebeb2f",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -72,7 +76,10 @@
     "evidence/H08d_D3.1_result.json",
     "evidence/H08d_D3.1_result.md",
     "protocols/H08d_D4.md",
-    "protocols/H08d_D4.1.md"
+    "protocols/H08d_D4.1.md",
+    "evidence/H08d_D4.1_result.json",
+    "evidence/H08d_D4.1_result.md",
+    "experiments/verify_h08d_d4_result.py"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -194,7 +201,7 @@
     "output_zero_update": 9
   },
   "h08d_D4": {
-    "outcome": "running",
+    "outcome": "PASS_local_propagation",
     "candidate_map": {
       "5:8": "0:40",
       "5:9": "0:41"
@@ -215,14 +222,14 @@
       "runner_minutes_max": 8,
       "original_starts_max": 1
     },
-    "jobs_consumed": 0,
-    "run": 45595011701
-  },
-  "active_run": {
-    "id": 45595011701,
-    "unit": "H08d.D4.1",
-    "commit": "8eed1f9f875334c17545b16be15df7fcdadaa11d",
-    "status": "queued",
-    "max_runner_minutes": 8
+    "jobs_consumed": 1,
+    "run": 45595011701,
+    "artifact": 15013835017,
+    "runner_seconds_consumed": 157,
+    "original_starts_consumed": 1,
+    "regular_cycles": 34,
+    "basal_cycles": 16,
+    "matched_cycles": 18,
+    "valid_pulses": 2
   }
 }
