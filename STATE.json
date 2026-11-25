@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H09_1_closed_no_opportunity_single_dominant_decision",
+  "status": "H09_1_closed_review_dominant_inhibition_proposed",
   "stage": "H09",
-  "current_task": "H09.1_closed",
-  "next_action": "Revisar documentalmente contraste distinto de modificación de preferencia dominante (especificidad contextual, castigo contingente vs yoked, margen de WTA y lavado), o cierre H parcial. No ejecutar sin contrato nuevo aprobado. H09.2 no habilitada, N STOP.",
-  "scientific_next": "H09_review_dominant_preference_alternative_documentary",
+  "current_task": "H09_postpilot_review_closed",
+  "next_action": "Evaluar documentalmente sensibilidad de la elección dominante a cambios inhibitorios y costo/identificabilidad con modelo y snapshots archivados, sin ejecutar originales. Si se justifica, proponer nuevo contrato (aprobación antes de ejecutar); si no, evaluar método natural o cierre H parcial. H09.2 no habilitada; N STOP.",
+  "scientific_next": "H09_dominant_inhibition_documentary_sensitivity",
   "scientific_state": {
     "H": "active_documentary_reframe_direct_associative_learning",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "H09.1 solo Decision1 gana en basal; falta segundo destino, no exposiciones.",
-    "TRIG8/feedback y plasticidad causal no medidos; CHEM51 positiva en basal, lavado no probado.",
-    "Presupuesto H09.1 agotado, no reintentar."
+    "H09.1 falta segundo ganador basal; cero exposiciones, presupuesto cerrado.",
+    "Nuevo contraste candidato exige verificar magnitud de efecto y oportunidad real, TRIG8/feedback y lavado aún no medidos.",
+    "Ningún nuevo arranque autorizado."
   ],
-  "future_execution_dependency": "Decisión de continuidad tras revisión documental",
+  "future_execution_dependency": "Examen documental y aprobación de nuevo contrato si resulta viable",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "b4ee0ff502c59448a2559947272af272accea479",
+  "last_confirmed_non_state_write": "abfbf6a8973fef211c4c17bd94806c9b4234d85a",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -100,7 +100,8 @@
     "protocols/H09.1_implementation.md",
     "evidence/H09.1_observations.json",
     "evidence/H09.1_result.md",
-    "experiments/verify_h09_1_result.py"
+    "experiments/verify_h09_1_result.py",
+    "protocols/H09_REVIEW_DOMINANT_PREFERENCE.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -399,6 +400,11 @@
       1
     ],
     "trig_attempts": 0,
-    "exposures": 0
+    "exposures": 0,
+    "review": {
+      "status": "documentary_alternatives_reviewed",
+      "candidate": "context_specific_inhibition_dominant_decision",
+      "execution_authorized": false
+    }
   }
 }
