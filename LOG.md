@@ -55,3 +55,5 @@
 - 25/11/2026: usuario confirma revisión estratégica de alineación; registrar en PLAN/AUDIT, sin cambiar objetivo ni puertas. Autoriza D5.1 (1 job/8min/1 arranque). H se limita a evidencia útil para adquisición y retención; no emulación integral.
 
 - D5.1 preregistro de implementación: escaneo único de 640 células Concept, tres candidatos fijados antes de estímulo, observación de contactos y predicción; D4 reutilizado.
+
+- D5.1 CI 45603170075 cerrado FAIL condicional. Escaneo 640, candidatos232/237/4, 54/54 Concept, A3 y B1 salidas positivas propias, opuesto cero; D4 A9/9 B1/9 por desaparición L5:9 entre tick503 y504. Artefacto descargado hash/CRC, proyección compacta conservada, recálculo separado. 164s/1 job/1 arranque, sin reintentar; D6 automático no habilitado. H08c.1/N STOP.

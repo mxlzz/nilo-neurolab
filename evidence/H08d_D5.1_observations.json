@@ -1,0 +1,275 @@
+{
+  "stage": "H08d.D5.1",
+  "run": 45603170075,
+  "job": 139167075460,
+  "commit": "f73f7b6ff112cf46618fadb72c38a1c2c89ebdf2",
+  "artifact": 15016358150,
+  "artifact_zip_bytes": 23158,
+  "artifact_zip_sha256": "88b3bbf485b723bfa6b86ec93ffd25d2889340206e9c26d87a73e8d8df9b06a5",
+  "original_json_bytes": 925918,
+  "original_json_sha256": "45cfc2edc48eb8698e7ec80f583de008f9966060320d71bcb62a1616b6b68488",
+  "archive_scope": "Compact projection of complete 640 scan rows and 34 synchronized frames, including actual phase values and all candidate pre/post measurements; original JSON contains additional duplicated ordered markers and analysis; original ZIP not copied into GitHub by this commit.",
+  "runner_seconds": 164,
+  "trace_ms": 20406,
+  "raw_bytes": 65123,
+  "subject_created": true,
+  "trig_attempts": 2,
+  "reward_pulses": 0,
+  "pass": false,
+  "classification": "observed_conditional_divergence",
+  "gate_checks": {
+    "ack": true,
+    "full_prediction": false,
+    "identity": true,
+    "transport": true
+  },
+  "diagnostics": {},
+  "returncode": 0,
+  "timeout": false,
+  "event_counts": {
+    "COPY": 34,
+    "END": 1,
+    "ENDC": 34,
+    "LAYOUT": 34,
+    "PERCEPTION": 34,
+    "POST": 34,
+    "PRE": 34,
+    "PULSE_POST": 2,
+    "PULSE_PRE": 2,
+    "READY": 1
+  },
+  "ticks": [
+    478,
+    511
+  ],
+  "segment_lengths": [
+    8,
+    17,
+    9
+  ],
+  "brain": "B1",
+  "route": "regular",
+  "layout": [
+    9,
+    112,
+    16,
+    40,
+    16,
+    40,
+    32,
+    16,
+    40,
+    640,
+    0,
+    2,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0
+  ],
+  "l5_l0_meta": [
+    32,
+    0,
+    24,
+    0,
+    0,
+    112,
+    10,
+    0,
+    0,
+    0
+  ],
+  "concept_meta_without_chem": [
+    640,
+    0,
+    8,
+    0,
+    255,
+    0,
+    14,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "selected": [
+    232,
+    237,
+    4
+  ],
+  "selected_source": [
+    40,
+    41,
+    0
+  ],
+  "candidate_counts": [
+    128,
+    292,
+    220
+  ],
+  "selected_scan": [
+    [
+      232,
+      1,
+      0,
+      40,
+      128,
+      3
+    ],
+    [
+      237,
+      1,
+      0,
+      41,
+      128,
+      2
+    ],
+    [
+      4,
+      1,
+      0,
+      0,
+      128,
+      7
+    ]
+  ],
+  "scan_format": "640 rows x5 unsigned bytes, implicit index row; count0,count1,source (255 represents original sentinel999),STW,strength; zlib/base64",
+  "scan_bytes": 3200,
+  "scan_sha256": "20dcb6d4613bd4255e8954a05b5007d37b7a49f8459550a6b2319dbd0063f147",
+  "scan_zlib_b64": "eNqdVt1OFUEMbqd7zp4javAPDcZEBEQ9CuQkaLzw3ysvMAiiBIIYYjQaXsCrvoGv4C1PqXSpc7o7s7O73jTTzmyn0379ugR/AFxZIADnIhABec1uVFTHx5PVRFUbiZcTQaKS2RjwMZ2uMp4vhPNqJRY91+NfeqTPmSv7s1fm3KPIbuzwZCOIb8iD2s8o8m0Q7lRwBOEs9+0d57gnIhcxtN+e57w2cKoLPB0pwjQ7G8sFqdYZ/l2s1HZRV1SXIXV1iXs245eDzyo2qtboCqOuZoJqiS2z6lV2ItA6uGYz5G3o6oqsR2a1APre2boHXud+24yrqxsJTLpkZdJ3INzkgQjn/qm5S+IP4ZZit2JDmNcMxW5DWIi06QIPAveLnBXCIvZ28HyqNsRSU18i3GGKZ/euYjeByXuF4D7CSNpqVO6okcaXwMZ9nrPqg7pzy8KJy5YeEFaU9WxAK9oBgYPVJlio03G5YcfytrEmEeENz1EXWrIRrGlVZZXZOx4qzBIoecRDL3JKPiEB0ccWopSk0vRuU/c8sVxC9cl+qtBDeGa/sEV+zj9tfU/UFrlHeMFTCd54pRmn5hmF8JrpP6mlRQ6o5XShLiM1PX+pC3aDxK5Ln69P1FNbFq/vW0a/ylvchrAhfb6hNKK2d3YuxGlu03foZsA5CFvlP4AtLSjCe0t9TXdsS/tt2yGsXj74xv5oGVPUoVV3hEt2EtBLzO5dGce7+kq7sRckR2y5azkREfbL03lf/SF8CjJpzx34JB7oF0Fon6WWLzXFrV55WC7UYYCr+AT7Eo/UdWZqfdtXv/rWBJCgP74HZN6iLxF+NNEDwpFvpqPgR4m6DIJC/AWqQGRH",
+  "frames_format": "34 rows x72 unsigned bytes, implicit tick478+row; PRE,POST,COPY,PERCEPTION each 8 bytes in order L5:8 output/state, L5:9 output/state,L0:40 output/state,L0:41 output/state; 2 CHEM pre and 2 post; then role A/B/control each 6 pre +6 post bytes [source_output,STW,LTW,strength,output,state]. All observed roles, counts, sources stable as selected_scan. zlib/base64.",
+  "frames_bytes": 2448,
+  "frames_sha256": "ed7007886231374ec541458d0fd225bd1de7359fa157224232ba71ec2678976b",
+  "frames_zlib_b64": "eNrtlN0KwyAMhY0LDlfwTm/GwL1pH33xP5TZeSGjY23gHAKHj9CmEWL/uVCJdSWpKpleq36JI6mOxAGqf+Z4n/LeMvfJXf7uLhKC3qDLyXlrmNvkC/VItURCUOzOU/JGMzfJMc+DkRAUupyS14q5Ts73GT68n5JXyFy1fnQPSx4lc2z9KKfmgbls/eh3b3nmwPsxDvzYfzHrjoV9PtI8533ev2RbjouEoPGmbeZxHX8/D7uK5z5PmudONYPzpJrBeVCNcF6+QtXf",
+  "pulse_marks": {
+    "args": [
+      [
+        5,
+        8,
+        32
+      ],
+      [
+        5,
+        9,
+        32
+      ]
+    ],
+    "in_cycle": [
+      0,
+      0
+    ],
+    "pre": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "post": [
+      [
+        32,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        32,
+        32,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "identity_before_after": [
+      true,
+      true
+    ],
+    "ack": [
+      [
+        32,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        32,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "dde_basal_both_channels_zero": true
+  },
+  "results": {
+    "d4_matched": [
+      9,
+      1
+    ],
+    "concept_matched": [
+      [
+        9,
+        9,
+        9
+      ],
+      [
+        9,
+        9,
+        9
+      ]
+    ],
+    "concept_positive": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "concept_all_frames_matched": 102,
+    "concept_selection_verified": true,
+    "first_divergence": {
+      "tick": 504,
+      "field": "GeneralSense9 pre output/state",
+      "expected": [
+        32,
+        21
+      ],
+      "observed": [
+        0,
+        0
+      ],
+      "previous_post": [
+        32,
+        21
+      ]
+    },
+    "basal_cycles": 16,
+    "concept_contacts_stable": true
+  }
+}
