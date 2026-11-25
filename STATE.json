@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08c1_calibration_running",
+  "status": "H08c1_instrumental_correction_pending",
   "stage": "H08c",
   "current_task": "H08c.1",
-  "next_action": "Revisar CI 45518372778 (sesión 1), confirmar si se creó sujeto, leer resumen y artefacto derivado; verificar resultados antes de corrección o réplica. No lanzar otro ensayo mientras activo.",
+  "next_action": "Evaluar corrección única del transporte CDB batch con criterios H08c.1 intactos; solo ejecutar si puede cumplir contrato, de lo contrario STOP y dictamen. Quedan 2 sesiones; no iniciar H08c.2 ni N.",
   "scientific_next": "H08c.1",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
@@ -20,7 +20,7 @@
     "G00_H": "open",
     "G_H6_CLOCK": "open",
     "H08c0": "passed_documentary_design",
-    "H08c1": "session1_queued"
+    "H08c1": "session1_instrumental_failure"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -33,7 +33,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "77c031a696aa4cf533bf845a09f8587447762ba9",
+  "last_confirmed_non_state_write": "169429a08d0e67db01ba4d001d31f26e29f239f9",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -44,7 +44,9 @@
     "inherited/docs/neurolab/resultados/h08b_19_ltw_consolidation_20261124.json",
     "protocols/H08c.1.md",
     "evidence/H08c.1_PREFLIGHT_20261124.md",
-    "protocols/H08c.1_session1.md"
+    "protocols/H08c.1_session1.md",
+    "evidence/H08c.1_session1_result.json",
+    "evidence/H08c.1_session1_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -61,7 +63,7 @@
     "historical_logs_excluded_privacy": 28,
     "coverage": "evidence/ARCHIVE_COVERAGE.json",
     "simulation": "documentary_pass",
-    "new_repo_experiment_execution": "not_tested"
+    "new_repo_experiment_execution": "tested_instrumental_failure"
   },
   "updated_at": "2026-11-24",
   "input_preflight": {
@@ -69,17 +71,17 @@
     "cd_archive": "verified_exact_in_windows",
     "runner_configuration": "both_present",
     "readiness_run": 45516662183,
-    "experimental_sessions_consumed": 0,
+    "experimental_sessions_consumed": 1,
     "readiness_run_attempt": 2,
     "medium_preflight_run": 45517841268,
     "medium_mounted_read_only": true,
     "debugger_present": true
   },
-  "active_run": {
-    "id": 45518372778,
-    "session": 1,
-    "commit": "77c031a696aa4cf533bf845a09f8587447762ba9",
-    "status": "queued",
-    "max_runner_minutes": 15
+  "session1": {
+    "run": 45518372778,
+    "artifact": 14979312336,
+    "outcome": "instrumental_incomplete",
+    "trials": 0,
+    "subject_created": true
   }
 }
