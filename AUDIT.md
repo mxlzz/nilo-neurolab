@@ -127,3 +127,6 @@ La pregunta de revisión selectiva distingue inversión global NX01 y representa
 
 ## NSR00 (autoverificación)
 Criterio anterior a datos cumplido. Tabla compacta exacta alcanza techo y mínimo de estados para familia arbitraria. No confundir inferencia binaria inmediata con target privilegiado ni resultado post-feedback con detección previa de cambio. Costo lógico no RAM ni CPU. Familia factorizada sin cambio no representa todas las inversiones parciales. N diagnóstico activo, sin experimento neuronal; gates y reservas antiguas intactos. Sin auditor independiente.
+
+## NSR01 (autoverificación)
+Bayes exacto bajo supuestos de priors conocidos e independencia (486 historias,1944 comparaciones); no confundir óptimo en esperanza con máximo observado. BAYES8 cumple gate global/retorno, no todos subgrupos. Corrección secundaria conservada, primer replay aritmética discrepó y se corrigió antes de escritura, segundo4608 coincidencias y regret0 de diferencia. No diseño de API aislada ni medición RAM/CPU; q/h comunes, z inferible desde recompensa binaria. Próxima unidad solo diagnóstico de estructura compartida y cambios correlacionados con fuertes controles. Sin auditor independiente, no reabrir campañas ni gates previos.
