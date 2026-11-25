@@ -125,3 +125,6 @@ H09.N0 [NO OPORTUNIDAD](evidence/H09.N0_result.md): T válido, 256/256 ciclos, 2
 
 ## Próxima orientación propuesta (documental)
 [Revisión N](protocols/N_NEXT_ORIENTATION_20261125.md): priorizar revisión selectiva de asociaciones y retención de conocimiento válido en contextos recurrentes; aislar recompensa inmediata inicialmente, comparar baselines fuertes y techo/costo antes de diseñar red. Crédito retardado a través de contextos como extensión separada, no rescatar NX01. N STOP hasta aprobación de nueva pregunta; ningún ensayo nuevo.
+
+## N revisión selectiva aprobada — NSR00
+[Preregistro](protocols/NSR00.md), [resultado](evidence/NSR00_result.md): banco mínimo STOP por techo exacto de tabla8bits y familia XOR5bits, 3584 secuencias parciales, controles completos, sin red ni CI. N activa solo en diagnóstico de nueva pregunta, no reabrir miniC1/NR01/NX01 ni reservas. Próxima unidad diagnóstica: feedback ruidoso y cambio no anunciado, identificar techo antes de red.

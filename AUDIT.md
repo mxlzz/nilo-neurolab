@@ -124,3 +124,6 @@ H09.N0 última observación según límite acordado. Se formaliza cierre parcial
 
 ## Orientación posterior a H (autoverificación)
 La pregunta de revisión selectiva distingue inversión global NX01 y representación NR01. No se declara novedad, ni necesidad neuronal; evidencia previa favorece controles fuertes, biblioteca existente si compatible. Separar inicialmente demora de recompensa, definir identificabilidad y presupuesto/margen antes de modelo. Revisión documental solamente; decisión de N requiere aprobación. Sin auditor independiente.
+
+## NSR00 (autoverificación)
+Criterio anterior a datos cumplido. Tabla compacta exacta alcanza techo y mínimo de estados para familia arbitraria. No confundir inferencia binaria inmediata con target privilegiado ni resultado post-feedback con detección previa de cambio. Costo lógico no RAM ni CPU. Familia factorizada sin cambio no representa todas las inversiones parciales. N diagnóstico activo, sin experimento neuronal; gates y reservas antiguas intactos. Sin auditor independiente.

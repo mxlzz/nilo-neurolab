@@ -91,3 +91,5 @@
 - Usuario aprueba cierre parcial H tras H09.N0. Cierre formal, conocimiento reutilizable y límites registrados; N STOP. Revisión documental de orientación autorizada, no ejecución ni reapertura N.
 
 - Revisión de orientación tras cierre H: antecedentes de consolidación multiescala, sistemas complementarios/replay, crédito retrospectivo/anónimo, detección de drift recurrente; comparar soluciones existentes. Propuesta N de estabilidad-plasticidad con revisión parcial y retorno sin refuerzo, diagnóstico de identificabilidad y baselines previo. N no reabierta; aprobación pendiente.
+
+- Usuario aprueba N revisión selectiva, alcance diagnóstico previo. NSR00 prereg4497b17, ejecución local exhaustiva: tabla8bits 100% post-feedback en todos los endpoints previstos; LRU4/compartida retorno50%; XOR5bits exacta en familia propia. STOP banco mínimo, no red, no CI ni semillas. Próximo diagnóstico de evidencia ruidosa/cambio.

@@ -1,0 +1,11 @@
+{
+  "stage": "NSR00",
+  "script_sha256": "aee7275d95397b8bb03cb801c18b75187925f261574fe9d67ecbad026ab32fb1",
+  "result_bytes": 13542,
+  "result_sha256": "fc2aa73619910b51b8a74185b78bf8a65875abc56d8f15ab80e04932c7c1f00a",
+  "result_encoding": "base64(zlib(raw JSON))",
+  "result_zlib_b64": "eNrtW9tymzAQfecrPDx3PAIbTPoRfWg/QCPLSqyWSI4kOm0z/vcKfAmOAyHiVtx9hJVnV8ues2eFefZmM59y/F2utf95hj7l1/fkkaec5Tee7XVxhxqp+B+2wUJiuiXigZ2t1k7Uoy5dn39xcS9fR58yrrnhUrwyFUaaKUJ/W0swLyIpGalUilFjbWEUX9kycbSUDPvyKv+eK21wU/9oHierqDKEYOUeQiYO6ds4JyAIkwrv1lLpfSetc8VMpsQYnsfatmLa1iHD4yZfsZ9MaZL2X/TeGwH4qcpckYjmdTi4CweAYuTwMKaPw7p9x0uAYW8w7Kbi38ThjtAfV5ueUFP8P5EIHfH2OqLeEuWORGiK0BShKbZpit6rSHzNnjImaDF0LkKvZPQfUrkmKaZSGPbLBPVzZ29SN1pU8g1aJkPgGoVL9wia1BaqqS1UVVk2qnp0ta7q6n2/77wlp0RB6OL6EtijpL4DVDev+KHFrnUPWLxFLPbheypg7KjiB5e70BihMUJjfA+MtYL3JJNPirfhOxbQur1NsdODVleTbCdddsw4QPcCLv8l/QnABA0MwISGCQ3TWQ/viDL8IsQB1XAYRKgSW0m8CoeA93JRneMGMfQ1aa2CuH9uyZ24+O9kyG7lvCWx1fguCqJvanPd+zBT/gdCGDMVbdn1Q/Qz9ECS+wdqBGrshRpr1U7NUwduvCFu7Ix+hp4JQTYCN4JsBGqclmys/19WlBzOEfJlxRJ/y/OEcUpSrBnbaJzpIl2HD4kEy5QU1qYy8fJ5kTakeLPlf/n2FSH/dM8wvObm6qOj/IDneAxgJ3ws1YYdKDu4O58OHPXtMdUvrJ5Hu/f23l+Sc43n",
+  "ci_jobs": 0,
+  "neuronal_runs": 0,
+  "old_reservations_used": 0
+}
