@@ -1,0 +1,55 @@
+{
+  "stage": "H08d.D1",
+  "classification": "PASS_minimal_WTA",
+  "run": 45521849436,
+  "job": 138895410674,
+  "commit": "5f04ac50359f160cc328a89f1d4425f837cf383f",
+  "artifact": 14980247157,
+  "archive_sha256": "f5517f7d1f97612741f7fef663e2effb067f95963ab80d7a53e27855b88064e8",
+  "json_sha256": "beef42787dfd4cd80d858d86bad48c693445b1b9f28fb34aec61a7b1069bc420",
+  "json_bytes": 96472,
+  "identity_before": true,
+  "identity_after": true,
+  "gate_checks": {
+    "bound": true,
+    "consecutive": true,
+    "identity": true,
+    "match": true,
+    "opportunity": true,
+    "transport": true
+  },
+  "subject_created": true,
+  "stimuli": 0,
+  "reward_pulses": 0,
+  "regular_cycles": 20,
+  "complete_cycles": 20,
+  "matched_cycles": 20,
+  "longest_consecutive_matches": 20,
+  "positive_opportunities": 20,
+  "wta_branches": 20,
+  "pre_ties": 0,
+  "multiple_outputs": 0,
+  "no_output": 0,
+  "event_counts": {
+    "RB": 20,
+    "PRE": 20,
+    "PRE_CELL": 320,
+    "POST": 20,
+    "POST_CELL": 320,
+    "RP": 20
+  },
+  "tick_range": [
+    478,
+    497
+  ],
+  "winner_counts": {
+    "1": 17,
+    "2": 3
+  },
+  "independent_recompute_matches": 20,
+  "diagnostics": {},
+  "returncode": 0,
+  "timeout": false,
+  "trace_elapsed_ms": 11656,
+  "runner_seconds": 142
+}

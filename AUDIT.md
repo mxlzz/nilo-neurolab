@@ -50,3 +50,6 @@ H08d.D0: el diseño de control compartió marcadores entre variantes y la negati
 D0b control aislado PASS; se valida transporte en fixture, no retrospectivamente el motor. GO D1 bajo contrato mínimo. D0 FAIL histórico intacto. D2 diferida.
 
 D1 preregistro tras D0b: captura reducida, selección exacta con empate/exclusión/bypass, identidad y oportunidad. El resultado no valida aprendizaje, ni se trata cada ciclo como sujeto independiente.
+
+## H08d cierre
+D0 FAIL formal, D0b PASS y D1 PASS local 20/20. Transporte aislado y lectura libre post-WTA recuperados. Una sesión; no validación de empate/bypass en runtime, ni comportamiento, aprendizaje, retención, TRIG o lavado. Costo 3/3 jobs, 214s y 1 arranque. D2 diferida por decisión técnica tras D0; no más ejecución en presupuesto. [Dictamen](evidence/H08d_D1_result.md). Autoverificación, no auditor independiente. N STOP.

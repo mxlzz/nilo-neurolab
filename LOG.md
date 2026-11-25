@@ -31,3 +31,5 @@
 - H08d.D0b PASS exacto, CI 45521574554, 3/3 eventos y valores, END y retorno 0, artefacto hash verificado. D1 habilitada, D2 diferida. Cero arranques originales en H08d.
 
 - H08d.D1 preregistro mínimo, cuatro breakpoints, 20 ciclos máximo y 8 min. Cotejo estático WTA revalidado, sin estímulos ni refuerzo. Último job, D2 diferida.
+
+- H08d.D1 PASS local: CI 45521849436, 20 ciclos regulares completos, 20/20 predicciones, dos ganadores (1:17,2:3), sin estímulo ni premio. ZIP derivado exacto archivado y cotejado; recálculo independiente de implementación 20/20. H08d cierra 3/3 jobs, 214s, 1 original. D2 no ejecutada; siguiente contrato requiere aprobación por límite alcanzado. H08c.1 y N STOP intactos.
