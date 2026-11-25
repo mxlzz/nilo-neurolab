@@ -23,3 +23,7 @@ Preservación histórica: ocho ZIP E09 y NR01 en Drive con hashes según informe
 
 ## H08c.0 — revisión de cierre (autoverificación, 24/11)
 GO documental a [H08c.1](protocols/H08c.1.md), condicionado a acceso original y observación válida. Evidencia nativa permite proponer TRIG sensorial (no demostrado en Build47), CHEM ya entregado y DDE agregado limitado; no confundir índice Concept con identidad o firing Decision con elección. Contrato discrimina contingencia frente a dosis, estado químico y actividad, conserva STOP por ausencia de oportunidad y límite de costo. Revisión de diseño, no ejecución ni resultado causal; H08c.2 aún requiere prerregistro definitivo y potencia tras piloto. Riesgo mayor: sincronización post-WTA, persistencia de señales químicas endógenas y estabilidad de fuentes; si no identificables, STOP. N y reservas intactas. Valor marginal: testar asociación, no más testigos de peso. No auditor independiente disponible en esta intervención.
+
+
+## H08c.1 preflight parcial (24/11)
+Tres insumos originales verificados por hash local, CD pendiente de verificación actual por límite de conector. Nuevo punto post-WTA respaldado por inspección estática, pendiente de validación dinámica y temporal (Decision anterior a Concept en loop). No prueba de asociación ni cambio de gate. No exponer valores de secretos, archivos originales o IDs adicionales; preservar configuración existente. [Evidencia](evidence/H08c.1_PREFLIGHT_20261124.md).

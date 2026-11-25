@@ -26,3 +26,6 @@ Informe por capacidades, evidencia, límites y costo. Continuar/corregir/replant
 Nota de cierre NL-M: la evidencia necesaria para H08c.0 está preservada y comprobada. Las brechas de archivo históricas están en evidence/ARCHIVE_COVERAGE.json; recuperar si una conclusión depende de ellas y se dispone de vía autorizada, antes de utilizarla. No condicionan la unidad documental inmediata.
 
 Actualización H08c.0 (24/11): unidad documental completada, [protocolo H08c.1](protocols/H08c.1.md). H08c.1 pendiente de preflight privado e instrumental. No ensayos iniciados. No cambia alcance ni gates históricos.
+
+
+H08c.1 preflight parcial: [evidencia](evidence/H08c.1_PREFLIGHT_20261124.md). Drive verificado para DATA/EXE/GEN; CD y configuración de runner pendientes de comprobación. Candidato post-WTA estático; falta validación dinámica. Mantener límite de 3 sesiones científicas.

@@ -1,0 +1,22 @@
+name: NeuroLab H08c.1 private input readiness
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/neurolab-h08c-input-readiness.yml']
+permissions:
+  contents: read
+jobs:
+  presence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check configuration presence only (no values or downloads)
+        shell: bash
+        env:
+          CD_CONFIGURED: ${{ secrets.NEUROLAB_CD_FILE_ID != '' }}
+          DATA_CONFIGURED: ${{ secrets.NEUROLAB_DATA_FILE_ID != '' }}
+        run: |
+          if [ "$CD_CONFIGURED" = true ]; then echo 'CD configuration present'; else echo 'CD configuration missing'; fi
+          if [ "$DATA_CONFIGURED" = true ]; then echo 'DATA configuration present'; else echo 'DATA configuration missing'; fi
+          if [ "$CD_CONFIGURED" != true ] || [ "$DATA_CONFIGURED" != true ]; then exit 1; fi
