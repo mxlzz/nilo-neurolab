@@ -29,3 +29,5 @@ GO documental a [H08c.1](protocols/H08c.1.md), condicionado a acceso original y 
 Tres insumos originales verificados por hash local, CD pendiente de verificación actual por límite de conector. Nuevo punto post-WTA respaldado por inspección estática, pendiente de validación dinámica y temporal (Decision anterior a Concept en loop). No prueba de asociación ni cambio de gate. No exponer valores de secretos, archivos originales o IDs adicionales; preservar configuración existente. [Evidencia](evidence/H08c.1_PREFLIGHT_20261124.md).
 
 CI #45516662183 confirmó ambos secretos ausentes; bloqueo de ejecución, no resultado científico. Sin gasto pago ni originales publicados. Autoverificación.
+
+Readiness revalidado tras intervención: ambas configuraciones presentes. No equivale a acceso ni integridad en Windows; nuevo preflight limitado a hash, montaje y CDB, sin sesiones científicas.

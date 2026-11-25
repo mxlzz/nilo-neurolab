@@ -9,3 +9,5 @@
 - 24/11/2026 — H08c.1 preflight parcial: acceso Drive y tres huellas exactas, ZIP CD localizado pero conector 413 (256 MiB). Candidato estático post-WTA 0x404911; sin ejecución. Workflow de presencia de configuración sin valores ni descarga. Ver evidence/H08c.1_PREFLIGHT_20261124.md.
 
 - CI #45516662183 concluida: ambos secretos de configuración ausentes; bloqueo de aprovisionamiento. Cero sesiones científicas. Requiere configuración del usuario, no archivos nuevos.
+
+- Readiness CI 45516662183 intento 2 SUCCESS (ambas configuraciones presentes). Se levanta bloqueo de presencia; inicia comprobación de medio original sin ejecutar juego.

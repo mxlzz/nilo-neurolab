@@ -31,3 +31,5 @@ Actualización H08c.0 (24/11): unidad documental completada, [protocolo H08c.1](
 H08c.1 preflight parcial: [evidencia](evidence/H08c.1_PREFLIGHT_20261124.md). Drive verificado para DATA/EXE/GEN; CD y configuración de runner pendientes de comprobación. Candidato post-WTA estático; falta validación dinámica. Mantener límite de 3 sesiones científicas.
 
 H08c.1 detenido por ausencia confirmada de ambos secretos de repositorio; reanudar tras configuración y verificación del medio.
+
+Configuración de secretos confirmada; preflight de medio original y CDB pendiente de resultado. No iniciar sesión científica hasta verificar.
