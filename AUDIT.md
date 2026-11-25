@@ -63,3 +63,5 @@ D3.0 autoverificación: evidencia estática y fórmula heredada permiten predicc
 D3.1 revisión previa: EXE/GEN releídos por hash, cinco puntos estáticos, transporte D0b y lectura D1 reutilizados. Captura de ambas rutas, controles de continuidad, identidad y predicción. Sin modificación de criterios ni ejecución de aprendizaje.
 
 D3.1 cierre (autoverificación): 9/9 predicciones exactas con 8 ciclos basales, identidad y ruta válidas; estímulo natural transitorio sin reset. 1 sujeto, no 9 réplicas. No resuelve causa D2 ni lavado de química ni aprendizaje. Un job 144s y un arranque, presupuesto agotado. GO documental D4, ejecución condicionada. H08c.1/N STOP.
+
+D4.0 autoverificación: mapa derivado del bucle original y flags/counts genéticos, no selección post hoc. Gate exige layout efectivo y predicción de copia/umbral, canales opuestos y separación local; no sustituye gate H08c.1, no inferir Concept/Decision ni lavado. No ejecutado.

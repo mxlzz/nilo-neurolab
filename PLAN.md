@@ -68,3 +68,6 @@ D2 PASS local de entrega [evidencia](evidence/H08d_D2_result.md); presupuesto ce
 D3.1 aprobada; [especificación de implementación](protocols/H08d_D3.1.md), presupuesto de un job, no ampliar.
 
 D3.1 PASS local [resultado](evidence/H08d_D3.1_result.md), presupuesto cerrado. Próxima D4 documental: verificar mapeo de GeneralSense a Perception y contrato mínimo de propagación sincronizada. No ejecutar nueva campaña sin aprobación.
+
+## H08d.D4 — propagación a Perception
+[D4.0 y propuesta D4.1](protocols/H08d_D4.md). Mapa y predicción cuantitativa verificados estáticamente; dinámica pendiente. 1 job/8min/1 arranque propuestos, sin nuevos refuerzos ni reset. No ejecutar sin aprobación.
