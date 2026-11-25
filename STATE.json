@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D3_documentary_pass_approval_required",
+  "status": "H08d_D3_1_running",
   "stage": "H08d",
-  "current_task": "H08d.D3.0_closed",
-  "next_action": "Solicitar aprobación de D3.1, 1 job gratuito/8 min/1 arranque; prueba aislada de decaimiento de un pulso en actualizaciones reales. No ejecutar hasta aprobación, no reabrir H08c.1 ni N.",
-  "scientific_next": "H08d.D3.1_pending_approval",
+  "current_task": "H08d.D3.1",
+  "next_action": "Leer CI 45539700196 y artefacto; verificar basal, pulso, nueve ciclos y predicción congelada; cerrar D3.1 sin reintentar. H08c.1 y N STOP.",
+  "scientific_next": "H08d.D3.1",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,24 +23,20 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.0_PASS_documentary"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_running"
   },
   "reserved_seeds": [
     "1400..1419",
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [
-    "Separación temporal no verificada; D2 sin ticks observados, A permanece activo.",
-    "Refuerzo endógeno no descartado; no lavado.",
-    "Presupuesto D2 agotado. D3.1 requiere aprobación."
-  ],
-  "future_execution_dependency": "Aprobación de D3.1 acotada, ningún archivo o secreto nuevo.",
+  "blockers": [],
+  "future_execution_dependency": "D3.1 decay and regular update trace before propagation",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "decc1a8ac49d7e2b9670ff6f4bee1212b5bded95",
+  "last_confirmed_non_state_write": "a7377aaf81307ec7060e7ecdaba3fd0888c92c44",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -71,7 +67,8 @@
     "protocols/H08d_D2.md",
     "evidence/H08d_D2_result.json",
     "evidence/H08d_D2_result.md",
-    "protocols/H08d_D3.md"
+    "protocols/H08d_D3.md",
+    "protocols/H08d_D3.1.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -90,7 +87,7 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "tested_instrumental_failure"
   },
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "input_preflight": {
     "drive_exe_gen_data_sha256": "exact_match",
     "cd_archive": "verified_exact_in_windows",
@@ -164,7 +161,7 @@
     "logical_ticks_observed": false
   },
   "h08d_D3": {
-    "outcome": "documentary_pass_dynamic_not_executed",
+    "outcome": "running",
     "predicted_state": [
       32,
       21,
@@ -181,6 +178,14 @@
       "runner_minutes_max": 8,
       "original_starts_max": 1
     },
-    "jobs_consumed": 0
+    "jobs_consumed": 0,
+    "run": 45539700196
+  },
+  "active_run": {
+    "id": 45539700196,
+    "unit": "H08d.D3.1",
+    "commit": "a7377aaf81307ec7060e7ecdaba3fd0888c92c44",
+    "status": "queued",
+    "max_runner_minutes": 8
   }
 }
