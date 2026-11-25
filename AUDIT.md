@@ -59,3 +59,5 @@ D2 autorizado: fuente histórica CELL especifica output/state; contraste inmedia
 D2 cierre (autoverificación): gate de entrega local 4/4, dos pulsos exactos, dos shams sin subida. No separación temporal: A 32/32 antes y después de B. CHEM51/54/55 no cero; ins# opcional falló. No afirmar actividad lógica, ausencia de refuerzo ni propagación. Una sesión, presupuesto cerrado. Próxima revisión documental; no nueva ejecución ni reabrir N.
 
 D3.0 autoverificación: evidencia estática y fórmula heredada permiten predicción discriminante de decaimiento, no explicación demostrada de D2. No confundir contador de sujeto con brain updates; output precede relajación. D3.1 propuesto con límite 1 job, no ejecución. H08c.1/N STOP, G05/R-ACT-I3c/G09 no superadas.
+
+D3.1 revisión previa: EXE/GEN releídos por hash, cinco puntos estáticos, transporte D0b y lectura D1 reutilizados. Captura de ambas rutas, controles de continuidad, identidad y predicción. Sin modificación de criterios ni ejecución de aprendizaje.

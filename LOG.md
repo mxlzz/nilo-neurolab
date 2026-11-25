@@ -39,3 +39,5 @@
 - D2 PASS local 4/4, CI 45527460904, 2 pulsos exactos 0→32, 2 sham 0→0. A persiste en lecturas de B; ticks no medidos, CHEM51/54/55 no cero, ins# sin respuesta. Artefacto hash/CRC verificados. 137s, 1/1 job. H08c.1/N STOP. Próxima revisión estática para separación temporal antes de integración.
 
 - D3.0 revisión documental: EXE/GEN exactos, relax de GeneralSense5 rate24 factor43707 mask0, predicción state32→0 tras 8 actualizaciones sin otras escrituras, output un paso detrás. Rutas regulares/alternativas separadas, ticks sujeto no equivalen a cerebro. Contrato D3.1 propuesto (1 job/8min/1 arranque), no ejecutado; presupuesto D2 cerrado.
+
+- 25/11/2026: usuario aprueba D3.1. Contrato previo a ejecución, un job/8 min/1 arranque; control basal en ticks reales, un TRIG y nueve actualizaciones posteriores, sin reset. H08c.1 y N STOP.

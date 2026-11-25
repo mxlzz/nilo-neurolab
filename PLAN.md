@@ -64,3 +64,5 @@ D2 PASS local de entrega [evidencia](evidence/H08d_D2_result.md); presupuesto ce
 
 ## H08d.D3 — separación temporal
 [D3.0 y contrato propuesto D3.1](protocols/H08d_D3.md): PASS documental. Predicción matemática y fases del original verificadas estáticamente, no dinámicamente. Próxima prueba aislada de decaimiento con un pulso, mínimo 8 ciclos basales y 9 posteriores, identidad y ruta. No ejecutar hasta aprobación de nuevo presupuesto.
+
+D3.1 aprobada; [especificación de implementación](protocols/H08d_D3.1.md), presupuesto de un job, no ampliar.
