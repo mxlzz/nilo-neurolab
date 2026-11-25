@@ -11,3 +11,5 @@
 - CI #45516662183 concluida: ambos secretos de configuración ausentes; bloqueo de aprovisionamiento. Cero sesiones científicas. Requiere configuración del usuario, no archivos nuevos.
 
 - Readiness CI 45516662183 intento 2 SUCCESS (ambas configuraciones presentes). Se levanta bloqueo de presencia; inicia comprobación de medio original sin ejecutar juego.
+
+- CI 45517841268 SUCCESS: ZIP CD/ISO/DATA/EXE/GEN exactos en Windows, montaje de solo lectura, CDB y limpieza verificados. H08c.1 preflight PASS, sin ejecutar juego. TRIG y marcador PUTV localizados estáticamente; sesión 1 pendiente.

@@ -31,3 +31,5 @@ Tres insumos originales verificados por hash local, CD pendiente de verificació
 CI #45516662183 confirmó ambos secretos ausentes; bloqueo de ejecución, no resultado científico. Sin gasto pago ni originales publicados. Autoverificación.
 
 Readiness revalidado tras intervención: ambas configuraciones presentes. No equivale a acceso ni integridad en Windows; nuevo preflight limitado a hash, montaje y CDB, sin sesiones científicas.
+
+Preflight original en destino PASS: CI 45517841268, evidencia efectiva de hashes, montaje y limpieza. No se ejecutó juego. TRIG estático escribe input; no prueba transmisión a decisión; Concept640 y orden Decision antes de Concept obligan a asociar fuentes por firma y ciclo. No modificar gates.

@@ -33,3 +33,5 @@ H08c.1 preflight parcial: [evidencia](evidence/H08c.1_PREFLIGHT_20261124.md). Dr
 H08c.1 detenido por ausencia confirmada de ambos secretos de repositorio; reanudar tras configuración y verificación del medio.
 
 Configuración de secretos confirmada; preflight de medio original y CDB pendiente de resultado. No iniciar sesión científica hasta verificar.
+
+Preflight de configuración y medio original PASS (CI 45517841268). Siguiente H08c.1 calibración instrumental sesión 1; no ejecutar H08c.2. Ningún arranque científico consumido.
