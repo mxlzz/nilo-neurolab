@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D5x_running",
+  "status": "H08d_D5x_closed_no_opportunity_native_reset_observed",
   "stage": "H08d",
-  "current_task": "H08d.D5x.1",
-  "next_action": "Leer CI 45607721471 y artefacto. Verificar cambio de atención y 32 pares de borrado, testigo positivo 8/9 antes de próximo PRE. Cerrar sin reintento; D5.1 FAIL intacto, N STOP. D6 requiere contrato y aprobación.",
-  "scientific_next": "H08d.D5x.1",
+  "current_task": "H08d.D5x.1_closed",
+  "next_action": "Diseñar contraste integrado D6.0 documental orientado a oportunidad de decisión y aprendizaje: señales reales, reset contextual, selección libre, contactos y química. No ejecutar sin nuevo contrato aprobado. D5.1 FAIL, H08c.1/N STOP.",
+  "scientific_next": "H08d.D6.0_documentary_integrated_design",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,7 +23,7 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation_D5.1_FAIL_conditional_divergence_partial_concept_witness"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation_D5.1_FAIL_conditional_divergence_partial_concept_witness_D5x_NO_OPPORTUNITY_native_reset_observed"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -31,14 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "Causa exacta de la divergencia histórica D5.1 no verificada; candidato estático de reset contextual."
+    "Causa exacta retrospectiva D5.1 no probada; reset contextual positivo observado en otro canal/sesión.",
+    "Concept→Decision y oportunidad de aprendizaje aún no verificados.",
+    "Presupuesto D5x agotado; no repetir ni ampliar microdiagnóstico."
   ],
-  "future_execution_dependency": "Cierre de diagnóstico acotado D5x",
+  "future_execution_dependency": "D6.0 documental y aprobación de nuevo contrato",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "c89f22067c4b4892da68821ee810f9606b9c8f06",
+  "last_confirmed_non_state_write": "ec082d9cecd1c68c5a37f7e0d70b2041585f1ef5",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -83,7 +85,10 @@
     "evidence/H08d_D5.1_observations.json",
     "evidence/H08d_D5.1_result.md",
     "experiments/verify_h08d_d5_result.py",
-    "protocols/H08d_D5x.md"
+    "protocols/H08d_D5x.md",
+    "evidence/H08d_D5x.1_observations.json",
+    "evidence/H08d_D5x.1_result.md",
+    "experiments/verify_h08d_d5x_result.py"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -267,19 +272,33 @@
   },
   "strategic_limit": "H es instrumento, no destino; D5→D6→contraste causal adquisición/retención si factible→síntesis, sin reconstrucción integral ni reabrir N; auditar valor marginal y cerrar H parcial si no justifica continuar.",
   "h08d_D5x": {
-    "outcome": "running",
+    "outcome": "NO_OPPORTUNITY_native_reset_observed",
     "run": 45607721471,
     "budget": {
       "jobs_max": 1,
       "runner_minutes_max": 8,
       "original_starts_max": 1
-    }
-  },
-  "active_run": {
-    "id": 45607721471,
-    "unit": "H08d.D5x.1",
-    "commit": "c89f22067c4b4892da68821ee810f9606b9c8f06",
-    "status": "queued",
-    "max_runner_minutes": 8
+    },
+    "jobs_consumed": 1,
+    "runner_seconds_consumed": 151,
+    "original_starts_consumed": 1,
+    "artifact": 15017848493,
+    "regular_cycles": 34,
+    "d4_matched": 18,
+    "valid_reset_groups": 1,
+    "clear_pairs": 32,
+    "native_active_reset": {
+      "index": 12,
+      "pre": [
+        183,
+        175
+      ],
+      "post": [
+        0,
+        0
+      ],
+      "tick": 488
+    },
+    "injected_witnesses": 0
   }
 }
