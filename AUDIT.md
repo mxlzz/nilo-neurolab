@@ -46,3 +46,5 @@ Dos fallos instrumentales, 2/3 arranques, ~7 min. Segunda corrección no permiti
 H08d autorizado. Se identifica diferencia de escape y parser entre instrumentos, hipótesis no causa demostrada. Probar con CDB real sobre fixture propio antes de originales. Presupuesto y STOP explícitos; sin cambios de alcance o gate.
 
 H08d.D0: el diseño de control compartió marcadores entre variantes y la negativa contaminó el conteo, por lo que no supera su propio gate. Diagnóstico reproducido en fixture real, no prueba retrospectiva de causalidad en C1. STOP formal; D0b es nueva pregunta de aislamiento, con el mismo criterio estricto, sin ampliar presupuesto ni alcance. D2 diferida.
+
+D0b control aislado PASS; se valida transporte en fixture, no retrospectivamente el motor. GO D1 bajo contrato mínimo. D0 FAIL histórico intacto. D2 diferida.

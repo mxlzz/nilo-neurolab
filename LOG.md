@@ -27,3 +27,5 @@
 - H08d.D0 FAIL formal: CI 45521328544, fixture propio; legado 3/3 valores anclados, escape simple 0/3 anclados y concatenación con HIT/END. Artefacto verificado. STOP del diseño D0; nuevo control aislado D0b justificado, sin aumentar presupuesto y D2 diferida.
 
 - H08d.D0b preregistrado: control legado aislado, secuencia exacta, máximo 4 min sin originales. D1 condicional, D2 diferida.
+
+- H08d.D0b PASS exacto, CI 45521574554, 3/3 eventos y valores, END y retorno 0, artefacto hash verificado. D1 habilitada, D2 diferida. Cero arranques originales en H08d.

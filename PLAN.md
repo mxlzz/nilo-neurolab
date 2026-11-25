@@ -50,3 +50,5 @@ H08c.1 STOP instrumental tras corrección única. H08c.2/H08c.3 NO ejecutadas. S
 H08d.D0 FAIL formal, hallazgo de formato verificable. [Dictamen](evidence/H08d_D0_result.md). D0b control de transporte positivo aislado, no repetir comparación; D1 condicionado al PASS exacto de D0b. Mantener máximo tres jobs y 20 min; D2 diferida. H08c.1 STOP, N STOP.
 
 [H08d.D0b contrato](protocols/H08d_D0b.md): control positivo aislado, sin comparador. STOP si falla.
+
+H08d.D0b PASS: [evidencia](evidence/H08d_D0b_result.md). D1 lectura WTA mínima habilitada. Último job de esta campaña, máximo 8 min, sin estímulos ni refuerzo.
