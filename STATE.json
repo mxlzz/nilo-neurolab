@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D0_failed_D0b_ready",
+  "status": "H08d_D0b_running",
   "stage": "H08d",
   "current_task": "H08d.D0b",
-  "next_action": "Control aislado del transporte CDB legado sin comparador, con gate exacto. Si PASS, D1; si FAIL STOP. D2 diferida. Máximo dos jobs restantes, 0 originales consumidos.",
+  "next_action": "Leer CI 45521574554 y artefacto. Si D0b PASS exacto, D1; si FAIL STOP. D2 diferida. No repetir D0.",
   "scientific_next": "H08d.D0b",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
@@ -23,7 +23,7 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_formal_format_diagnostic"
+    "H08d": "D0b_queued_after_D0_formal_FAIL"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -36,7 +36,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "2e2727eeffc5ae474a21059c4a96d84db27cfa85",
+  "last_confirmed_non_state_write": "54ef5e7e98bfdc485554a3cef4c0bf98a73e6c72",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -55,7 +55,8 @@
     "evidence/H08c.1_STOP.md",
     "protocols/H08d.md",
     "evidence/H08d_D0_result.json",
-    "evidence/H08d_D0_result.md"
+    "evidence/H08d_D0_result.md",
+    "protocols/H08d_D0b.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -117,5 +118,12 @@
     "outcome": "FAIL_formal",
     "legacy_anchored": 3,
     "single_anchored": 0
+  },
+  "active_run": {
+    "id": 45521574554,
+    "unit": "H08d.D0b",
+    "commit": "54ef5e7e98bfdc485554a3cef4c0bf98a73e6c72",
+    "status": "queued",
+    "max_runner_minutes": 4
   }
 }
