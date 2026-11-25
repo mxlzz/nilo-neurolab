@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D3_1_PASS_local_decay",
+  "status": "H08d_D4_0_PASS_documentary_approval_required",
   "stage": "H08d",
-  "current_task": "H08d.D3.1_closed",
-  "next_action": "Diseñar D4 documental: mapa GeneralSense→Perception y prueba mínima de propagación sincronizada. No ejecutar otro job sin nuevo contrato aprobado. H08c.1 y N STOP.",
-  "scientific_next": "H08d.D4_documentary_design",
+  "current_task": "H08d.D4.0_closed",
+  "next_action": "Solicitar aprobación D4.1 (1 job gratuito/8 min/1 arranque); verificar propagación sincronizada GeneralSense8/9→Perception40/41 y umbral. No ejecutar hasta aprobación. No reabrir H08c.1 ni N.",
+  "scientific_next": "H08d.D4.1_pending_approval",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,7 +23,7 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.0_PASS_documentary"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "Propagación a Perception/Concept y Decision aún no verificada.",
-    "Química residual/lavado no medidos.",
-    "Presupuesto D3.1 agotado; D4 ejecución requiere nuevo contrato."
+    "Propagación GeneralSense→Perception solo predicha estáticamente; requiere D4.1.",
+    "Concept, Decision vinculada a estímulo y lavado no verificados.",
+    "Presupuesto D3.1 cerrado; D4.1 requiere aprobación."
   ],
-  "future_execution_dependency": "D4 documental y aprobación de presupuesto de ejecución",
+  "future_execution_dependency": "Aprobación D4.1 acotada, ningún archivo/credencial adicional.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "257f5a648a5b5282dfe7ed0f045736b02091e880",
+  "last_confirmed_non_state_write": "a10ab84bfb8cd4d82b3c6e2a204a25c1266609b4",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -74,7 +74,8 @@
     "protocols/H08d_D3.md",
     "protocols/H08d_D3.1.md",
     "evidence/H08d_D3.1_result.json",
-    "evidence/H08d_D3.1_result.md"
+    "evidence/H08d_D3.1_result.md",
+    "protocols/H08d_D4.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -194,5 +195,29 @@
     "matched_cycles": 9,
     "state_zero_update": 8,
     "output_zero_update": 9
+  },
+  "h08d_D4": {
+    "outcome": "documentary_pass_dynamic_not_executed",
+    "candidate_map": {
+      "5:8": "0:40",
+      "5:9": "0:41"
+    },
+    "predicted_output": [
+      22,
+      11,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "proposed_budget": {
+      "jobs_max": 1,
+      "runner_minutes_max": 8,
+      "original_starts_max": 1
+    },
+    "jobs_consumed": 0
   }
 }
