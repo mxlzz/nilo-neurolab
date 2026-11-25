@@ -17,3 +17,5 @@
 - H08c.1 sesión 1: especificación de instrumentación y código fijados antes de datos; CI limitada a 15 min y un arranque, autotest previo. Protocolo protocols/H08c.1_session1.md. No ejecución confirmatoria.
 
 - H08c.1 sesión 1 CI 45518372778 terminada: artefacto hash verificado, sujeto creado, cero eventos/ensayos; observer_wait_timeout. Fallo instrumental, no negativo neuronal. Consumido 1/3 arranques. Revisar corrección batch, no replicar instrumento fallido.
+
+- Única corrección instrumental H08c.1: CDB batch con parser de snapshots acotados y gc automático, sin cambiar contrato. Sesión 2 solo; sesión 3 condicional a PASS completo.

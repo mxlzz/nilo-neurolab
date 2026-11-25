@@ -39,3 +39,5 @@ Preflight de configuración y medio original PASS (CI 45517841268). Siguiente H0
 Sesión 1 de calibración preparada según [especificación](protocols/H08c.1_session1.md); máximo 15 min y un arranque. Revisar datos antes de réplica o STOP.
 
 Sesión 1 cerrada como fallo instrumental; quedan dos sesiones, ambas deben superar protocolo con misma ruta para GO. Corrección batch candidata basada en observadores históricos. No autoriza H08c.2.
+
+Sesión 2: [corrección instrumental](protocols/H08c.1_batch_correction.md), mismos criterios, máximo 15 min. Sesión 3 únicamente tras PASS completo de sesión 2.

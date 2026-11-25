@@ -37,3 +37,5 @@ Preflight original en destino PASS: CI 45517841268, evidencia efectiva de hashes
 H08c.1 sesión 1 preregistro técnico: validación WTA exacta, identidad y marcadores nativos, firma Concept con fuentes, ventana lógica y lavado; interacción CDB/ReadProcessMemory aún no validada. Cualquier fallo se conserva como instrumental; sin prometer PASS.
 
 H08c.1 sesión 1 NO supera gate (CI verde, cero eventos). Artefacto cotejado, sujeto creado y limpieza confirmada. No se conocen causas exactas de timeout. Una corrección instrumental permitida, no tuning ni cambio de criterios. Ver evidence/H08c.1_session1_result.md.
+
+Corrección única CDB batch, patrón de transporte heredado, no atribuir causalmente timeout a buffering. Tests sintéticos nuevos y control de captura; si falla, STOP. No afirmación de equivalencia dinámica hasta validar datos.
