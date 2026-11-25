@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "N_NSR00_closed_exact_tabular_ceiling",
+  "status": "N_NSR01_closed_independent_family_Bayesian_ceiling",
   "stage": "N_selective_revision_diagnostic",
-  "current_task": "NSR00_closed",
-  "next_action": "Definir y ejecutar diagnóstico NSR01 de ruido y revisión no anunciada con filtros existentes y techo bayesiano, sin arquitectura neuronal ni semillas reservadas. H cerrada parcial, E09/NR01/NX01 STOP.",
-  "scientific_next": "NSR01_noisy_feedback_baseline_diagnostic",
+  "current_task": "NSR01_closed",
+  "next_action": "NSR02: revisar soluciones existentes y definir diagnóstico de estructura compartida, cambios correlacionados y excepciones locales; evaluar identificabilidad, inferencia jerárquica/factorización/episodios y techo de baselines antes de red. Separar revisión de asociaciones no visitadas, retención válida y retorno sin feedback; preservar prueba de adaptación rara y costo. No red hasta contrato específico aprobado. H cerrada parcial, E09/NR01/NX01 STOP.",
+  "scientific_next": "NSR02_shared_structure_correlated_revision_diagnostic",
   "scientific_state": {
     "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
@@ -31,15 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "NSR00 saturado por tabla exacta; no justifica red.",
-    "Aún no identificado contraste de revisión bajo incertidumbre y costo que justifique arquitectura neuronal."
+    "NSR00 techo exacto tabular; NSR01 filtro local casi óptimo bajo independencia y priors conocidos.",
+    "BAYES8 no equivale a BAYES64 en subgrupo de cambios raros, pese a gate primario cumplido.",
+    "No se ha establecido contraste discriminante ni presupuesto de una nueva arquitectura neuronal."
   ],
-  "future_execution_dependency": "Diagnóstico comparativo de baselines aprobado; contrato neuronal posterior requiere aprobación explícita.",
+  "future_execution_dependency": "Diagnóstico de baselines de estructura compartida autorizado; nuevo contrato neuronal requiere aprobación específica.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "fa51f704e07a5cd354553daf10bbc15a2bfd14a1",
+  "last_confirmed_non_state_write": "f5e5bd7489bd560524689ccbb9bfa746653cc19e",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -119,7 +120,13 @@
     "protocols/NSR00.md",
     "experiments/nsr00.py",
     "evidence/NSR00_result.md",
-    "evidence/NSR00_observations.json"
+    "evidence/NSR00_observations.json",
+    "protocols/NSR01.md",
+    "experiments/nsr01.js",
+    "evidence/NSR01_result.json",
+    "experiments/verify_nsr01.js",
+    "evidence/NSR01_recent_correction.json",
+    "evidence/NSR01_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -485,6 +492,24 @@
       "packed_accuracy_post": 1,
       "state_bits": 8,
       "neuronal_runs": 0
+    },
+    "nsr01": {
+      "status": "STOP_independent_family_near_Bayes_ceiling",
+      "conditions": 6,
+      "worlds_per_condition": 64,
+      "seed_range": [
+        31000,
+        31063
+      ],
+      "steps_per_world": 1024,
+      "bayes8_state_bytes_logical": 64,
+      "max_mean_conditional_regret_all": 0.00044918856194428727,
+      "max_mean_conditional_regret_return": 0.00023818597560977122,
+      "secondary_metric_corrected": true,
+      "recent_rare_bayes8": 0.4341317365269461,
+      "recent_rare_bayes64": 0.5694610778443113,
+      "neuronal_runs": 0,
+      "ci_jobs": 0
     }
   }
 }
