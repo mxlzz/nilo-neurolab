@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D1_running",
+  "status": "H08d_closed_local_WTA_pass_budget_exhausted",
   "stage": "H08d",
-  "current_task": "H08d.D1",
-  "next_action": "Leer CI 45521849436 y artefacto; contrastar D1 con gate y cerrar campaña H08d. D2 diferida; no ejecutar nuevos jobs ni H08c.2 ni N.",
-  "scientific_next": "H08d.D1",
+  "current_task": "H08d_closed",
+  "next_action": "No ejecutar más jobs de H08d: presupuesto agotado. Proponer/aprobar contrato acotado D2 de entrega TRIG nativa aislada, sin refuerzo ni forcing; después evaluar integración gradual. H08c.1 STOP histórico y N STOP intactos.",
+  "scientific_next": "H08d.D2_contract_pending_approval",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,20 +23,23 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D1_in_progress_after_D0b_PASS"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_not_executed"
   },
   "reserved_seeds": [
     "1400..1419",
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [],
-  "future_execution_dependency": "D0 debe pasar antes de originales. No reabrir H08c.1 ni N.",
+  "blockers": [
+    "Presupuesto H08d de tres jobs consumido. D2 requiere nueva campaña acotada aprobada.",
+    "Transporte TRIG, firma Concept, oportunidad sináptica y lavado todavía no verificados; no iniciar H08c.2."
+  ],
+  "future_execution_dependency": "Aprobación de contrato D2 y presupuesto; ningún archivo/credencial adicional requerido.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "5f04ac50359f160cc328a89f1d4425f837cf383f",
+  "last_confirmed_non_state_write": "a51579a62d910ac0cbf379da37f50b14152a0979",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -59,7 +62,11 @@
     "protocols/H08d_D0b.md",
     "evidence/H08d_D0b_result.json",
     "evidence/H08d_D0b_result.md",
-    "protocols/H08d_D1.md"
+    "protocols/H08d_D1.md",
+    "evidence/H08d_D1_summary.json",
+    "evidence/H08d_D1_result.md",
+    "experiments/verify_h08d_d1_archive.py",
+    "evidence/H08d_D1_derived.zip"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -111,9 +118,9 @@
     "jobs_max": 3,
     "runner_minutes_max": 20,
     "original_starts_max": 2,
-    "original_starts_consumed": 0,
-    "jobs_consumed": 2,
-    "runner_seconds_consumed": 72
+    "original_starts_consumed": 1,
+    "jobs_consumed": 3,
+    "runner_seconds_consumed": 214
   },
   "h08d_D0": {
     "run": 45521328544,
@@ -128,11 +135,14 @@
     "outcome": "PASS",
     "hits": 3
   },
-  "active_run": {
-    "id": 45521849436,
-    "unit": "H08d.D1",
-    "commit": "5f04ac50359f160cc328a89f1d4425f837cf383f",
-    "status": "in_progress",
-    "max_runner_minutes": 8
+  "h08d_D1": {
+    "run": 45521849436,
+    "artifact": 14980247157,
+    "outcome": "PASS_minimal_WTA",
+    "complete_cycles": 20,
+    "matched_cycles": 20
+  },
+  "h08d_D2": {
+    "outcome": "not_executed_budget"
   }
 }
