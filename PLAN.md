@@ -35,3 +35,5 @@ H08c.1 detenido por ausencia confirmada de ambos secretos de repositorio; reanud
 Configuración de secretos confirmada; preflight de medio original y CDB pendiente de resultado. No iniciar sesión científica hasta verificar.
 
 Preflight de configuración y medio original PASS (CI 45517841268). Siguiente H08c.1 calibración instrumental sesión 1; no ejecutar H08c.2. Ningún arranque científico consumido.
+
+Sesión 1 de calibración preparada según [especificación](protocols/H08c.1_session1.md); máximo 15 min y un arranque. Revisar datos antes de réplica o STOP.

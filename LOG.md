@@ -13,3 +13,5 @@
 - Readiness CI 45516662183 intento 2 SUCCESS (ambas configuraciones presentes). Se levanta bloqueo de presencia; inicia comprobación de medio original sin ejecutar juego.
 
 - CI 45517841268 SUCCESS: ZIP CD/ISO/DATA/EXE/GEN exactos en Windows, montaje de solo lectura, CDB y limpieza verificados. H08c.1 preflight PASS, sin ejecutar juego. TRIG y marcador PUTV localizados estáticamente; sesión 1 pendiente.
+
+- H08c.1 sesión 1: especificación de instrumentación y código fijados antes de datos; CI limitada a 15 min y un arranque, autotest previo. Protocolo protocols/H08c.1_session1.md. No ejecución confirmatoria.
