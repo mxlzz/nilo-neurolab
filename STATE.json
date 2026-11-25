@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H09_P_closed_induced_STOP_natural_observation_approval_required",
+  "status": "H09_N0_running",
   "stage": "H09",
-  "current_task": "H09.P_closed",
-  "next_action": "Solicitar aprobación de H09.N0 como última observación natural sin TRIG/STIM/CHEM, 1 job gratuito/8min/1 arranque, máximo256 ciclos/180s/4MiB. Si no oportunidad interpretable, recomendar cierre H parcial. No ejecutar sin aprobación, H09.2 no habilitada, N STOP.",
-  "scientific_next": "H09.N0_pending_approval",
+  "current_task": "H09.N0",
+  "next_action": "Leer CI45652045072 y artefacto. Verificar fixture, 256 ciclos, firmas/inventarios, recurrencia A/B, decisiones/margen y química Q. Cerrar sin reintento; si no oportunidad recomendar cierre H parcial. N STOP.",
+  "scientific_next": "H09.N0",
   "scientific_state": {
     "H": "active_documentary_reframe_direct_associative_learning",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,14 @@
     "26000..26019"
   ],
   "blockers": [
-    "Patrón inducido nominal: cota de retención0 después de128/512 sin refuerzo; STOP condicional.",
-    "No hay serie temporal Concept completa para demostrar recurrencia natural ni lavado; latencia feedback no validada.",
-    "H09.N0 requiere aprobación de nuevo arranque/presupuesto."
+    "Resultado de fixture y observación natural pendientes."
   ],
-  "future_execution_dependency": "Aprobación explícita H09.N0 o decisión de cierre parcial H",
+  "future_execution_dependency": "Resultado de H09.N0 autorizado",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "7a90d2dc0a302817e60bbe19703f9bc88f5a34e6",
+  "last_confirmed_non_state_write": "5d21300b37eb87b9d751ad3575cd94b6fc13e935",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -110,7 +108,8 @@
     "experiments/h09_p.py",
     "evidence/H09.P_result.json",
     "evidence/H09.P_result.md",
-    "protocols/H09.N0.md"
+    "protocols/H09.N0.md",
+    "protocols/H09.N0_implementation.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -436,14 +435,22 @@
       "ci_jobs": 0
     },
     "natural": {
-      "status": "proposed_pending_approval",
+      "status": "running",
       "jobs_max": 1,
       "runner_minutes_max": 8,
       "original_starts_max": 1,
       "cycles_max": 256,
       "trace_seconds_max": 180,
       "combined_capture_mib_max": 4,
-      "execution_authorized": false
+      "execution_authorized": true,
+      "run": 45652045072
     }
+  },
+  "active_run": {
+    "id": 45652045072,
+    "unit": "H09.N0",
+    "commit": "5d21300b37eb87b9d751ad3575cd94b6fc13e935",
+    "status": "queued",
+    "max_runner_minutes": 8
   }
 }
