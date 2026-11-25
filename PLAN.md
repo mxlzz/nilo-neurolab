@@ -52,3 +52,5 @@ H08d.D0 FAIL formal, hallazgo de formato verificable. [Dictamen](evidence/H08d_D
 [H08d.D0b contrato](protocols/H08d_D0b.md): control positivo aislado, sin comparador. STOP si falla.
 
 H08d.D0b PASS: [evidencia](evidence/H08d_D0b_result.md). D1 lectura WTA mínima habilitada. Último job de esta campaña, máximo 8 min, sin estímulos ni refuerzo.
+
+[H08d.D1](protocols/H08d_D1.md) lectura mínima post-WTA preregistrada; último job. D2 diferida. Cierre tras resultado.

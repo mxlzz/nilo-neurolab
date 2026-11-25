@@ -48,3 +48,5 @@ H08d autorizado. Se identifica diferencia de escape y parser entre instrumentos,
 H08d.D0: el diseño de control compartió marcadores entre variantes y la negativa contaminó el conteo, por lo que no supera su propio gate. Diagnóstico reproducido en fixture real, no prueba retrospectiva de causalidad en C1. STOP formal; D0b es nueva pregunta de aislamiento, con el mismo criterio estricto, sin ampliar presupuesto ni alcance. D2 diferida.
 
 D0b control aislado PASS; se valida transporte en fixture, no retrospectivamente el motor. GO D1 bajo contrato mínimo. D0 FAIL histórico intacto. D2 diferida.
+
+D1 preregistro tras D0b: captura reducida, selección exacta con empate/exclusión/bypass, identidad y oportunidad. El resultado no valida aprendizaje, ni se trata cada ciclo como sujeto independiente.
