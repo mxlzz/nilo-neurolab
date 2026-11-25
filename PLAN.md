@@ -66,3 +66,5 @@ D2 PASS local de entrega [evidencia](evidence/H08d_D2_result.md); presupuesto ce
 [D3.0 y contrato propuesto D3.1](protocols/H08d_D3.md): PASS documental. Predicción matemática y fases del original verificadas estáticamente, no dinámicamente. Próxima prueba aislada de decaimiento con un pulso, mínimo 8 ciclos basales y 9 posteriores, identidad y ruta. No ejecutar hasta aprobación de nuevo presupuesto.
 
 D3.1 aprobada; [especificación de implementación](protocols/H08d_D3.1.md), presupuesto de un job, no ampliar.
+
+D3.1 PASS local [resultado](evidence/H08d_D3.1_result.md), presupuesto cerrado. Próxima D4 documental: verificar mapeo de GeneralSense a Perception y contrato mínimo de propagación sincronizada. No ejecutar nueva campaña sin aprobación.

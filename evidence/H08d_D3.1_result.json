@@ -1,0 +1,1209 @@
+{
+  "classification": "PASS_local_decay",
+  "dde_ack": {
+    "bytes": 16,
+    "ok": true,
+    "value": [
+      32,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "dde_basal": [
+    {
+      "bytes": 14,
+      "ok": true,
+      "value": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "bytes": 14,
+      "ok": true,
+      "value": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "identity_after_pulse": true,
+  "identity_before_pulse": true,
+  "pass": true,
+  "reward_pulses": 0,
+  "stage": "H08d.D3.1",
+  "subject_created": true,
+  "trace": {
+    "basal_cycles": [
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 479
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 480
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 481
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 482
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 483
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 484
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 485
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 486
+      }
+    ],
+    "classification": "PASS_local_decay",
+    "diagnostics": {},
+    "elapsed_ms": 10860,
+    "event_counts": {
+      "END": 1,
+      "ENDC": 17,
+      "POST": 17,
+      "PRE": 17,
+      "PULSE_POST": 1,
+      "PULSE_PRE": 1,
+      "READY": 1
+    },
+    "events": [
+      {
+        "tag": "READY"
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 479,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 479,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 479
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 480,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 480,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 480
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 481,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 481,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 481
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 482,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 482,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 482
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 483,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 483,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 483
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 484,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 484,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 484
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 485,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 485,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 485
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 486,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 486,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 486
+      },
+      {
+        "args": [
+          5,
+          8,
+          32
+        ],
+        "brain": "B1",
+        "in_cycle": 0,
+        "tag": "PULSE_PRE",
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "PULSE_POST",
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          32,
+          32,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 487,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          32,
+          32,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 487,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          32,
+          21,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 487
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 488,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          32,
+          21,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 488,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          21,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 488
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 489,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          21,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 489,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          14,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 489
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 490,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          14,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 490,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          9,
+          6,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 490
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 491,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          9,
+          6,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 491,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          6,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 491
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 492,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          6,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 492,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          4,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 492
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 493,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          4,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 493,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 493
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 494,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 494,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 494
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "PRE",
+        "tick": 495,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "route": "regular",
+        "tag": "POST",
+        "tick": 495,
+        "v": [
+          32,
+          0,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "brain": "B1",
+        "tag": "ENDC",
+        "tick": 495
+      },
+      {
+        "tag": "END"
+      }
+    ],
+    "expected": [
+      {
+        "post": [
+          32,
+          21,
+          0,
+          0
+        ],
+        "pre": [
+          32,
+          32,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          21,
+          14,
+          0,
+          0
+        ],
+        "pre": [
+          32,
+          21,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          14,
+          9,
+          0,
+          0
+        ],
+        "pre": [
+          21,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          9,
+          6,
+          0,
+          0
+        ],
+        "pre": [
+          14,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          6,
+          4,
+          0,
+          0
+        ],
+        "pre": [
+          9,
+          6,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          4,
+          2,
+          0,
+          0
+        ],
+        "pre": [
+          6,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "pre": [
+          4,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "gate_checks": {
+      "ack": true,
+      "basal": true,
+      "identity": true,
+      "post_sequence": true,
+      "prediction": true,
+      "pulse": true,
+      "transport": true
+    },
+    "live_basal_observed": true,
+    "matched_cycles": 9,
+    "observer_error": null,
+    "pass": true,
+    "post_cycles": [
+      {
+        "brain": "B1",
+        "post": [
+          32,
+          21,
+          0,
+          0
+        ],
+        "pre": [
+          32,
+          32,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 487
+      },
+      {
+        "brain": "B1",
+        "post": [
+          21,
+          14,
+          0,
+          0
+        ],
+        "pre": [
+          32,
+          21,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 488
+      },
+      {
+        "brain": "B1",
+        "post": [
+          14,
+          9,
+          0,
+          0
+        ],
+        "pre": [
+          21,
+          14,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 489
+      },
+      {
+        "brain": "B1",
+        "post": [
+          9,
+          6,
+          0,
+          0
+        ],
+        "pre": [
+          14,
+          9,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 490
+      },
+      {
+        "brain": "B1",
+        "post": [
+          6,
+          4,
+          0,
+          0
+        ],
+        "pre": [
+          9,
+          6,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 491
+      },
+      {
+        "brain": "B1",
+        "post": [
+          4,
+          2,
+          0,
+          0
+        ],
+        "pre": [
+          6,
+          4,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 492
+      },
+      {
+        "brain": "B1",
+        "post": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "pre": [
+          4,
+          2,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 493
+      },
+      {
+        "brain": "B1",
+        "post": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 494
+      },
+      {
+        "brain": "B1",
+        "post": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "route": "regular",
+        "tick": 495
+      }
+    ],
+    "raw_bytes": 12210,
+    "returncode": 0,
+    "timeout": false
+  },
+  "trig_attempts": 1
+}

@@ -41,3 +41,5 @@
 - D3.0 revisión documental: EXE/GEN exactos, relax de GeneralSense5 rate24 factor43707 mask0, predicción state32→0 tras 8 actualizaciones sin otras escrituras, output un paso detrás. Rutas regulares/alternativas separadas, ticks sujeto no equivalen a cerebro. Contrato D3.1 propuesto (1 job/8min/1 arranque), no ejecutado; presupuesto D2 cerrado.
 
 - 25/11/2026: usuario aprueba D3.1. Contrato previo a ejecución, un job/8 min/1 arranque; control basal en ticks reales, un TRIG y nueve actualizaciones posteriores, sin reset. H08c.1 y N STOP.
+
+- D3.1 PASS local CI 45539700196: 8 basal +9 post, ticks 479..495; un TRIG, estado 0 al octavo, output 0 al noveno, 9/9 exactas, canal9 cero. Artefacto hash/CRC verificado y recálculo separado. 144s, 1/1 job y arranque. Sin nuevos premios; química no medida. D4 documental siguiente, H08c.1 y N STOP.
