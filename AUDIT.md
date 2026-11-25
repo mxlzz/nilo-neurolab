@@ -65,3 +65,5 @@ D3.1 revisión previa: EXE/GEN releídos por hash, cinco puntos estáticos, tran
 D3.1 cierre (autoverificación): 9/9 predicciones exactas con 8 ciclos basales, identidad y ruta válidas; estímulo natural transitorio sin reset. 1 sujeto, no 9 réplicas. No resuelve causa D2 ni lavado de química ni aprendizaje. Un job 144s y un arranque, presupuesto agotado. GO documental D4, ejecución condicionada. H08c.1/N STOP.
 
 D4.0 autoverificación: mapa derivado del bucle original y flags/counts genéticos, no selección post hoc. Gate exige layout efectivo y predicción de copia/umbral, canales opuestos y separación local; no sustituye gate H08c.1, no inferir Concept/Decision ni lavado. No ejecutado.
+
+D4.1 previa: ampliar D3 solo con layout, COPY/PERCEPTION y segundo pulso condicionado a A y basal adicional. No medir Concept ni aprendizaje, no aumentar presupuesto. H08c.1/N STOP.
