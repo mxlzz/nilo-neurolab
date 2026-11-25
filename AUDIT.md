@@ -121,3 +121,6 @@ Transporte válido; NO OPORTUNIDAD por falta de B y Q, no falla de aprendizaje. 
 
 ## Cierre parcial H aprobado (autoverificación)
 H09.N0 última observación según límite acordado. Se formaliza cierre parcial, no fidelidad ni refutación del aprendizaje original; preservar negativos y cobertura parcial. Revisión de orientación exclusivamente documental, no reabrir N sin aprobación discriminante. Sin auditor independiente.
+
+## Orientación posterior a H (autoverificación)
+La pregunta de revisión selectiva distingue inversión global NX01 y representación NR01. No se declara novedad, ni necesidad neuronal; evidencia previa favorece controles fuertes, biblioteca existente si compatible. Separar inicialmente demora de recompensa, definir identificabilidad y presupuesto/margen antes de modelo. Revisión documental solamente; decisión de N requiere aprobación. Sin auditor independiente.

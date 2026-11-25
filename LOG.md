@@ -89,3 +89,5 @@
 - H09.N0 CI45652045072, job139338842434, 278s/1 job/1 arranque, fixture PASS, T válido, 256 ticks476..731, WTA256/256, 28 soportes, A31, B ausente, Q0, 84 fuentes endpoint distintas, 11 cambios atención, NO OPORTUNIDAD. 0 TRIG/STIM/reward. ZIP CRC/hash comprobado, proyección compacta y recálculo separado. Errores transitorios de ref reconciliados antes de ejecución. No repetir; recomendar cierre parcial H.
 
 - Usuario aprueba cierre parcial H tras H09.N0. Cierre formal, conocimiento reutilizable y límites registrados; N STOP. Revisión documental de orientación autorizada, no ejecución ni reapertura N.
+
+- Revisión de orientación tras cierre H: antecedentes de consolidación multiescala, sistemas complementarios/replay, crédito retrospectivo/anónimo, detección de drift recurrente; comparar soluciones existentes. Propuesta N de estabilidad-plasticidad con revisión parcial y retorno sin refuerzo, diagnóstico de identificabilidad y baselines previo. N no reabierta; aprobación pendiente.

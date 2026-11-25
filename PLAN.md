@@ -122,3 +122,6 @@ H09.N0 [NO OPORTUNIDAD](evidence/H09.N0_result.md): T válido, 256/256 ciclos, 2
 
 ## Cierre parcial H aprobado — 25/11/2026
 [Acta y síntesis](evidence/H_CLOSURE_20261125.md). No más originales ni H09.2/3. H reabrible solo por nueva pregunta y aprobación. N STOP. Próxima unidad exclusivamente documental: contrastar preguntas funcionales con antecedentes y negativos antes de proponer una hipótesis nueva. No implementar ni ejecutar N.
+
+## Próxima orientación propuesta (documental)
+[Revisión N](protocols/N_NEXT_ORIENTATION_20261125.md): priorizar revisión selectiva de asociaciones y retención de conocimiento válido en contextos recurrentes; aislar recompensa inmediata inicialmente, comparar baselines fuertes y techo/costo antes de diseñar red. Crédito retardado a través de contextos como extensión separada, no rescatar NX01. N STOP hasta aprobación de nueva pregunta; ningún ensayo nuevo.
