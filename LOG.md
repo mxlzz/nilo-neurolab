@@ -83,3 +83,5 @@
 - H09.S: prereg e00c30d, EXE/GEN y ZIP exactos, proyección reconstruida SHA coincidente y cálculo local reproducible, 44 fuentes/65 contactos positivos/105 todos, STW/LTW0. Margen42..126, mediana102; cota favorable CHEM1=31 a512 16/28, ningún cue alcanza mínimo. Extremo virtual255 no dosis. STOP monocue, no originales ni CI. Snapshot9 Concept activos, evaluar patrones poblacionales documentalmente.
 
 - H09.P prereg 6fdf19e, error transitorio update_ref recuperado antes del cálculo. ZIP/CRC/proyecciones verificadas; análisis local 44 fuentes, k1/3/6/9, máxima inhibición28/49/70/88 a512 (all), 0 al probe tras128/512 lavado (peso<=5, floor(32*5/256)=0). STOP inducido nominal. Revisión de fuentes y propuesta H09.N0 solo observación natural, sin nuevo CI/arranque, pendiente aprobación.
+
+- Usuario aprueba H09.N0. Especificación de lectura por bloques indexados, inventarios/firmas endpoint, WTA/química y episodios congelados, cap 256/180s/4MiB. Sin estímulos ni premio; fixture antes del original.

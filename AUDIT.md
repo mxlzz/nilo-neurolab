@@ -113,3 +113,5 @@ Criterio previo cumplido: cota condicional de inhibición con fuente32, local31 
 
 ## H09.P cierre (autoverificación)
 Criterio STOP predefinido cumplido: cota favorable k9/512 alcanza solo2/23 márgenes durante entrenamiento, ninguna tras lavado y probe, no resultado causal ni imposibilidad global. Error GraphQL de ref reconciliado; script y resultado verificables. Patrón natural no demostrado con datos disponibles; propuesta de una última factibilidad de solo lectura (H09.N0), no habilita entrenamiento, presupuesto y aprobación nueva. N STOP, H09.1/S no reclasificadas. Sin auditor independiente.
+
+H09.N0 previa: aprobación confirmada, controles de transporte y límites, clasificación temporal sin selección por respuestas, endpoint no equivale a estabilidad continua; T completo requiere 256 ciclos. No GO por recurrencia aislada. Sin nuevo entrenamiento/N.

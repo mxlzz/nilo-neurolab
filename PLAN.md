@@ -115,3 +115,5 @@ H09.1 [cierre NO OPORTUNIDAD](evidence/H09.1_result.md). Instrumento basal y 409
 H09.S [STOP condicional monocue](evidence/H09.S_result.md): 44 fuentes, margen mínimo42, cota favorable28 a512 para cue32/CHEM1 local31, sin arranques. No elevar dosis ni generalizar. Próxima unidad documental: factibilidad de patrones poblacionales endógenos o TRIG nativo, comparar oportunidades/margen y control contextual, o cierre H parcial. H09.2 no habilitada; N STOP.
 
 H09.P [resultado STOP condicional](evidence/H09.P_result.md): patrón 1/3/6/9 a32/local31; máximo favorable88 en k9 a512, 0 tras lavado y reactivación por cuantización. No elevar dosis/tamaño ni rescatar. [H09.N0](protocols/H09.N0.md) propuesta de última observación natural, 1 job/8min/1 arranque, no intervención, patrones recurrentes y margen/Q, aprobación pendiente. Si no oportunidad, recomendar cierre parcial H; N STOP.
+
+H09.N0 aprobado; [instrumentación previa](protocols/H09.N0_implementation.md), contrato congelado, sin intervención, fixture obligatorio, no reintento.
