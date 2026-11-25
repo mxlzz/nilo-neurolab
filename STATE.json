@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D3_1_running",
+  "status": "H08d_D3_1_PASS_local_decay",
   "stage": "H08d",
-  "current_task": "H08d.D3.1",
-  "next_action": "Leer CI 45539700196 y artefacto; verificar basal, pulso, nueve ciclos y predicción congelada; cerrar D3.1 sin reintentar. H08c.1 y N STOP.",
-  "scientific_next": "H08d.D3.1",
+  "current_task": "H08d.D3.1_closed",
+  "next_action": "Diseñar D4 documental: mapa GeneralSense→Perception y prueba mínima de propagación sincronizada. No ejecutar otro job sin nuevo contrato aprobado. H08c.1 y N STOP.",
+  "scientific_next": "H08d.D4_documentary_design",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,20 +23,24 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_running"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay"
   },
   "reserved_seeds": [
     "1400..1419",
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [],
-  "future_execution_dependency": "D3.1 decay and regular update trace before propagation",
+  "blockers": [
+    "Propagación a Perception/Concept y Decision aún no verificada.",
+    "Química residual/lavado no medidos.",
+    "Presupuesto D3.1 agotado; D4 ejecución requiere nuevo contrato."
+  ],
+  "future_execution_dependency": "D4 documental y aprobación de presupuesto de ejecución",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "a7377aaf81307ec7060e7ecdaba3fd0888c92c44",
+  "last_confirmed_non_state_write": "257f5a648a5b5282dfe7ed0f045736b02091e880",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -68,7 +72,9 @@
     "evidence/H08d_D2_result.json",
     "evidence/H08d_D2_result.md",
     "protocols/H08d_D3.md",
-    "protocols/H08d_D3.1.md"
+    "protocols/H08d_D3.1.md",
+    "evidence/H08d_D3.1_result.json",
+    "evidence/H08d_D3.1_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -161,7 +167,7 @@
     "logical_ticks_observed": false
   },
   "h08d_D3": {
-    "outcome": "running",
+    "outcome": "PASS_local_decay",
     "predicted_state": [
       32,
       21,
@@ -178,14 +184,15 @@
       "runner_minutes_max": 8,
       "original_starts_max": 1
     },
-    "jobs_consumed": 0,
-    "run": 45539700196
-  },
-  "active_run": {
-    "id": 45539700196,
-    "unit": "H08d.D3.1",
-    "commit": "a7377aaf81307ec7060e7ecdaba3fd0888c92c44",
-    "status": "queued",
-    "max_runner_minutes": 8
+    "jobs_consumed": 1,
+    "run": 45539700196,
+    "artifact": 14987619881,
+    "runner_seconds_consumed": 144,
+    "original_starts_consumed": 1,
+    "basal_cycles": 8,
+    "post_cycles": 9,
+    "matched_cycles": 9,
+    "state_zero_update": 8,
+    "output_zero_update": 9
   }
 }
