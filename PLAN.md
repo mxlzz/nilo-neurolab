@@ -95,3 +95,5 @@ D5x cierre formal NO OPORTUNIDAD, mecanismo nativo de reset confirmado localment
 [D6.0 propuesta](protocols/H08d_D6.md): seis brazos A/S/B/B/S/A, selección preestablecida por topología Concept→Decision, WTA libre y oportunidad computacional de modificación; registro de reset y química, señales reales. Piloto 1 job/8min/1 arranque propuesto, no ejecutar sin aprobación. STOP si no factible y considerar cierre H parcial, no serie de microdiagnósticos.
 
 D6.1 aprobada; [especificación previa](protocols/H08d_D6.1.md). Fixture y tests antes del original, inventario único, selección fija, seis brazos con sham marcado, no reintento.
+
+D6.1 [cierre](evidence/H08d_D6.1_result.md) instrumental incompleto + ausencia topológica registrada (640 filas, A ausente, B236/237). 0/6 exposiciones y sin inventario Decision, no aprendizaje. Presupuesto cerrado, sin reintento; preparar síntesis H parcial y decisión estratégica de continuidad. N STOP.

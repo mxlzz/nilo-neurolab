@@ -1,0 +1,417 @@
+{
+  "stage": "H08d.D6.1",
+  "run": 45618843971,
+  "job": 139221294270,
+  "commit": "6a531c881c3b99053833d50f239c3c757b8d75c0",
+  "artifact": 15022658226,
+  "zip_bytes": 12047,
+  "zip_sha256": "79ad94ab15bd2b07e517d0b3318f438a6b3fa28b1086d4df33623ae9f4ab7591",
+  "json_bytes": 361811,
+  "json_sha256": "5c43aa31500f4207ec46f7331b0998df57ccdf07f8bf06d2628a739c514bfec2",
+  "fixture_json_bytes": 193,
+  "fixture_json_sha256": "02ba2643868e0f53117c0254dc5603758e8c682d7976d61b3b374381924eb144",
+  "archive_scope": "Compact projection of all 640 scan rows, complete captured WTA pair, D4 partial phases, selection and fixture. Original artifact ZIP downloaded, CRC and hashes verified; raw malformed debugger line not preserved in artifact. Exact ZIP not copied byte-for-byte to GitHub by this commit.",
+  "runner_seconds": 162,
+  "trace_ms": 1094,
+  "raw_bytes": 41682,
+  "classification": "instrumental_incomplete",
+  "pass": false,
+  "subject_created": true,
+  "trig_attempts": 0,
+  "reward_pulses": 0,
+  "arms": [],
+  "planned_arms": [
+    "A",
+    "S",
+    "B",
+    "B",
+    "S",
+    "A"
+  ],
+  "gate_checks": {
+    "transport": false,
+    "identity": true,
+    "preflight": false,
+    "complete_opportunity": false
+  },
+  "diagnostics": {
+    "D6_malformed": 1
+  },
+  "observer_error": "capture_invalid",
+  "timeout": false,
+  "returncode": 0,
+  "stop_ack": true,
+  "event_counts": {
+    "COPY": 1,
+    "LAYOUT": 1,
+    "PERCEPTION": 1,
+    "POST": 1,
+    "PRE": 1,
+    "READY": 1
+  },
+  "fixture": {
+    "stage": "D6_fixture",
+    "returncode": 0,
+    "markers": [
+      "NL_D6_FIX PRE 11 18",
+      "NL_D6_FIX PRE 22 18",
+      "NL_D6_FIX PRE 33 18",
+      "NL_D6_FIX_END"
+    ],
+    "pass": true
+  },
+  "brain": "B1",
+  "tick": 476,
+  "route": "regular",
+  "layout": [
+    9,
+    112,
+    16,
+    40,
+    16,
+    40,
+    32,
+    16,
+    40,
+    640,
+    0,
+    2,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0
+  ],
+  "sensor_phase_order": [
+    "PRE",
+    "POST",
+    "COPY",
+    "PERCEPTION"
+  ],
+  "sensor_meta": [
+    32,
+    0,
+    24,
+    0,
+    0,
+    112,
+    10,
+    0,
+    0,
+    0
+  ],
+  "sensor_phase_values": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "decision_local_chem": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "wta_meta_pre": [
+    16,
+    1,
+    16
+  ],
+  "wta_meta_post": [
+    16,
+    1,
+    16
+  ],
+  "wta_pre": [
+    [
+      0,
+      29,
+      46,
+      0
+    ],
+    [
+      1,
+      244,
+      189,
+      0
+    ],
+    [
+      2,
+      102,
+      94,
+      0
+    ],
+    [
+      3,
+      70,
+      74,
+      0
+    ],
+    [
+      4,
+      70,
+      74,
+      0
+    ],
+    [
+      5,
+      70,
+      74,
+      0
+    ],
+    [
+      6,
+      70,
+      74,
+      0
+    ],
+    [
+      7,
+      70,
+      74,
+      0
+    ],
+    [
+      8,
+      70,
+      74,
+      0
+    ],
+    [
+      9,
+      70,
+      74,
+      1
+    ],
+    [
+      10,
+      70,
+      74,
+      0
+    ],
+    [
+      11,
+      70,
+      74,
+      0
+    ],
+    [
+      12,
+      70,
+      74,
+      1
+    ],
+    [
+      13,
+      70,
+      74,
+      1
+    ],
+    [
+      14,
+      70,
+      74,
+      1
+    ],
+    [
+      15,
+      70,
+      74,
+      1
+    ]
+  ],
+  "wta_post": [
+    [
+      0,
+      0,
+      46,
+      0
+    ],
+    [
+      1,
+      244,
+      189,
+      0
+    ],
+    [
+      2,
+      0,
+      94,
+      0
+    ],
+    [
+      3,
+      0,
+      74,
+      0
+    ],
+    [
+      4,
+      0,
+      74,
+      0
+    ],
+    [
+      5,
+      0,
+      74,
+      0
+    ],
+    [
+      6,
+      0,
+      74,
+      0
+    ],
+    [
+      7,
+      0,
+      74,
+      0
+    ],
+    [
+      8,
+      0,
+      74,
+      0
+    ],
+    [
+      9,
+      0,
+      74,
+      1
+    ],
+    [
+      10,
+      0,
+      74,
+      0
+    ],
+    [
+      11,
+      0,
+      74,
+      0
+    ],
+    [
+      12,
+      0,
+      74,
+      1
+    ],
+    [
+      13,
+      0,
+      74,
+      1
+    ],
+    [
+      14,
+      0,
+      74,
+      1
+    ],
+    [
+      15,
+      0,
+      74,
+      1
+    ]
+  ],
+  "concept_select": [
+    640,
+    236,
+    7
+  ],
+  "concept_no_opportunity_marker": true,
+  "concept_selection_scan_complete": true,
+  "concept_count0_histogram": {
+    "1": 150,
+    "2": 263,
+    "3": 227
+  },
+  "valid_singletons": 150,
+  "eligible_singletons": 142,
+  "source40_singletons": 0,
+  "source41_eligible": [
+    [
+      236,
+      1,
+      0,
+      41,
+      128,
+      9
+    ],
+    [
+      237,
+      1,
+      0,
+      41,
+      128,
+      6
+    ]
+  ],
+  "scan_format": "640 rows x5 bytes, implicit index; count0,count1,source (255 represents sentinel999),STW,strength; zlib/base64",
+  "scan_bytes": 3200,
+  "scan_sha256": "16ddbeffdfad5570613fd0236d6789f3095ea77a2fa5212bd7efcfab37a93879",
+  "scan_zlib_b64": "eNqNVttuFDEMTeKdnV1uBcRtH9giCkJF3AQsICjlUm4CQUG0gEpVsRVFgAS88+Q/4Dv6lbBenZn14ExmXiwnTpxj59gJub/OhTpBIrzzvD7TZgaqLvYu8C6pbcS9UGpUdfqfF1JeMv4DMTltNoS1y/1QxSJzwbscZ4hGFIkDi3sapDb0Oae6RHi3B9v03F7uTUVt6uII9nFHp2k/IsLwAHdFhJg/vW2O/UQYq3cHOY9ti6FqATftgKLQjvCu4dBRoMLwGJItWhYKrY+54+xDoYWpoDr03p2YipJrg6p1gOzWwqVma20OAPckU/yOhmUcw5Kdw4QrLD4VJ7AYeqGhek4nrtG7hSq+BX2Q9nKG+yJoIqoOziIOSpIhzvtzIPVUo+Q2rFsUGIvcpXqunefORDQdHprv0ruL3E0DMvguSa1eBtsBqDLEuiucieiICKE58lhyvLvKPh2gd9cE0HXuYNjheRkGOBiJdSQwRlJWI9QbRalyA1zTCG6WN3iB56Hdkj50GEHLsN+2yvRptzUjdER30CxFy0QUdb4kwSzpbTIsesldkEa0UM4V1uXSy7J+mUy93eMs/tLd59+JGnzAAxPHQ90jMLdSglwBtNCGdY/KiB6jv5glTwxV4gE+Neu8ewanVJnLE13ludCsEIY0L1BWouXp1qdhvETCQsO6Vwmn3q3Ci2iZ3vZaX228277RD3NIkjp++FudSZ2SNemsa9V3fx29mNp8Id5x7t173YvjPPiA3Idk2g2+Dem7G7o0vDtk/k1Y/FHqcrOOiZvm62fKZUs6yJZxQM292LtPJmswjCXFY4ljXJb9uPw7bgvmbd3vQ/Orhng/G8LJ3KSp7qDvasMOCse7L6aEZI6oTS18Nd0RDr6ZBiVzBeW/m0pu8b5Ra5b8QPPQcz91lZlL+WX+L/8AU3xfjw==",
+  "decision_scan_executed": false,
+  "complete_cycles": 0,
+  "validated_local_wta_pair": 1,
+  "compared_D5_singletons": [
+    [
+      232,
+      1,
+      0,
+      40,
+      128,
+      3
+    ],
+    [
+      237,
+      1,
+      0,
+      41,
+      128,
+      2
+    ]
+  ]
+}
