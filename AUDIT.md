@@ -69,3 +69,5 @@ D4.0 autoverificación: mapa derivado del bucle original y flags/counts genétic
 D4.1 previa: ampliar D3 solo con layout, COPY/PERCEPTION y segundo pulso condicionado a A y basal adicional. No medir Concept ni aprendizaje, no aumentar presupuesto. H08c.1/N STOP.
 
 D4.1 cierre (autoverificación): 34 ciclos contiguos, 18/18 predicciones de propagación exactas y 16/16 basal cero, layout efectivo. Una sesión; no prueba exclusividad global, Concept, Decision contingente, química o aprendizaje. Recálculo separado, no réplica. 157s, 1 job/1 arranque, presupuesto agotado. GO documental D5, sin nueva ejecución hasta aprobación.
+
+D5.0 autoverificación: ANDTYPE0 no es min/producto; predicción depende de outputs y STW reales. Selección previa de singleton y control evita búsqueda retrospectiva; si no hay oportunidad, STOP, no inferir ausencia general de representación. Sin ejecución, aprendizaje no demostrado. H08c.1/N STOP.
