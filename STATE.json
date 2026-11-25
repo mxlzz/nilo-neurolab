@@ -2,10 +2,10 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "ready_H08c1_calibration",
+  "status": "H08c1_calibration_running",
   "stage": "H08c",
   "current_task": "H08c.1",
-  "next_action": "Implementar y ejecutar sesión 1 calibración H08c.1 según protocolo; validar transporte TRIG, readout post-WTA y cadena temporal, controles y lavado. Solo replicar sesiones 2–3 si viable; no iniciar H08c.2 ni N.",
+  "next_action": "Revisar CI 45518372778 (sesión 1), confirmar si se creó sujeto, leer resumen y artefacto derivado; verificar resultados antes de corrección o réplica. No lanzar otro ensayo mientras activo.",
   "scientific_next": "H08c.1",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
@@ -20,7 +20,7 @@
     "G00_H": "open",
     "G_H6_CLOCK": "open",
     "H08c0": "passed_documentary_design",
-    "H08c1": "preflight_pass_calibration_not_executed"
+    "H08c1": "session1_queued"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -33,7 +33,7 @@
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "ec311edee773a02a0f35618f340ef287582ee892",
+  "last_confirmed_non_state_write": "77c031a696aa4cf533bf845a09f8587447762ba9",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -43,7 +43,8 @@
     "inherited/docs/neurolab/resultados/h08b_18_discriminating_observation_20261124.json",
     "inherited/docs/neurolab/resultados/h08b_19_ltw_consolidation_20261124.json",
     "protocols/H08c.1.md",
-    "evidence/H08c.1_PREFLIGHT_20261124.md"
+    "evidence/H08c.1_PREFLIGHT_20261124.md",
+    "protocols/H08c.1_session1.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -73,5 +74,12 @@
     "medium_preflight_run": 45517841268,
     "medium_mounted_read_only": true,
     "debugger_present": true
+  },
+  "active_run": {
+    "id": 45518372778,
+    "session": 1,
+    "commit": "77c031a696aa4cf533bf845a09f8587447762ba9",
+    "status": "queued",
+    "max_runner_minutes": 15
   }
 }
