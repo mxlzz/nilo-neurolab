@@ -119,3 +119,6 @@ H09.P [resultado STOP condicional](evidence/H09.P_result.md): patrón 1/3/6/9 a3
 H09.N0 aprobado; [instrumentación previa](protocols/H09.N0_implementation.md), contrato congelado, sin intervención, fixture obligatorio, no reintento.
 
 H09.N0 [NO OPORTUNIDAD](evidence/H09.N0_result.md): T válido, 256/256 ciclos, 28 soportes, 84 fuentes cambiadas en endpoints, sin B admisible ni Q. 0 estímulo/refuerzo, 278s/1 job/1 original; no repetir. Recomendar cierre parcial H según límite acordado. Pendiente decisión estratégica, H09.2 no habilitada, N STOP.
+
+## Cierre parcial H aprobado — 25/11/2026
+[Acta y síntesis](evidence/H_CLOSURE_20261125.md). No más originales ni H09.2/3. H reabrible solo por nueva pregunta y aprobación. N STOP. Próxima unidad exclusivamente documental: contrastar preguntas funcionales con antecedentes y negativos antes de proponer una hipótesis nueva. No implementar ni ejecutar N.

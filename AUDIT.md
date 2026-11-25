@@ -118,3 +118,6 @@ H09.N0 previa: aprobación confirmada, controles de transporte y límites, clasi
 
 ## H09.N0 cierre (autoverificación)
 Transporte válido; NO OPORTUNIDAD por falta de B y Q, no falla de aprendizaje. WTA exacta y cambios de topología/pesos/fuerza en endpoints no implican adquisición ni causalidad. Proyección parcial (soportes, WTA, química, diferencias de fuentes), ZIP íntegro descargado, hashes/CRC. Un único sujeto y ventana; no generalizar. Refinamiento pre-run de factibilidad con endpoints sin afirmar crédito, sin efecto sobre conclusión. Presupuesto agotado, límite de campaña alcanzado. Recomendar cierre H parcial; N STOP, sin reintentos ni apertura automática. Sin auditor independiente.
+
+## Cierre parcial H aprobado (autoverificación)
+H09.N0 última observación según límite acordado. Se formaliza cierre parcial, no fidelidad ni refutación del aprendizaje original; preservar negativos y cobertura parcial. Revisión de orientación exclusivamente documental, no reabrir N sin aprobación discriminante. Sin auditor independiente.
