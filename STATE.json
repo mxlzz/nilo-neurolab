@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08d_D4_1_PASS_local_propagation",
+  "status": "H08d_D5_0_PASS_documentary_approval_required",
   "stage": "H08d",
-  "current_task": "H08d.D4.1_closed",
-  "next_action": "Diseñar D5.0 documental: examinar Concept ANDTYPE0, conectividad de Perception y firma funcional. No ejecutar otro job sin contrato aprobado. H08c.1 y N STOP.",
-  "scientific_next": "H08d.D5_documentary_design",
+  "current_task": "H08d.D5.0_closed",
+  "next_action": "Solicitar aprobación D5.1 (1 job gratuito/8 min/1 arranque). Verificar respuesta Concept de singleton preseleccionados por topología a Perception40/41 y control; no ejecutar hasta aprobación, no H08c.2 ni N.",
+  "scientific_next": "H08d.D5.1_pending_approval",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -23,7 +23,7 @@
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
     "H08c3": "not_executed",
-    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation"
+    "H08d": "D0_FAIL_D0b_PASS_D1_PASS_local_D2_PASS_local_D3.1_PASS_local_decay_D4.1_PASS_local_propagation_D5.0_PASS_documentary"
   },
   "reserved_seeds": [
     "1400..1419",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "Propagación funcional a Concept y Decision dependiente de contexto sin verificar.",
-    "Lavado químico y aprendizaje no verificados.",
-    "Presupuesto D4.1 cerrado."
+    "Respuesta funcional Concept todavía no observada; disponibilidad de singleton y contacto estable no garantizadas.",
+    "Vínculo Concept→Decision, química residual y aprendizaje no verificados.",
+    "Presupuesto D4.1 cerrado; D5.1 requiere aprobación."
   ],
-  "future_execution_dependency": "D5 documental y aprobación de ejecución",
+  "future_execution_dependency": "Aprobación D5.1 acotada, ningún archivo/credencial nuevo.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "99bc3bdb733da8c973e1b7853f0ebeb48cebeb2f",
+  "last_confirmed_non_state_write": "02c447cb4b12b10e01727d69ebdbec651a76b6e8",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -79,7 +79,8 @@
     "protocols/H08d_D4.1.md",
     "evidence/H08d_D4.1_result.json",
     "evidence/H08d_D4.1_result.md",
-    "experiments/verify_h08d_d4_result.py"
+    "experiments/verify_h08d_d4_result.py",
+    "protocols/H08d_D5.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -231,5 +232,15 @@
     "basal_cycles": 16,
     "matched_cycles": 18,
     "valid_pulses": 2
+  },
+  "h08d_D5": {
+    "outcome": "documentary_pass_dynamic_not_executed",
+    "candidate_selection": "lowest_index_singleton_source40_source41_and_control_before_stimulus",
+    "proposed_budget": {
+      "jobs_max": 1,
+      "runner_minutes_max": 8,
+      "original_starts_max": 1
+    },
+    "jobs_consumed": 0
   }
 }
