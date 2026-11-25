@@ -15,3 +15,5 @@
 - CI 45517841268 SUCCESS: ZIP CD/ISO/DATA/EXE/GEN exactos en Windows, montaje de solo lectura, CDB y limpieza verificados. H08c.1 preflight PASS, sin ejecutar juego. TRIG y marcador PUTV localizados estáticamente; sesión 1 pendiente.
 
 - H08c.1 sesión 1: especificación de instrumentación y código fijados antes de datos; CI limitada a 15 min y un arranque, autotest previo. Protocolo protocols/H08c.1_session1.md. No ejecución confirmatoria.
+
+- H08c.1 sesión 1 CI 45518372778 terminada: artefacto hash verificado, sujeto creado, cero eventos/ensayos; observer_wait_timeout. Fallo instrumental, no negativo neuronal. Consumido 1/3 arranques. Revisar corrección batch, no replicar instrumento fallido.

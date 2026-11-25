@@ -1,0 +1,59 @@
+{
+  "alternate": [],
+  "classification": "instrumental_incomplete",
+  "debugger_detached": false,
+  "event_counts": {},
+  "frames": [],
+  "instrument_error": "observer_wait_timeout",
+  "markers": {},
+  "order": [
+    "S",
+    "B",
+    "S",
+    "B",
+    "B",
+    "A",
+    "A",
+    "A",
+    "B",
+    "S",
+    "S",
+    "A"
+  ],
+  "purpose": "instrumental calibration only",
+  "seed": 10801,
+  "session": 1,
+  "subject_created": true,
+  "summary": {
+    "actions": [],
+    "all_checks": false,
+    "alternate_events": 0,
+    "baseline_winners": {},
+    "free_winners": {},
+    "gate_checks": {
+      "active_wash": false,
+      "free_actions": false,
+      "identities_transport": false,
+      "input": false,
+      "opportunities": false,
+      "readout": false,
+      "signature": false
+    },
+    "heldout_classification": {
+      "A": [],
+      "B": []
+    },
+    "input_correct": {
+      "A": 0,
+      "B": 0
+    },
+    "longest_wash": 0,
+    "opportunities": {},
+    "regular_frames": 0,
+    "sham_classification": [],
+    "sham_false_positive": 0,
+    "valid_trials": 0
+  },
+  "trials": [],
+  "triggers": []
+}

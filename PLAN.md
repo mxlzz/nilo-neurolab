@@ -37,3 +37,5 @@ Configuración de secretos confirmada; preflight de medio original y CDB pendien
 Preflight de configuración y medio original PASS (CI 45517841268). Siguiente H08c.1 calibración instrumental sesión 1; no ejecutar H08c.2. Ningún arranque científico consumido.
 
 Sesión 1 de calibración preparada según [especificación](protocols/H08c.1_session1.md); máximo 15 min y un arranque. Revisar datos antes de réplica o STOP.
+
+Sesión 1 cerrada como fallo instrumental; quedan dos sesiones, ambas deben superar protocolo con misma ruta para GO. Corrección batch candidata basada en observadores históricos. No autoriza H08c.2.

@@ -35,3 +35,5 @@ Readiness revalidado tras intervención: ambas configuraciones presentes. No equ
 Preflight original en destino PASS: CI 45517841268, evidencia efectiva de hashes, montaje y limpieza. No se ejecutó juego. TRIG estático escribe input; no prueba transmisión a decisión; Concept640 y orden Decision antes de Concept obligan a asociar fuentes por firma y ciclo. No modificar gates.
 
 H08c.1 sesión 1 preregistro técnico: validación WTA exacta, identidad y marcadores nativos, firma Concept con fuentes, ventana lógica y lavado; interacción CDB/ReadProcessMemory aún no validada. Cualquier fallo se conserva como instrumental; sin prometer PASS.
+
+H08c.1 sesión 1 NO supera gate (CI verde, cero eventos). Artefacto cotejado, sujeto creado y limpieza confirmada. No se conocen causas exactas de timeout. Una corrección instrumental permitida, no tuning ni cambio de criterios. Ver evidence/H08c.1_session1_result.md.
