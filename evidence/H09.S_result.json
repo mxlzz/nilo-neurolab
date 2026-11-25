@@ -1,0 +1,238 @@
+{
+  "stage": "H09.S",
+  "classification": "STOP_single_cue_conditional_bound",
+  "source_commit": "b4ee0ff502c59448a2559947272af272accea479",
+  "preregister_commit": "e00c30d37991193af7a50e58f8c441f7ea6e44ae",
+  "source_zip_sha256": "15c0e4e618940eeb6a1b67c9d1164e79c142387e3c15623dcafcb7e506cf36b9",
+  "source_json_sha256": "ef96424fb651e3f0d878ebac0cc3cfb0a8aa71b8703e67952e937b4ba725e044",
+  "source_projection_sha256": {
+    "inventory": "f16845a03ef9c685d7fa92a908e3489b055260388ce47d447729cc64ae7a15ef",
+    "states": "43800950bfa54551d5eb12957d3a5e3f732ebf6505566fbaf1e78362b491e019",
+    "frames": "1700d01791f3fd3079e1db20e8fe8f8dafc7e29d8c3e93c650bf25751a5d5b4d"
+  },
+  "script_sha256": "fd4d2e13a7d0481ac797019ed9ef8177b8b49acb4c7ea77990891af52e6f79a6",
+  "full_output_sha256": "541923da8706b209d16c9893d18d3f4839d370a3f512a0a0acf568e881b0491c",
+  "source_roundtrip_verified": true,
+  "gen_decision": {
+    "threshold": 0,
+    "decay_rate": 24,
+    "rest_state": 80,
+    "attenuation": 128,
+    "state_rule": [
+      9,
+      23,
+      12,
+      24,
+      13,
+      0,
+      0,
+      0
+    ],
+    "inhibitory": {
+      "source_lobe": 8,
+      "sus_decay": 48,
+      "stw_relax": 80,
+      "ltw_rate": 128,
+      "sus_rule": [
+        10,
+        22,
+        16
+      ],
+      "reinforcement_rule": [
+        6
+      ]
+    }
+  },
+  "start_tick": 501,
+  "cue_output": 32,
+  "ltw_updates_512": 4,
+  "source_candidates": 44,
+  "source_candidates_with_excitation_2": 15,
+  "contacts_positive": 65,
+  "contacts_all": 105,
+  "max_contacts_positive_per_source": 9,
+  "max_contacts_all_per_source": 17,
+  "max_initial_sus": 76,
+  "all_candidate_contact_stw_ltw_initial_zero": true,
+  "margins": [
+    103,
+    102,
+    101,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    102,
+    42,
+    86,
+    105,
+    119,
+    126,
+    118,
+    112,
+    108,
+    106,
+    104
+  ],
+  "margin_min": 42,
+  "margin_median": 102,
+  "margin_max": 126,
+  "summary": {
+    "31_positive": {
+      "6": [
+        1,
+        4,
+        9,
+        0,
+        0
+      ],
+      "128": [
+        1,
+        4,
+        10,
+        0,
+        0
+      ],
+      "512": [
+        5,
+        16,
+        13,
+        0,
+        0
+      ]
+    },
+    "31_all": {
+      "6": [
+        1,
+        4,
+        9,
+        0,
+        0
+      ],
+      "128": [
+        1,
+        4,
+        10,
+        0,
+        0
+      ],
+      "512": [
+        9,
+        28,
+        13,
+        0,
+        0
+      ]
+    },
+    "255_positive": {
+      "6": [
+        18,
+        51,
+        75,
+        1,
+        1
+      ],
+      "128": [
+        18,
+        55,
+        76,
+        1,
+        1
+      ],
+      "512": [
+        18,
+        55,
+        79,
+        1,
+        1
+      ]
+    },
+    "255_all": {
+      "6": [
+        34,
+        95,
+        75,
+        2,
+        2
+      ],
+      "128": [
+        34,
+        103,
+        76,
+        3,
+        15
+      ],
+      "512": [
+        34,
+        103,
+        79,
+        3,
+        15
+      ]
+    }
+  },
+  "summary_fields": [
+    "max_direct",
+    "max_difference",
+    "max_weight",
+    "sources_reaching_min_margin",
+    "max_margins_reachable"
+  ],
+  "saturated_weight_direct_bound_max": 127,
+  "active_concept_snapshot": [
+    [
+      11,
+      28,
+      5
+    ],
+    [
+      14,
+      103,
+      20
+    ],
+    [
+      15,
+      103,
+      20
+    ],
+    [
+      24,
+      25,
+      4
+    ],
+    [
+      27,
+      51,
+      10
+    ],
+    [
+      59,
+      138,
+      27
+    ],
+    [
+      60,
+      109,
+      21
+    ],
+    [
+      62,
+      109,
+      21
+    ],
+    [
+      411,
+      28,
+      5
+    ]
+  ],
+  "baseline_local_punishment_max": 1,
+  "original_starts": 0,
+  "ci_jobs": 0,
+  "independent_audit": false
+}
