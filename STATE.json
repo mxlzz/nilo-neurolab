@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "STOP_H08c1_instrumental_decision_required",
-  "stage": "H08c",
-  "current_task": "H08c.1_STOP",
-  "next_action": "No ejecutar. Revisar valor marginal y obtener decisión sobre cierre H con límites o nuevo contrato instrumental mínimo justificado. N STOP; no tuning ni reservas.",
-  "scientific_next": "strategic_review_H",
+  "status": "H08d_D0_running",
+  "stage": "H08d",
+  "current_task": "H08d.D0",
+  "next_action": "Leer CI 45521328544, verificar contraste de transporte CDB real con fixture propio. Solo D0 PASS habilita D1; D2 condicional. H08c.1 STOP y N STOP intactos.",
+  "scientific_next": "H08d.D0",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -22,23 +22,21 @@
     "H08c0": "passed_documentary_design",
     "H08c1": "STOP_instrumental_two_failures",
     "H08c2": "not_executed",
-    "H08c3": "not_executed"
+    "H08c3": "not_executed",
+    "H08d": "D0_queued"
   },
   "reserved_seeds": [
     "1400..1419",
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [
-    "H08c.1 no pasó; corrección única agotada, dos sesiones sin eventos parseados. Causa exacta no determinada.",
-    "Nueva campaña o reapertura N requiere aprobación sustantiva; no hay dependencia técnica de originales/secretos."
-  ],
-  "future_execution_dependency": "Decisión estratégica aprobada; no lanzar más sesiones H08c.1.",
+  "blockers": [],
+  "future_execution_dependency": "D0 debe pasar antes de originales. No reabrir H08c.1 ni N.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "f8723b8323e9619aae571aeb809ed7a6f9a79a6d",
+  "last_confirmed_non_state_write": "f6b567aa6955d87c47b73d1d308dfe540a598894",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -54,7 +52,8 @@
     "evidence/H08c.1_session1_result.md",
     "protocols/H08c.1_batch_correction.md",
     "evidence/H08c.1_session2_result.json",
-    "evidence/H08c.1_STOP.md"
+    "evidence/H08c.1_STOP.md",
+    "protocols/H08d.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -101,5 +100,18 @@
   },
   "session3": {
     "outcome": "not_executed_gate_unreachable"
+  },
+  "h08d_budget": {
+    "jobs_max": 3,
+    "runner_minutes_max": 20,
+    "original_starts_max": 2,
+    "original_starts_consumed": 0
+  },
+  "active_run": {
+    "id": 45521328544,
+    "unit": "H08d.D0",
+    "commit": "f6b567aa6955d87c47b73d1d308dfe540a598894",
+    "status": "queued",
+    "max_runner_minutes": 4
   }
 }
