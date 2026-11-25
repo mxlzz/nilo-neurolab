@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H08c1_session2_running",
+  "status": "STOP_H08c1_instrumental_decision_required",
   "stage": "H08c",
-  "current_task": "H08c.1",
-  "next_action": "Revisar CI 45519467547, verificar artefacto y gate completo antes de replicar. Si falla instrumentación o criterios, STOP sin tercer arranque (no puede alcanzar gate conjunto). No iniciar H08c.2 ni N.",
-  "scientific_next": "H08c.1",
+  "current_task": "H08c.1_STOP",
+  "next_action": "No ejecutar. Revisar valor marginal y obtener decisión sobre cierre H con límites o nuevo contrato instrumental mínimo justificado. N STOP; no tuning ni reservas.",
+  "scientific_next": "strategic_review_H",
   "scientific_state": {
     "H": "active_local_mechanisms_verified",
     "H08b19": "passed_local_witness",
@@ -20,20 +20,25 @@
     "G00_H": "open",
     "G_H6_CLOCK": "open",
     "H08c0": "passed_documentary_design",
-    "H08c1": "session2_batch_correction_queued"
+    "H08c1": "STOP_instrumental_two_failures",
+    "H08c2": "not_executed",
+    "H08c3": "not_executed"
   },
   "reserved_seeds": [
     "1400..1419",
     "24000..24019",
     "26000..26019"
   ],
-  "blockers": [],
-  "future_execution_dependency": "Validación dinámica instrumental H08c.1; originales y CDB verificados en destino.",
+  "blockers": [
+    "H08c.1 no pasó; corrección única agotada, dos sesiones sin eventos parseados. Causa exacta no determinada.",
+    "Nueva campaña o reapertura N requiere aprobación sustantiva; no hay dependencia técnica de originales/secretos."
+  ],
+  "future_execution_dependency": "Decisión estratégica aprobada; no lanzar más sesiones H08c.1.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "7913b684071a2b1797b7e807edff8e9b81638c9f",
+  "last_confirmed_non_state_write": "f8723b8323e9619aae571aeb809ed7a6f9a79a6d",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -47,7 +52,9 @@
     "protocols/H08c.1_session1.md",
     "evidence/H08c.1_session1_result.json",
     "evidence/H08c.1_session1_result.md",
-    "protocols/H08c.1_batch_correction.md"
+    "protocols/H08c.1_batch_correction.md",
+    "evidence/H08c.1_session2_result.json",
+    "evidence/H08c.1_STOP.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -72,7 +79,7 @@
     "cd_archive": "verified_exact_in_windows",
     "runner_configuration": "both_present",
     "readiness_run": 45516662183,
-    "experimental_sessions_consumed": 1,
+    "experimental_sessions_consumed": 2,
     "readiness_run_attempt": 2,
     "medium_preflight_run": 45517841268,
     "medium_mounted_read_only": true,
@@ -85,11 +92,14 @@
     "trials": 0,
     "subject_created": true
   },
-  "active_run": {
-    "id": 45519467547,
-    "session": 2,
-    "commit": "7913b684071a2b1797b7e807edff8e9b81638c9f",
-    "status": "queued",
-    "max_runner_minutes": 15
+  "session2": {
+    "run": 45519467547,
+    "artifact": 14979676973,
+    "outcome": "instrumental_incomplete",
+    "trials": 0,
+    "subject_created": true
+  },
+  "session3": {
+    "outcome": "not_executed_gate_unreachable"
   }
 }
