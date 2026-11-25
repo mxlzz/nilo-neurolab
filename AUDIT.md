@@ -84,3 +84,5 @@ D5x previa: valor directo para separación sensorial/crédito temporal; hipótes
 
 ## D5x cierre (autoverificación)
 Gate formal NO OPORTUNIDAD, no fallo instrumental. Cambio de atención confirmado y escritura de cero 32/32, con testigo endógeno positivo en L5:12, fuera de pulsos. A/B normales 18/18. D5.1 no reclasificada ni causa histórica demostrada. Decisión: cerrar microdiagnóstico, incorporar registro de cambios de atención al diseño de D6 integrado; no intentar controlar por forcing ni buscar coincidencia por repetición. Un sujeto, 151s, presupuesto cerrado. No N ni integración.
+
+D6.0 revisión (autoverificación): pregunta directa de oportunidad para adquisición/retención; no exigir decaimiento pasivo tras evidencia de reset, no sustituir gate D5.1. Controles sham, lag, topología previa, WTA y contraste de sensibilidad sin administrar premio. Riesgos: coste escaneo/captura y marcador sham no validado; STOP antes de originales si implementación no interpretable. Un piloto no demuestra dependencia causal de elección ni aprendizaje. Si no factible proponer cierre H parcial, no más microcampañas; aprobación de ejecución requerida.

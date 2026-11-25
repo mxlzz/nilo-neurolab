@@ -90,3 +90,6 @@ D5.1 formal FAIL, testigo Concept positivo parcial: [resultado](evidence/H08d_D5
 [Contrato](protocols/H08d_D5x.md). Candidato estático: cambio del objeto atendido borra GeneralSense, Decision y Source. Un job/8min/1 arranque para observar borrado nativo, sin repetir D5 ni forzar atención. STOP/no oportunidad al cierre.
 
 D5x cierre formal NO OPORTUNIDAD, mecanismo nativo de reset confirmado localmente: [resultado](evidence/H08d_D5x.1_result.md). 32 pares de borrado, GeneralSense12 183/175→0/0 en cambio de atención antes del pulso; A/B normales 18/18. No repetir. D6.0 diseño integrado documental, con reset como variable explícita y sin forzar atención; ejecución requiere aprobación. D5.1 FAIL y N STOP intactos.
+
+## H08d.D6 — contraste integrado
+[D6.0 propuesta](protocols/H08d_D6.md): seis brazos A/S/B/B/S/A, selección preestablecida por topología Concept→Decision, WTA libre y oportunidad computacional de modificación; registro de reset y química, señales reales. Piloto 1 job/8min/1 arranque propuesto, no ejecutar sin aprobación. STOP si no factible y considerar cierre H parcial, no serie de microdiagnósticos.

@@ -61,3 +61,5 @@
 - Usuario autoriza diagnóstico breve de extinción D5.1. D5x.0: identificado bucle de reset por cambio de objeto atendido (0x409c70..0x409e32); D5x.1 preregistrado para contrastar con escritura real, 1 job/8min/1 arranque, sin reintento.
 
 - D5x CI 45607721471: 151s/1 job/1 arranque, NO OPORTUNIDAD formal; D4 18/18, 34 ciclos regulares, 16 basal. Cambio de objeto atendido tick488 y 32 pares CLEAR nativos; L5:12 activo183/175→0/0, 8/9 cero. Artefacto descargado CRC/hash verificado, proyección exacta, recálculo local. No causa retrospectiva D5.1, no reintentar. D6.0 documental siguiente.
+
+- D6.0 documental completo: contrato de factibilidad integrado (2 A,2 B,2 sham), contactos preseleccionados, WTA, lag Concept→Decision, reset y química, oportunidad virtual STW; 1 job/8min/1 arranque propuesto, sin ejecución. No reabrir D5/H08c.1/N.
