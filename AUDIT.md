@@ -100,3 +100,5 @@ Se reemplaza la recomendación de cierre, no los resultados. Priorizar asociaci�
 
 ## H09.1 previa (autoverificación)
 Revisión estática y aritmética, sin datos nuevos del motor. El gate anterior de pulso único podía no ofrecer sensibilidad STW desde sus0; nuevo tren fijo de seis pulsos, no garantía de incrementos. Selección basal pretratamiento explicitada, población condicional, no selección por respuesta. Fixture valida bloques/guardas y formas completas antes de originales, diagnósticos sanitizados de líneas malformadas, latencia de feedback inocuo no equivalente a CHEM. Riesgos: cadencia 36 macros, estabilidad de firma y química endógena, presupuesto; STOP sin rescate. Contrato propuesto, no implementación ni ejecución. Aprobación requerida; no N ni cambios de puertas.
+
+H09.1 previa a ejecución: aprobación confirmada. Relectura estática y fuente Microsoft de $vvalid/.writemem; guardas, inventario único, separación de selección y lectura, Q estricto respecto de ecos. No publicar dumps. Validar fixture y modelos antes de original; no rescatar gate ni exceder presupuesto.

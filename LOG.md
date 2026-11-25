@@ -73,3 +73,5 @@
 - 25/11: usuario acuerda replantear H en vez de cierre parcial. H09.0 documental: antecedentes Grand/Cliff, CAOS/CDR, openc2e, revisión histórica; método candidato TRIG Concept8→Decision libre, sin requerir singleton sensorial; adquisición causal y retención primero, mecanismos/percepción después. No ejecutar, N STOP. Contrato H09.1 pendiente.
 
 - H09.1 contrato documental completado. EXE/GEN hashes exactos, TRIG genérico y orden Decision→Concept revisados; alternativa .writemem de lectura acotada documentada, no validada. Cálculo: un incremento de susceptibilidad4 con CHEM32 da efecto0; seis incrementos ideales dejan24 (18 tras cuatro decaimientos), efecto2 con CHEM31. Proponer seis slots por brazo, no tuning; selección por topología + disponibilidad basal previa, registro de feedback inocuo y química. Ningún arranque/CI ni recompensa; aprobación pendiente.
+
+- Usuario aprueba H09.1. Especificación de implementación previa a código: inventario 34 bloques por lectura, selección offline, scripts activados solo RB, fixture y diagnósticos sanitizados, seis brazos y feedback inocuo, presupuesto intacto.
