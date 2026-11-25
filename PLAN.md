@@ -93,3 +93,5 @@ D5x cierre formal NO OPORTUNIDAD, mecanismo nativo de reset confirmado localment
 
 ## H08d.D6 — contraste integrado
 [D6.0 propuesta](protocols/H08d_D6.md): seis brazos A/S/B/B/S/A, selección preestablecida por topología Concept→Decision, WTA libre y oportunidad computacional de modificación; registro de reset y química, señales reales. Piloto 1 job/8min/1 arranque propuesto, no ejecutar sin aprobación. STOP si no factible y considerar cierre H parcial, no serie de microdiagnósticos.
+
+D6.1 aprobada; [especificación previa](protocols/H08d_D6.1.md). Fixture y tests antes del original, inventario único, selección fija, seis brazos con sham marcado, no reintento.
