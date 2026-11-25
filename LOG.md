@@ -71,3 +71,5 @@
 - 25/11: síntesis H parcial y revisión de valor marginal completadas; D6 no rescatar. H08d 9 jobs/1129s/7 arranques. H pausa operativa, N STOP. Propuesta documental de crédito contextual pendiente de aprobación estratégica. Ver evidence/H_PARTIAL_SYNTHESIS_20261125.md.
 
 - 25/11: usuario acuerda replantear H en vez de cierre parcial. H09.0 documental: antecedentes Grand/Cliff, CAOS/CDR, openc2e, revisión histórica; método candidato TRIG Concept8→Decision libre, sin requerir singleton sensorial; adquisición causal y retención primero, mecanismos/percepción después. No ejecutar, N STOP. Contrato H09.1 pendiente.
+
+- H09.1 contrato documental completado. EXE/GEN hashes exactos, TRIG genérico y orden Decision→Concept revisados; alternativa .writemem de lectura acotada documentada, no validada. Cálculo: un incremento de susceptibilidad4 con CHEM32 da efecto0; seis incrementos ideales dejan24 (18 tras cuatro decaimientos), efecto2 con CHEM31. Proponer seis slots por brazo, no tuning; selección por topología + disponibilidad basal previa, registro de feedback inocuo y química. Ningún arranque/CI ni recompensa; aprobación pendiente.
