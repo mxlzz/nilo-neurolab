@@ -94,3 +94,6 @@ Formal instrumental_incomplete; no inferir fallo científico de aprendizaje. Fix
 
 ## Síntesis estratégica H (autoverificación)
 Mecanismos locales separados de aprendizaje integrado; no G09 PASS. D6 captura incompleta y topología faltante impiden contrastar adquisición; no justifica otro arranque bajo contrato previo. Error de generación corregido antes de ejecutar, no confundir con captura posterior. Alternativas H nuevo contrato / N documental / STOP evaluadas; se recomienda pausa H parcial y revisión documental N independiente, sin implementación ni cambio de gates. Archivo parcial, sin auditor independiente. Pendiente aprobación sustantiva del usuario. [Informe](evidence/H_PARTIAL_SYNTHESIS_20261125.md).
+
+## Replanteo H — decisión aprobada (autoverificación)
+Se reemplaza la recomendación de cierre, no los resultados. Priorizar asociación aguas abajo con control contingente/yoked; TRIG8 ya era alternativa H08c no ejecutada, no prueba de concepto adquirido. D6 inviable en sujeto observado y captura incompleta no implican limitación del cerebro original. Menor carga de observación; nueva instrumentación, latencia, oportunidad y química aún sin validar. Contrato H09.1 previo, no ejecución ni presupuesto nuevo autorizado. H08c.1/D6 cerradas, N STOP y gates intactos. [Revisión](protocols/H_REFRAME_20261125.md).

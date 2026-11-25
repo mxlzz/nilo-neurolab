@@ -100,3 +100,6 @@ D6.1 [cierre](evidence/H08d_D6.1_result.md) instrumental incompleto + ausencia t
 
 ## Síntesis H parcial — decisión requerida (25/11/2026)
 [Informe](evidence/H_PARTIAL_SYNTHESIS_20261125.md). H en pausa operativa tras D6.1; no repetir ni reconstruir integralmente. Recomendación: cierre parcial de campaña H y aprobación exclusiva del examen documental de una nueva pregunta N sobre crédito temporal a través de cambios de contexto, con alternativas simples y techo de rendimiento antes de implementar. N STOP, sin reabrir líneas previas ni usar reservas. Ningún ensayo nuevo autorizado.
+
+## Replanteo H aprobado — 25/11/2026
+El usuario prefiere mantener H y cambiar el método, no cierre parcial ni apertura N. [H09.0 revisión documental](protocols/H_REFRAME_20261125.md): probar adquisición/retención de asociaciones directamente en la interfaz Concept→Decision mediante estímulos Concept nativos si factibles, separar percepción natural como contraste posterior. No rescatar D6/H08c.1. H09.1 contrato de piloto acotado pendiente de especificación y aprobación de ejecución; H09.2/.3 condicionales. N STOP. Esta decisión sustituye la recomendación estratégica anterior, preserva todos los resultados.
