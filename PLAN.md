@@ -56,3 +56,6 @@ H08d.D0b PASS: [evidencia](evidence/H08d_D0b_result.md). D1 lectura WTA mínima 
 [H08d.D1](protocols/H08d_D1.md) lectura mínima post-WTA preregistrada; último job. D2 diferida. Cierre tras resultado.
 
 H08d cerrado: D0 FAIL, D0b PASS, D1 PASS local, D2 no ejecutada por límite 3 jobs. [Resultado](evidence/H08d_D1_result.md). Próxima propuesta D2 entrega nativa aislada bajo nuevo contrato acotado aprobado; no iniciar adquisición ni reabrir N.
+
+## H08d.D2 — campaña independiente aprobada
+[Contrato](protocols/H08d_D2.md): entrega TRIG aislada vía DDE CELL, cuatro brazos y un arranque / 8 min. STOP al fallo; no inferir propagación ni aprendizaje.

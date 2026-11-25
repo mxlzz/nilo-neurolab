@@ -53,3 +53,5 @@ D1 preregistro tras D0b: captura reducida, selección exacta con empate/exclusi�
 
 ## H08d cierre
 D0 FAIL formal, D0b PASS y D1 PASS local 20/20. Transporte aislado y lectura libre post-WTA recuperados. Una sesión; no validación de empate/bypass en runtime, ni comportamiento, aprendizaje, retención, TRIG o lavado. Costo 3/3 jobs, 214s y 1 arranque. D2 diferida por decisión técnica tras D0; no más ejecución en presupuesto. [Dictamen](evidence/H08d_D1_result.md). Autoverificación, no auditor independiente. N STOP.
+
+D2 autorizado: fuente histórica CELL especifica output/state; contraste inmediato en mismo macro, dos shams, basal elegible y verificación identidad. Un sujeto, no cuatro independientes. Sin afirmación de simultaneidad ni lavado. Cierre al fallo, no tuning.
