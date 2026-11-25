@@ -85,3 +85,5 @@
 - H09.P prereg 6fdf19e, error transitorio update_ref recuperado antes del cálculo. ZIP/CRC/proyecciones verificadas; análisis local 44 fuentes, k1/3/6/9, máxima inhibición28/49/70/88 a512 (all), 0 al probe tras128/512 lavado (peso<=5, floor(32*5/256)=0). STOP inducido nominal. Revisión de fuentes y propuesta H09.N0 solo observación natural, sin nuevo CI/arranque, pendiente aprobación.
 
 - Usuario aprueba H09.N0. Especificación de lectura por bloques indexados, inventarios/firmas endpoint, WTA/química y episodios congelados, cap 256/180s/4MiB. Sin estímulos ni premio; fixture antes del original.
+
+- H09.N0 CI45652045072, job139338842434, 278s/1 job/1 arranque, fixture PASS, T válido, 256 ticks476..731, WTA256/256, 28 soportes, A31, B ausente, Q0, 84 fuentes endpoint distintas, 11 cambios atención, NO OPORTUNIDAD. 0 TRIG/STIM/reward. ZIP CRC/hash comprobado, proyección compacta y recálculo separado. Errores transitorios de ref reconciliados antes de ejecución. No repetir; recomendar cierre parcial H.
