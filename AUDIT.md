@@ -91,3 +91,6 @@ D6.1 previa: relectura estática PUTV y química, reutilización de observadores
 
 ## D6.1 cierre (autoverificación)
 Formal instrumental_incomplete; no inferir fallo científico de aprendizaje. Fixture validó script/transport, no captura integrada. Un error de marcador no identificable desde derivado, ciclo sin ENDC. Además, inventario 640 filas verificable, ninguna conexión singleton hacia A40, por tanto precondición topológica ausente aunque se corrigiera parser; otra sesión o selección multientrada sería nuevo contrato. 0 exposiciones, no oportunidades STW medidas. No rescatar, 162s, límite de job agotado. Recomendar cierre H parcial/síntesis, no reabrir N sin nueva pregunta y autorización.
+
+## Síntesis estratégica H (autoverificación)
+Mecanismos locales separados de aprendizaje integrado; no G09 PASS. D6 captura incompleta y topología faltante impiden contrastar adquisición; no justifica otro arranque bajo contrato previo. Error de generación corregido antes de ejecutar, no confundir con captura posterior. Alternativas H nuevo contrato / N documental / STOP evaluadas; se recomienda pausa H parcial y revisión documental N independiente, sin implementación ni cambio de gates. Archivo parcial, sin auditor independiente. Pendiente aprobación sustantiva del usuario. [Informe](evidence/H_PARTIAL_SYNTHESIS_20261125.md).

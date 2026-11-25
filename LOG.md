@@ -67,3 +67,5 @@
 - 25/11: usuario aprueba D6.1. Prerregistro de implementación antes de datos, 1 job/8min/1 original, fixture obligatorio, selección previa de contactos y dos destinos, seis brazos fijos.
 
 - D6.1 CI45618843971: 162s/1 job/1 original, fixture PASS, original instrumental_incomplete (D6_malformed1, capture_invalid), selección completa Concept[640,236,7] NO_OPPORTUNITY; 0 A singleton, 2 B, 142 singleton elegibles, 1 WTA local exacta, 0 ciclos integrados/0 pulsos/0 sham. ZIP descargado hash/CRC, proyección y recálculo local. No reintentar. D5.1 FAIL, H08c.1/N STOP.
+
+- 25/11: síntesis H parcial y revisión de valor marginal completadas; D6 no rescatar. H08d 9 jobs/1129s/7 arranques. H pausa operativa, N STOP. Propuesta documental de crédito contextual pendiente de aprobación estratégica. Ver evidence/H_PARTIAL_SYNTHESIS_20261125.md.

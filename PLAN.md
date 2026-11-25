@@ -97,3 +97,6 @@ D5x cierre formal NO OPORTUNIDAD, mecanismo nativo de reset confirmado localment
 D6.1 aprobada; [especificación previa](protocols/H08d_D6.1.md). Fixture y tests antes del original, inventario único, selección fija, seis brazos con sham marcado, no reintento.
 
 D6.1 [cierre](evidence/H08d_D6.1_result.md) instrumental incompleto + ausencia topológica registrada (640 filas, A ausente, B236/237). 0/6 exposiciones y sin inventario Decision, no aprendizaje. Presupuesto cerrado, sin reintento; preparar síntesis H parcial y decisión estratégica de continuidad. N STOP.
+
+## Síntesis H parcial — decisión requerida (25/11/2026)
+[Informe](evidence/H_PARTIAL_SYNTHESIS_20261125.md). H en pausa operativa tras D6.1; no repetir ni reconstruir integralmente. Recomendación: cierre parcial de campaña H y aprobación exclusiva del examen documental de una nueva pregunta N sobre crédito temporal a través de cambios de contexto, con alternativas simples y techo de rendimiento antes de implementar. N STOP, sin reabrir líneas previas ni usar reservas. Ningún ensayo nuevo autorizado.
