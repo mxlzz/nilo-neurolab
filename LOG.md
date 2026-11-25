@@ -25,3 +25,5 @@
 - Usuario aprueba replanteo instrumental. H08d D0/D1/D2 secuenciales, presupuesto 20 min/2 originales máximo. D0 fixture propio, no originales; contraste real de gramática CDB y parser antes de lectura neuronal.
 
 - H08d.D0 FAIL formal: CI 45521328544, fixture propio; legado 3/3 valores anclados, escape simple 0/3 anclados y concatenación con HIT/END. Artefacto verificado. STOP del diseño D0; nuevo control aislado D0b justificado, sin aumentar presupuesto y D2 diferida.
+
+- H08d.D0b preregistrado: control legado aislado, secuencia exacta, máximo 4 min sin originales. D1 condicional, D2 diferida.

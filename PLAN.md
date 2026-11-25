@@ -48,3 +48,5 @@ H08c.1 STOP instrumental tras corrección única. H08c.2/H08c.3 NO ejecutadas. S
 [Contrato](protocols/H08d.md). D0 transporte real con fixture propio, D1 lectura mínima WTA, D2 entrega nativa independiente. Cada etapa condicionada a anterior; máximo 20 min/2 originales, STOP al fallo. H08c.1 STOP histórico no reabre, H08c.2/3 no ejecutadas, N STOP.
 
 H08d.D0 FAIL formal, hallazgo de formato verificable. [Dictamen](evidence/H08d_D0_result.md). D0b control de transporte positivo aislado, no repetir comparación; D1 condicionado al PASS exacto de D0b. Mantener máximo tres jobs y 20 min; D2 diferida. H08c.1 STOP, N STOP.
+
+[H08d.D0b contrato](protocols/H08d_D0b.md): control positivo aislado, sin comparador. STOP si falla.
