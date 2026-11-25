@@ -81,3 +81,5 @@ D4.1 PASS local [resultado](evidence/H08d_D4.1_result.md). Dos canales aislados 
 
 ## Revisión estratégica acordada — 25/11/2026
 Creatures es instrumento de contraste, no destino de NeuroLab. Prioridad: D5 representación diferencial, D6 cadena estímulo–Concept–Decision y oportunidad de aprendizaje, luego prueba causal de adquisición/retención activa (solo con contrato y autorización propios), y síntesis de mecanismos útiles para Nilo frente a alternativas simples. No exigir reconstrucción integral ni exactitud de detalles sin incidencia en esas preguntas. En cada cierre, evaluar si el resultado cambia la decisión científica; si no hay oportunidad o el costo instrumental domina, proponer cierre H parcial en lugar de encadenar correcciones. N STOP y puertas originales intactas; no integración Nilo.
+
+D5.1 aprobada. [Especificación](protocols/H08d_D5.1.md): extensión mínima D4, selección ciega por topología, dos pulsos, 1 job/8min/1 arranque.

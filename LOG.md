@@ -53,3 +53,5 @@
 - D5.0 PASS documental: ANDTYPE0 real suma ponderada saturada, atenuación y máscara de todas las fuentes positivas; no gating por strength en agregado. Propuesta singleton preseleccionado por conectividad, control propio, dos pulsos aislados y predicción de salida/estado. Sin nuevo job, presupuesto D5.1 propuesto 1/8min/1 arranque.
 
 - 25/11/2026: usuario confirma revisión estratégica de alineación; registrar en PLAN/AUDIT, sin cambiar objetivo ni puertas. Autoriza D5.1 (1 job/8min/1 arranque). H se limita a evidencia útil para adquisición y retención; no emulación integral.
+
+- D5.1 preregistro de implementación: escaneo único de 640 células Concept, tres candidatos fijados antes de estímulo, observación de contactos y predicción; D4 reutilizado.

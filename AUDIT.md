@@ -74,3 +74,5 @@ D5.0 autoverificación: ANDTYPE0 no es min/producto; predicción depende de outp
 
 ## Revisión de alineación con Nilo — 25/11/2026
 Usuario confirma continuidad con límite estratégico: H sirve a aprendizaje neuronal autónomo por experiencia; no es fin histórico. D1/D2/D3/D4 y H08b.18/.19 son testigos locales, no mente ni memoria aprendida. E09 parcial/negativa y baselines simples impiden asumir superioridad. Próximo hito científico: experiencia modifica decisión futura y persiste con dinámica activa sin premio; D5 y D6 únicamente si desbloquean ese contraste. No multiplicar ensayos microscópicos por inercia; cerrar H con límites si valor marginal insuficiente. Sin cambios de objetivo, gates, ni autorización de reapertura N. D5.1 aprobada dentro de presupuesto previamente propuesto.
+
+D5.1 revisión previa: relectura estática y fuentes CDB, control por topología sin selección de respuesta. No ampliar alcance ni presupuesto. STOP al fallo/no oportunidad, no iterar por inercia.
