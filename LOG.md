@@ -51,3 +51,5 @@
 - D4.1 PASS local CI 45595011701: 34 ciclos regulares, 16 basal cero y 18/18 predicciones exactas de L5→L0; mapa 8→40,9→41 verificado. Artefacto descargado hash/CRC y recálculo separado. 157s, 1/1 job y arranque. Sin premio ni reset; no inferir Concept/Decision ni aprendizaje. D5.0 documental siguiente.
 
 - D5.0 PASS documental: ANDTYPE0 real suma ponderada saturada, atenuación y máscara de todas las fuentes positivas; no gating por strength en agregado. Propuesta singleton preseleccionado por conectividad, control propio, dos pulsos aislados y predicción de salida/estado. Sin nuevo job, presupuesto D5.1 propuesto 1/8min/1 arranque.
+
+- 25/11/2026: usuario confirma revisión estratégica de alineación; registrar en PLAN/AUDIT, sin cambiar objetivo ni puertas. Autoriza D5.1 (1 job/8min/1 arranque). H se limita a evidencia útil para adquisición y retención; no emulación integral.
