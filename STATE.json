@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H09_1_contract_documentary_complete_approval_required",
+  "status": "H09_1_running",
   "stage": "H09",
-  "current_task": "H09.1_contract_closed",
-  "next_action": "Solicitar aprobación específica de H09.1: 1 job estándar gratuito/8min/1 arranque, 180s/512 ciclos/4MiB; seis brazos, seis slots cada uno, 24 TRIG8 a32, 12 sham, 6 feedback inocuo, sin premio. Tras aprobación implementar observador mínimo, fixture obligatorio y ejecutar solo si pasa. No repetir. N STOP.",
-  "scientific_next": "H09.1_pilot_implementation_pending_approval",
+  "current_task": "H09.1",
+  "next_action": "Leer CI 45627910012 y artefacto, verificar fixture, inventario, T/F/O/Q y límites. Cerrar sin reintento; si factible preparar H09.2 documental, si no auditar valor marginal. N STOP.",
+  "scientific_next": "H09.1",
   "scientific_state": {
     "H": "active_documentary_reframe_direct_associative_learning",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,14 @@
     "26000..26019"
   ],
   "blockers": [
-    "Lectura acotada por bloques y marcador PUTV no comprobados dinámicamente en original.",
-    "Cadencia de 36 slots, oportunidad STW y lavado químico no verificados.",
-    "Aprobación de nuevo contrato y presupuesto antes de CI."
+    "Validación fixture y factibilidad nativa pendientes."
   ],
-  "future_execution_dependency": "Aprobación explícita H09.1; sin nuevos archivos ni credenciales por ahora",
+  "future_execution_dependency": "Resultado del piloto autorizado",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "bf22d2463036476476e216f110e112d8d06625ca",
+  "last_confirmed_non_state_write": "7fc3cb5e3ea5f87797a7e0699a718c87806d00a2",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -96,7 +94,8 @@
     "experiments/verify_h08d_d6_result.py",
     "evidence/H_PARTIAL_SYNTHESIS_20261125.md",
     "protocols/H_REFRAME_20261125.md",
-    "protocols/H09.1.md"
+    "protocols/H09.1.md",
+    "protocols/H09.1_implementation.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -359,11 +358,11 @@
     "experiments_authorized": false
   },
   "h09": {
-    "status": "H09.1_contract_documentary_complete",
+    "status": "H09.1_running",
     "candidate": "native_TRIG8_to_free_Decision",
     "jobs_consumed": 0,
     "original_starts": 0,
-    "execution_authorized": false,
+    "execution_authorized": true,
     "proposed_budget": {
       "jobs_max": 1,
       "runner_minutes_max": 8,
@@ -383,6 +382,14 @@
     "slots_per_arm": 6,
     "planned_trig": 24,
     "planned_sham_slots": 12,
-    "planned_reward": 0
+    "planned_reward": 0,
+    "run": 45627910012
+  },
+  "active_run": {
+    "id": 45627910012,
+    "unit": "H09.1",
+    "commit": "7fc3cb5e3ea5f87797a7e0699a718c87806d00a2",
+    "status": "in_progress",
+    "max_runner_minutes": 8
   }
 }
