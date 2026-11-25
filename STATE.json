@@ -2,15 +2,15 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "H_partial_closed_N_selective_revision_proposed_approval_required",
-  "stage": "strategic_orientation",
-  "current_task": "H_partial_closure_and_N_orientation_documentary_closed",
-  "next_action": "Solicitar aprobación explícita de nueva pregunta N: revisión selectiva, retención activa y recuperación en contextos recurrentes con cambios parciales. Si aprueba, definir diagnóstico identificabilidad/techo/costo y baselines simples; no diseñar red hasta demostrar contraste discriminante y aprobar contrato posterior. H cerrada parcial, no originales, reservas intactas.",
-  "scientific_next": "N_selective_revision_diagnostic_pending_approval",
+  "status": "N_NSR00_closed_exact_tabular_ceiling",
+  "stage": "N_selective_revision_diagnostic",
+  "current_task": "NSR00_closed",
+  "next_action": "Definir y ejecutar diagnóstico NSR01 de ruido y revisión no anunciada con filtros existentes y techo bayesiano, sin arquitectura neuronal ni semillas reservadas. H cerrada parcial, E09/NR01/NX01 STOP.",
+  "scientific_next": "NSR01_noisy_feedback_baseline_diagnostic",
   "scientific_state": {
     "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
-    "N": "STOP",
+    "N": "active_approved_selective_revision_baseline_diagnostic_only",
     "E09": "closed_partial_negative",
     "NR01": "STOP",
     "G05_NX01": "STOP_baseline_ceiling",
@@ -31,16 +31,15 @@
     "26000..26019"
   ],
   "blockers": [
-    "N STOP hasta aprobación explícita de nueva pregunta discriminante.",
-    "Identificabilidad, margen respecto a baselines fuertes y presupuesto comparable aún no demostrados.",
-    "H adquisición causal/retención originales no contrastadas; G05/R-ACT-I3c/G09 no superadas."
+    "NSR00 saturado por tabla exacta; no justifica red.",
+    "Aún no identificado contraste de revisión bajo incertidumbre y costo que justifique arquitectura neuronal."
   ],
-  "future_execution_dependency": "Aprobación de nueva pregunta N y diagnóstico previo, no arquitectura ni confirmación",
+  "future_execution_dependency": "Diagnóstico comparativo de baselines aprobado; contrato neuronal posterior requiere aprobación explícita.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "8ae3ffb78513366b827af1ce1c2a5873985734e1",
+  "last_confirmed_non_state_write": "fa51f704e07a5cd354553daf10bbc15a2bfd14a1",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -116,7 +115,11 @@
     "evidence/H09.N0_result.md",
     "experiments/verify_h09_n0_result.py",
     "evidence/H_CLOSURE_20261125.md",
-    "protocols/N_NEXT_ORIENTATION_20261125.md"
+    "protocols/N_NEXT_ORIENTATION_20261125.md",
+    "protocols/NSR00.md",
+    "experiments/nsr00.py",
+    "evidence/NSR00_result.md",
+    "evidence/NSR00_observations.json"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -369,8 +372,8 @@
     }
   },
   "strategic_review": {
-    "status": "H_partial_closed_user_approved_new_N_question_proposed",
-    "recommendation": "selective_revision_retention_recurrent_contexts_baseline_first",
+    "status": "H_partial_closed_N_selective_revision_diagnostic_approved",
+    "recommendation": "baseline_first",
     "new_question": "Context-conditioned temporal credit across observable context changes without loss of valid delayed rewards or active retention",
     "h08d_jobs": 9,
     "h08d_runner_seconds": 1129,
@@ -469,11 +472,19 @@
     }
   },
   "n_orientation": {
-    "status": "documentary_proposal_pending_approval",
+    "status": "approved_baseline_diagnostic_active",
     "candidate": "selective_revision_retention_recurrent_contexts",
     "delay": "immediate_initially_delayed_credit_separate_extension",
     "baseline_first": true,
     "experiments_authorized": false,
-    "old_reservations_untouched": true
+    "old_reservations_untouched": true,
+    "diagnostic_authorized": true,
+    "nsr00": {
+      "status": "STOP_exact_tabular_ceiling",
+      "partial_sequences": 3584,
+      "packed_accuracy_post": 1,
+      "state_bits": 8,
+      "neuronal_runs": 0
+    }
   }
 }
