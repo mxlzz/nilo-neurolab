@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "N_NSR02b_STOP_known_structure",
+  "status": "N_NSR03_scope_approval_required",
   "stage": "N_selective_revision_diagnostic",
-  "current_task": "NSR02b_closed",
-  "next_action": "Auditoría documental transversal del muestreo NSR01 (xorshift con sales), sin repetir ni usar reservas. Síntesis estratégica NSR00/01/02b: evaluar estructura compartida adquirida desde experiencia, revisar solapamiento NR01 y alternativas existentes; definir si hay nueva pregunta discriminante. No red sin aprobación específica. H cerrada parcial; E09/NR01/NX01 STOP.",
-  "scientific_next": "N_selective_revision_cross_audit_and_strategic_review",
+  "current_task": "NSR_cross_audit_completed",
+  "next_action": "Esperar aprobación explícita del diagnóstico NSR03 (inferir dependencia de cambios de contingencias, partición inicialmente fija, revisión condicional posterior). Si aprobado, contrato documental de identificabilidad y techo/baselines con muestreo preflight; no red ni CI sin nuevo contrato específico. No repetir NSR01 ni reabrir NR01/E09/NX01; H cerrada parcial.",
+  "scientific_next": "NSR03_learned_transition_dependence_diagnostic_proposed",
   "scientific_state": {
     "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "NSR02 original instrumental incompleto; NSR02b corregido: utilidad FAIL ruido alto, compacto PASS/STOP en familia conocida.",
-    "NSR01 riesgo de sesgo PRNG por auditar documentalmente; adaptación rara BAYES8 inferior a BAYES64.",
-    "No contraste neuronal aprobado; no se ha demostrado estructura adquirida ni escalabilidad."
+    "NSR01 dependencia XOR de streams: evidencia empírica limitada, no repetir; STOP operativo preservado.",
+    "NSR02b STOP estructura conocida; no arquitectura justificada.",
+    "NSR03 nuevo alcance diagnóstico pendiente aprobación; identificabilidad, margen y costo no establecidos."
   ],
-  "future_execution_dependency": "Revisión documental autorizada; nuevo contrato neuronal requiere aprobación específica.",
+  "future_execution_dependency": "Aprobación explícita de pregunta diagnóstica NSR03; arquitectura neuronal requiere aprobación separada.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "07ccb7a44a4ccfa95c7d1fe0fe6770e30e588882",
+  "last_confirmed_non_state_write": "b29b8eb73c10ae718112200586a617a259c85768",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -135,7 +135,10 @@
     "experiments/nsr02b.js",
     "evidence/NSR02b_preflight.json",
     "evidence/NSR02b_result.json",
-    "evidence/NSR02b_result.md"
+    "evidence/NSR02b_result.md",
+    "experiments/audit_nsr01_rng.js",
+    "evidence/NSR01_rng_audit.json",
+    "evidence/NSR_STRATEGIC_REVIEW_20261126.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -488,13 +491,13 @@
     }
   },
   "n_orientation": {
-    "status": "approved_baseline_diagnostic_active",
+    "status": "diagnostics_closed_new_question_pending_approval",
     "candidate": "selective_revision_retention_recurrent_contexts",
     "delay": "immediate_initially_delayed_credit_separate_extension",
     "baseline_first": true,
     "experiments_authorized": false,
     "old_reservations_untouched": true,
-    "diagnostic_authorized": true,
+    "diagnostic_authorized": false,
     "nsr00": {
       "status": "STOP_exact_tabular_ceiling",
       "partial_sequences": 3584,
@@ -518,7 +521,19 @@
       "recent_rare_bayes8": 0.4341317365269461,
       "recent_rare_bayes64": 0.5694610778443113,
       "neuronal_runs": 0,
-      "ci_jobs": 0
+      "ci_jobs": 0,
+      "rng_audit": {
+        "status": "empirical_limited_operational_STOP_preserved",
+        "draw_pairs": 65536,
+        "xor_violations": 0,
+        "initial_distinct": 64,
+        "initial_ones_range": [
+          23,
+          41
+        ],
+        "zero_guard_uses": 0,
+        "rerun": false
+      }
     },
     "nsr02": {
       "status": "INSTRUMENTAL_INCOMPLETE_biased_seed_initialization",
@@ -579,6 +594,12 @@
       ],
       "joint8_max_world_regret": 0.0003926280884957043,
       "joint8_max_world_accuracy_loss": 0.002938988095238182,
+      "neuronal_runs": 0,
+      "ci_jobs": 0
+    },
+    "nsr03": {
+      "status": "proposed_approval_pending",
+      "candidate": "learned_transition_dependence_and_selective_revision",
       "neuronal_runs": 0,
       "ci_jobs": 0
     }
