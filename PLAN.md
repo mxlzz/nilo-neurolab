@@ -138,3 +138,7 @@ NSR01 [diagnóstico ruido/cambio](evidence/NSR01_result.md): seis condiciones/64
 
 ## NSR02b — corrección de muestreo y cierre
 [Contrato](protocols/NSR02b.md), [preflight](evidence/NSR02b_preflight.json), [dictamen](evidence/NSR02b_result.md): 62/62 distribución y 6/6 fixture PCG32; lote nuevo 64 mundos/condición. Gate utilidad FAIL (+39.66pp q.10/+0.80pp q.25), compacto PASS (max regret .000393 y pérdida .002939), STOP caso estructura conocida como justificación neuronal. No tuning ni réplica. Próxima unidad documental: auditoría transversal de muestreo NSR01 (no reejecutar), síntesis estratégica y evaluación de estructura adquirida (solapamiento NR01 y baselines). Nuevo contrato neuronal requiere aprobación específica; H cerrada parcial, reservas/puertas intactas.
+
+
+## Revisión transversal — 26/11/2026
+[Auditoría y propuesta](evidence/NSR_STRATEGIC_REVIEW_20261126.md): NSR01 streams xorshift dependientes por XOR determinista, tasas agregadas próximas al nominal, evidencia empírica limitada; STOP operativo preservado, sin reejecución. NSR03 propuesta distinta de NR01: inferir agrupación de cambios de contingencias de identidades observables y, condicionalmente, revisar agrupación; controles probabilísticos y techo antes de arquitectura. Pendiente aprobación explícita de alcance diagnóstico, no ejecutar. LCNet y modelos de causas latentes/clustering de bandits identificados, no adoptados.
