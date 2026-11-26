@@ -146,3 +146,7 @@ NSR01 [diagnóstico ruido/cambio](evidence/NSR01_result.md): seis condiciones/64
 
 ## NSR03 aprobado — 26/11/2026
 Usuario aprueba diagnóstico NSR03, no red. [NSR03.0 contrato](protocols/NSR03.0.md), [resultado](evidence/NSR03.0_result.md): identificabilidad PASS bajo modelo nominal (TV .019429/.002965 con g=.03 y q=.10/.25), controles nulos correctos. MAP reducido 51.77%/35.34% a1536 experiencias, inferior umbral orientativo .60; no techo completo ni ajuste de presupuesto. GO documental NSR03.1: preregistrar posterior conjunto de 48 estados, local y estadístico reducido, oráculo solo diagnóstico, mismos datos y coste explícito, probes sin feedback, preflight PCG32; no ampliación automática, red, CI ni reservas.
+
+
+## NSR03.1 — adquisición de relaciones y límite de revisión selectiva
+[Preregistro](protocols/NSR03.1.md), [resultado](evidence/NSR03.1_result.md). PCG32 preflight143/143; posterior factorizado exacto, 128 mundos/condición, 1536 experiencias y12 probes. Identificación final 100%/85.16% (g.03/q.10/.25), transferencia +32.26/+2.15pp, falsa propagación pérdida23.98/1.70pp. Gate funcional primario FAIL por falsa propagación con q.10; STOP etapa partición variable. FACT32 conducta idéntica, gate compacto global FAIL por empate numérico g0/q.10/384 (pérdida MAP4.17pp); no tuning ni nueva corrida. Próxima unidad documental: incertidumbre sobre origen del cambio, objetivo de decisión y alternativas robustas; nueva pregunta o cambio de contrato requiere aprobación. H cerrada parcial y campañas anteriores STOP.
