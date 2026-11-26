@@ -130,3 +130,7 @@ Criterio anterior a datos cumplido. Tabla compacta exacta alcanza techo y mínim
 
 ## NSR01 (autoverificación)
 Bayes exacto bajo supuestos de priors conocidos e independencia (486 historias,1944 comparaciones); no confundir óptimo en esperanza con máximo observado. BAYES8 cumple gate global/retorno, no todos subgrupos. Corrección secundaria conservada, primer replay aritmética discrepó y se corrigió antes de escritura, segundo4608 coincidencias y regret0 de diferencia. No diseño de API aislada ni medición RAM/CPU; q/h comunes, z inferible desde recompensa binaria. Próxima unidad solo diagnóstico de estructura compartida y cambios correlacionados con fuertes controles. Sin auditor independiente, no reabrir campañas ni gates previos.
+
+
+## NSR02 cierre (autoverificación)
+Alineado con revisión selectiva, no arquitectura ni aprendizaje de estructura. Posterior exacto bajo modelo nominal (fixture algebraico PASS), gate de utilidad numérico no cumple en ruido alto; compacto16B cumple márgenes numéricos. Defecto material del generador no detectado en preflight: xorshift32 con semillas consecutivas sesga iniciales; no asumir independencia ni calibración de techo en muestra. Dictamen INSTRUMENTAL_INCOMPLETE prevalece sobre gates numéricos. Cintas preservadas, no ajuste retrospectivo ni nueva red. Próxima corrección de instrumento separada NSR02b sin cambiar hipótesis ni márgenes; preflight de semillas antes de datos, lote nuevo no seleccionado por rendimiento. No auditor independiente, no medición RAM/CPU ni SHA256; identidad por blob Git y readback exacto.
