@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "N_NSR01_closed_independent_family_Bayesian_ceiling",
+  "status": "N_NSR02_instrumental_incomplete",
   "stage": "N_selective_revision_diagnostic",
-  "current_task": "NSR01_closed",
-  "next_action": "NSR02: revisar soluciones existentes y definir diagnóstico de estructura compartida, cambios correlacionados y excepciones locales; evaluar identificabilidad, inferencia jerárquica/factorización/episodios y techo de baselines antes de red. Separar revisión de asociaciones no visitadas, retención válida y retorno sin feedback; preservar prueba de adaptación rara y costo. No red hasta contrato específico aprobado. H cerrada parcial, E09/NR01/NX01 STOP.",
-  "scientific_next": "NSR02_shared_structure_correlated_revision_diagnostic",
+  "current_task": "NSR02_closed_instrumental_incomplete",
+  "next_action": "NSR02b: preregistrar corrección de inicialización/derivación de semillas y preflight independiente antes de nuevo lote diagnóstico; mismos generador nominal, modelos, métricas, umbrales y presupuesto, sin tuning/red/CI ni reservas históricas. No rescatar NSR02 ni abrir arquitectura sin aprobación específica. H cerrada parcial; E09/NR01/NX01 STOP.",
+  "scientific_next": "NSR02b_seed_derivation_instrumental_correction",
   "scientific_state": {
     "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "NSR00 techo exacto tabular; NSR01 filtro local casi óptimo bajo independencia y priors conocidos.",
-    "BAYES8 no equivale a BAYES64 en subgrupo de cambios raros, pese a gate primario cumplido.",
-    "No se ha establecido contraste discriminante ni presupuesto de una nueva arquitectura neuronal."
+    "NSR02 muestreo sesgado: g inicial contexto0=0 en 64/64; 14 patrones iniciales; cierre instrumental incompleto.",
+    "NSR02 utilidad numérica falla en q.25; JOINT8 márgenes numéricos provisionales.",
+    "NSR01 adaptación rara BAYES8 inferior a BAYES64; no contraste neuronal aprobado."
   ],
-  "future_execution_dependency": "Diagnóstico de baselines de estructura compartida autorizado; nuevo contrato neuronal requiere aprobación específica.",
+  "future_execution_dependency": "Corrección instrumental preregistrada y preflight válido antes de nuevo diagnóstico; nuevo contrato neuronal requiere aprobación específica.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "f5e5bd7489bd560524689ccbb9bfa746653cc19e",
+  "last_confirmed_non_state_write": "0a8eef2f84553a4d66cecf4a30e0eaa7d44c34e9",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -126,7 +126,11 @@
     "evidence/NSR01_result.json",
     "experiments/verify_nsr01.js",
     "evidence/NSR01_recent_correction.json",
-    "evidence/NSR01_result.md"
+    "evidence/NSR01_result.md",
+    "protocols/NSR02.md",
+    "experiments/nsr02.js",
+    "evidence/NSR02_result.json",
+    "evidence/NSR02_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -145,7 +149,7 @@
     "simulation": "documentary_pass",
     "new_repo_experiment_execution": "tested_instrumental_failure"
   },
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "input_preflight": {
     "drive_exe_gen_data_sha256": "exact_match",
     "cd_archive": "verified_exact_in_windows",
@@ -508,6 +512,39 @@
       "secondary_metric_corrected": true,
       "recent_rare_bayes8": 0.4341317365269461,
       "recent_rare_bayes64": 0.5694610778443113,
+      "neuronal_runs": 0,
+      "ci_jobs": 0
+    },
+    "nsr02": {
+      "status": "INSTRUMENTAL_INCOMPLETE_biased_seed_initialization",
+      "conditions": 4,
+      "worlds_per_condition": 64,
+      "seed_range": [
+        32000,
+        32063
+      ],
+      "steps_per_world": 384,
+      "elapsed_ms": 1862,
+      "decisions": 491520,
+      "fixture_checks": 432,
+      "fixture_max_error": 3.3306690738754696e-16,
+      "transfer_gain_world": [
+        0.344274080725561,
+        0.012429901512960695
+      ],
+      "joint8_max_world_regret": 0.0012163991976449932,
+      "joint8_max_world_accuracy_loss": 0.005291005291005235,
+      "initial_ones": [
+        0,
+        7,
+        7,
+        6,
+        32,
+        0,
+        0,
+        6
+      ],
+      "distinct_initial_patterns": 14,
       "neuronal_runs": 0,
       "ci_jobs": 0
     }
