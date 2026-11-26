@@ -107,3 +107,6 @@
 
 
 - 26/11 usuario aprueba NSR03 diagnóstico. NSR03.0 prereg fe38a1e, código3eb3031, salida ddfe88c; cálculo exacto 667ms, 1179648 términos enumerados, error máximo1.364e-13. TV positivo .0194287/.00296458; controles g0/q.5 azar1/3. MAP de paridades a1536 experiencias 51.7693%/35.3383%, no alcanza .60 orientativo. GO documental para contraste historial completo a igual presupuesto; no red/CI/semillas/pago. LCNet y métodos de bandits revisados, no adoptados.
+
+
+- 26/11 NSR03.1 prereg be45fa6, RNG a7e0934/preflight c75d5e2 PASS143/143+6/6, código4e3a534. Lote34000..34127, cuatro condiciones, 3962880 decisiones/25784ms, 7056 fixture y 730 agregados recálculo exacto. Resultados 0dad858/8bc95de/e0997f8/a6719d5; informe9149823. MAP final100%/85.16% g.03; transferencia+32.26/+2.15pp; falsa propagación pérdida23.98/1.70pp. Primario FAIL, STOP ampliación, q.25 cumple descriptivamente. FACT32 conducta idéntica pero gate compacto FAIL por MAP de empate g0/q.10/384. 0 red/CI/originales/pago/reservas. Próximo análisis documental de origen de cambios y coste; no rescatar.
