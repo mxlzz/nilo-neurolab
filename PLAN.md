@@ -142,3 +142,7 @@ NSR01 [diagnóstico ruido/cambio](evidence/NSR01_result.md): seis condiciones/64
 
 ## Revisión transversal — 26/11/2026
 [Auditoría y propuesta](evidence/NSR_STRATEGIC_REVIEW_20261126.md): NSR01 streams xorshift dependientes por XOR determinista, tasas agregadas próximas al nominal, evidencia empírica limitada; STOP operativo preservado, sin reejecución. NSR03 propuesta distinta de NR01: inferir agrupación de cambios de contingencias de identidades observables y, condicionalmente, revisar agrupación; controles probabilísticos y techo antes de arquitectura. Pendiente aprobación explícita de alcance diagnóstico, no ejecutar. LCNet y modelos de causas latentes/clustering de bandits identificados, no adoptados.
+
+
+## NSR03 aprobado — 26/11/2026
+Usuario aprueba diagnóstico NSR03, no red. [NSR03.0 contrato](protocols/NSR03.0.md), [resultado](evidence/NSR03.0_result.md): identificabilidad PASS bajo modelo nominal (TV .019429/.002965 con g=.03 y q=.10/.25), controles nulos correctos. MAP reducido 51.77%/35.34% a1536 experiencias, inferior umbral orientativo .60; no techo completo ni ajuste de presupuesto. GO documental NSR03.1: preregistrar posterior conjunto de 48 estados, local y estadístico reducido, oráculo solo diagnóstico, mismos datos y coste explícito, probes sin feedback, preflight PCG32; no ampliación automática, red, CI ni reservas.
