@@ -95,3 +95,6 @@
 - Usuario aprueba N revisión selectiva, alcance diagnóstico previo. NSR00 prereg4497b17, ejecución local exhaustiva: tabla8bits 100% post-feedback en todos los endpoints previstos; LRU4/compartida retorno50%; XOR5bits exacta en familia propia. STOP banco mínimo, no red, no CI ni semillas. Próximo diagnóstico de evidencia ruidosa/cambio.
 
 - NSR01 prereg48dbfe5, ejecución V8 4.252s, seis condiciones ×64 semillas nuevas ×1024 pasos, seis baselines. BAYES8 64B lógicos, max regret .000449 global/.000238 retorno, STOP caso independiente. Métrica reciente mezclaba adquisición; corregida sobre mismas cintas (replay4608 exacto), BAYES8 43.41% vs64 56.95% en cambio raro q.10/h.01. Conservar ambos archivos, no ocultar brecha, sin red/CI/reservas. Siguiente estructura compartida y revisión de no visitados.
+
+
+- 26/11 NSR02 prereg deb2458, código efbe434, salida eb05865 (readback exacto). 256 secuencias pareadas, 491520 decisiones, 1862ms V8, 432 fixture comparaciones error máximo3.33e-16. Utilidad numérica falla q.25; JOINT8 márgenes numéricos cumplidos. Auditoría posterior detecta inicialización sesgada xorshift: primer g0 en64/64, solo14 patrones. Cierre instrumental incompleto, conservar salida, no repetir contrato; NSR02b corrección de muestreo y preflight independiente antes de nuevo lote. 0 CI/red/originales/pago, reservas intactas.
