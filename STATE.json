@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "N_NSR03_0_identifiable_reduced_signal_weak",
+  "status": "N_NSR03_1_STOP_selective_revision",
   "stage": "N_selective_revision_diagnostic",
-  "current_task": "NSR03.0_closed_documentary_GO",
-  "next_action": "NSR03.1: preregistrar contraste de posterior exacto de 48 estados sobre partición y contingencias frente a local y paridades; oráculo de partición solo diagnóstico, calendario fijo hasta1536 experiencias, probes sin feedback con transición explícita, métricas de identificación/utilidad prospectiva/falsas propagaciones y retención, costos y preflight PCG32 con semillas nuevas. No aumentar presupuesto para rescatar ni red/CI. H cerrada parcial; E09/NR01/NX01 STOP.",
-  "scientific_next": "NSR03.1_full_history_baseline_contract",
+  "current_task": "NSR03.1_closed_functional_FAIL",
+  "next_action": "Revisión exclusivamente documental: analizar falsa propagación bajo incertidumbre de origen y objetivo simétrico, alternativas existentes de inferencia y decisión robusta/costes, sin modificar métricas ni reejecutar NSR03.1. No abrir partición variable ni red; nueva pregunta discriminante/cambio de contrato requiere aprobación explícita. H cerrada parcial; E09/NR01/NX01 STOP.",
+  "scientific_next": "NSR03_selective_revision_tradeoff_documentary_review",
   "scientific_state": {
     "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "NSR03.0 identificabilidad demostrada pero estadístico reducido no alcanza .60 orientativo a1536 experiencias; falta evidencia de utilidad prospectiva y margen frente a posterior completo.",
-    "NSR01 evidencia empírica limitada por dependencia PRNG; STOP preservado.",
-    "NSR02b STOP estructura conocida; ninguna arquitectura neuronal autorizada."
+    "NSR03.1 identificación y transferencia positivas, gate funcional primario FAIL por pérdida23.98pp en falsa propagación q.10; STOP partición variable.",
+    "FACT32 conducta idéntica pero gate compacto FAIL por caída MAP4.17pp en empate nulo g0/q.10/384; no ajuste.",
+    "NSR01 evidencia empírica limitada por PRNG; STOP anteriores y reservas intactos."
   ],
-  "future_execution_dependency": "Diagnóstico NSR03 aprobado; contrato NSR03.1 y preflight válido antes de lote nuevo. Red requiere aprobación específica.",
+  "future_execution_dependency": "Solo revisión documental; nuevo contrato experimental requiere aprobación específica.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "8b1a1d0331b38cc499b0a0d8c5e6b2476e2ca53f",
+  "last_confirmed_non_state_write": "53de930a1845f0c9802f78a58113a603735979aa",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -142,7 +142,16 @@
     "protocols/NSR03.0.md",
     "experiments/nsr03_identifiability.js",
     "evidence/NSR03.0_result.json",
-    "evidence/NSR03.0_result.md"
+    "evidence/NSR03.0_result.md",
+    "protocols/NSR03.1.md",
+    "experiments/nsr03_rng.js",
+    "experiments/nsr03_1.js",
+    "evidence/NSR03.1_preflight.json",
+    "evidence/NSR03.1_q10_g0.json",
+    "evidence/NSR03.1_q10_g3.json",
+    "evidence/NSR03.1_q25_g0.json",
+    "evidence/NSR03.1_q25_g3.json",
+    "evidence/NSR03.1_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -495,13 +504,13 @@
     }
   },
   "n_orientation": {
-    "status": "NSR03_diagnostic_approved",
+    "status": "NSR03_diagnostic_STOP_documentary_review",
     "candidate": "selective_revision_retention_recurrent_contexts",
     "delay": "immediate_initially_delayed_credit_separate_extension",
     "baseline_first": true,
     "experiments_authorized": false,
     "old_reservations_untouched": true,
-    "diagnostic_authorized": true,
+    "diagnostic_authorized": false,
     "nsr00": {
       "status": "STOP_exact_tabular_ceiling",
       "partial_sequences": 3584,
@@ -602,7 +611,7 @@
       "ci_jobs": 0
     },
     "nsr03": {
-      "status": "NSR03.0_documentary_GO",
+      "status": "NSR03.1_STOP_functional",
       "candidate": "learned_transition_dependence_and_selective_revision",
       "enumerated_terms": 1179648,
       "elapsed_ms": 667,
@@ -617,7 +626,52 @@
       "orientative_threshold_pass": false,
       "seeded_runs": 0,
       "neuronal_runs": 0,
-      "ci_jobs": 0
+      "ci_jobs": 0,
+      "nsr03_1": {
+        "status": "STOP_functional_false_propagation",
+        "instrument": "PASS",
+        "functional_gate_q10": "FAIL",
+        "functional_gate_q25": "PASS_descriptive",
+        "compact_gate": "FAIL_null_MAP_tie",
+        "seed_range": [
+          34000,
+          34127
+        ],
+        "preflight_seed_range": [
+          46000,
+          48047
+        ],
+        "preflight_checks": 143,
+        "preflight_max_abs_z": 2.6231569493555624,
+        "conditions": 4,
+        "worlds_per_condition": 128,
+        "feedback_per_world": 1536,
+        "probes_per_world": 12,
+        "decisions": 3962880,
+        "elapsed_ms": 25784,
+        "fixture_checks": 7056,
+        "recomputed_aggregates": 730,
+        "final_map": [
+          1,
+          0.8515625
+        ],
+        "final_true_mass": [
+          0.9999999278934215,
+          0.7773781953929055
+        ],
+        "transfer_gain": [
+          0.3226179418993215,
+          0.021480570367354956
+        ],
+        "false_propagation_loss": [
+          0.23981216112052206,
+          0.016993634087408727
+        ],
+        "compact_null_map_loss": 0.04166666666666691,
+        "compact_behavior_loss": 0,
+        "neuronal_runs": 0,
+        "ci_jobs": 0
+      }
     }
   }
 }
