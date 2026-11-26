@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "N_NSR03_scope_approval_required",
+  "status": "N_NSR03_0_identifiable_reduced_signal_weak",
   "stage": "N_selective_revision_diagnostic",
-  "current_task": "NSR_cross_audit_completed",
-  "next_action": "Esperar aprobación explícita del diagnóstico NSR03 (inferir dependencia de cambios de contingencias, partición inicialmente fija, revisión condicional posterior). Si aprobado, contrato documental de identificabilidad y techo/baselines con muestreo preflight; no red ni CI sin nuevo contrato específico. No repetir NSR01 ni reabrir NR01/E09/NX01; H cerrada parcial.",
-  "scientific_next": "NSR03_learned_transition_dependence_diagnostic_proposed",
+  "current_task": "NSR03.0_closed_documentary_GO",
+  "next_action": "NSR03.1: preregistrar contraste de posterior exacto de 48 estados sobre partición y contingencias frente a local y paridades; oráculo de partición solo diagnóstico, calendario fijo hasta1536 experiencias, probes sin feedback con transición explícita, métricas de identificación/utilidad prospectiva/falsas propagaciones y retención, costos y preflight PCG32 con semillas nuevas. No aumentar presupuesto para rescatar ni red/CI. H cerrada parcial; E09/NR01/NX01 STOP.",
+  "scientific_next": "NSR03.1_full_history_baseline_contract",
   "scientific_state": {
     "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "NSR01 dependencia XOR de streams: evidencia empírica limitada, no repetir; STOP operativo preservado.",
-    "NSR02b STOP estructura conocida; no arquitectura justificada.",
-    "NSR03 nuevo alcance diagnóstico pendiente aprobación; identificabilidad, margen y costo no establecidos."
+    "NSR03.0 identificabilidad demostrada pero estadístico reducido no alcanza .60 orientativo a1536 experiencias; falta evidencia de utilidad prospectiva y margen frente a posterior completo.",
+    "NSR01 evidencia empírica limitada por dependencia PRNG; STOP preservado.",
+    "NSR02b STOP estructura conocida; ninguna arquitectura neuronal autorizada."
   ],
-  "future_execution_dependency": "Aprobación explícita de pregunta diagnóstica NSR03; arquitectura neuronal requiere aprobación separada.",
+  "future_execution_dependency": "Diagnóstico NSR03 aprobado; contrato NSR03.1 y preflight válido antes de lote nuevo. Red requiere aprobación específica.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "b29b8eb73c10ae718112200586a617a259c85768",
+  "last_confirmed_non_state_write": "8b1a1d0331b38cc499b0a0d8c5e6b2476e2ca53f",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -138,7 +138,11 @@
     "evidence/NSR02b_result.md",
     "experiments/audit_nsr01_rng.js",
     "evidence/NSR01_rng_audit.json",
-    "evidence/NSR_STRATEGIC_REVIEW_20261126.md"
+    "evidence/NSR_STRATEGIC_REVIEW_20261126.md",
+    "protocols/NSR03.0.md",
+    "experiments/nsr03_identifiability.js",
+    "evidence/NSR03.0_result.json",
+    "evidence/NSR03.0_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -491,13 +495,13 @@
     }
   },
   "n_orientation": {
-    "status": "diagnostics_closed_new_question_pending_approval",
+    "status": "NSR03_diagnostic_approved",
     "candidate": "selective_revision_retention_recurrent_contexts",
     "delay": "immediate_initially_delayed_credit_separate_extension",
     "baseline_first": true,
     "experiments_authorized": false,
     "old_reservations_untouched": true,
-    "diagnostic_authorized": false,
+    "diagnostic_authorized": true,
     "nsr00": {
       "status": "STOP_exact_tabular_ceiling",
       "partial_sequences": 3584,
@@ -598,8 +602,20 @@
       "ci_jobs": 0
     },
     "nsr03": {
-      "status": "proposed_approval_pending",
+      "status": "NSR03.0_documentary_GO",
       "candidate": "learned_transition_dependence_and_selective_revision",
+      "enumerated_terms": 1179648,
+      "elapsed_ms": 667,
+      "tv": [
+        0.01942866422146791,
+        0.0029645788912151666
+      ],
+      "map_1536": [
+        0.5176927203838178,
+        0.35338280267426897
+      ],
+      "orientative_threshold_pass": false,
+      "seeded_runs": 0,
       "neuronal_runs": 0,
       "ci_jobs": 0
     }
