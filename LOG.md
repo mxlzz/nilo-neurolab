@@ -98,3 +98,6 @@
 
 
 - 26/11 NSR02 prereg deb2458, código efbe434, salida eb05865 (readback exacto). 256 secuencias pareadas, 491520 decisiones, 1862ms V8, 432 fixture comparaciones error máximo3.33e-16. Utilidad numérica falla q.25; JOINT8 márgenes numéricos cumplidos. Auditoría posterior detecta inicialización sesgada xorshift: primer g0 en64/64, solo14 patrones. Cierre instrumental incompleto, conservar salida, no repetir contrato; NSR02b corrección de muestreo y preflight independiente antes de nuevo lote. 0 CI/red/originales/pago, reservas intactas.
+
+
+- 26/11 NSR02b prereg a486c7d, PCG32 código82014d0, preflight16cdd13 PASS62/62 y6/6 vector, max z1.729484, 378ms. Nuevo lote33000..33063, salida81092fb, 491520 decisiones/2168ms, 432 fixtures, 120 agregados recálculo exacto. Utilidad FAIL (+39.66pp/+0.80pp), compacto PASS (16B, max regret .000392628, pérdida .002938988), STOP familia conocida. NSR02 previo instrumental intacto, 0 CI/red/originales/pago. Próxima revisión documental de muestreo NSR01 y síntesis/contraste discriminante; no rescatar ni reabrir NR01.
