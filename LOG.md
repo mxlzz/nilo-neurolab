@@ -104,3 +104,6 @@
 
 
 - 26/11 revisión transversal: inspección de RNG NSR01 sin ejecutar agentes (032834b/4bfac9b), iniciales64 distintos, 65536 pares, XOR determinista por índice, 0 violaciones, coocurrencias próximas a producto marginal. Limitación empírica registrada, STOP preservado. Síntesis y fuentes nuevas en 5e5d3de: LCNet, causas latentes, clustering bandits y switching. Propuesta NSR03 (dependencias de cambios adquiridas, no encoder NR01) pendiente aprobación; ninguna corrida ni reserva.
+
+
+- 26/11 usuario aprueba NSR03 diagnóstico. NSR03.0 prereg fe38a1e, código3eb3031, salida ddfe88c; cálculo exacto 667ms, 1179648 términos enumerados, error máximo1.364e-13. TV positivo .0194287/.00296458; controles g0/q.5 azar1/3. MAP de paridades a1536 experiencias 51.7693%/35.3383%, no alcanza .60 orientativo. GO documental para contraste historial completo a igual presupuesto; no red/CI/semillas/pago. LCNet y métodos de bandits revisados, no adoptados.
