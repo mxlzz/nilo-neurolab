@@ -134,3 +134,7 @@ NSR01 [diagnóstico ruido/cambio](evidence/NSR01_result.md): seis condiciones/64
 
 ## NSR02 — revisión correlacionada
 [Preregistro](protocols/NSR02.md), [resultado y auditoría](evidence/NSR02_result.md): utilidad numérica +34.43pp con q.10 y +1.24pp con q.25 (gate exige ambas >=3pp); JOINT8 cumple numéricamente márgenes. Muestreo inicial sesgado por semillas xorshift consecutivas, cierre INSTRUMENTAL_INCOMPLETE, no conclusión científica ni rescate. Próxima NSR02b: corrección instrumental preregistrada con preflight independiente y nuevo lote, modelos/métricas/umbrales intactos, sin tuning ni red. H cerrada parcial, E09/NR01/NX01 STOP, reservas intactas.
+
+
+## NSR02b — corrección de muestreo y cierre
+[Contrato](protocols/NSR02b.md), [preflight](evidence/NSR02b_preflight.json), [dictamen](evidence/NSR02b_result.md): 62/62 distribución y 6/6 fixture PCG32; lote nuevo 64 mundos/condición. Gate utilidad FAIL (+39.66pp q.10/+0.80pp q.25), compacto PASS (max regret .000393 y pérdida .002939), STOP caso estructura conocida como justificación neuronal. No tuning ni réplica. Próxima unidad documental: auditoría transversal de muestreo NSR01 (no reejecutar), síntesis estratégica y evaluación de estructura adquirida (solapamiento NR01 y baselines). Nuevo contrato neuronal requiere aprobación específica; H cerrada parcial, reservas/puertas intactas.
