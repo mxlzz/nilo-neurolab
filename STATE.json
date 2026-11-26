@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "mxlzz/nilo-neurolab",
   "source_commit": "c0c06c95c176eb9c0e0df71853313d16acda0f27",
-  "status": "N_NSR02_instrumental_incomplete",
+  "status": "N_NSR02b_STOP_known_structure",
   "stage": "N_selective_revision_diagnostic",
-  "current_task": "NSR02_closed_instrumental_incomplete",
-  "next_action": "NSR02b: preregistrar corrección de inicialización/derivación de semillas y preflight independiente antes de nuevo lote diagnóstico; mismos generador nominal, modelos, métricas, umbrales y presupuesto, sin tuning/red/CI ni reservas históricas. No rescatar NSR02 ni abrir arquitectura sin aprobación específica. H cerrada parcial; E09/NR01/NX01 STOP.",
-  "scientific_next": "NSR02b_seed_derivation_instrumental_correction",
+  "current_task": "NSR02b_closed",
+  "next_action": "Auditoría documental transversal del muestreo NSR01 (xorshift con sales), sin repetir ni usar reservas. Síntesis estratégica NSR00/01/02b: evaluar estructura compartida adquirida desde experiencia, revisar solapamiento NR01 y alternativas existentes; definir si hay nueva pregunta discriminante. No red sin aprobación específica. H cerrada parcial; E09/NR01/NX01 STOP.",
+  "scientific_next": "N_selective_revision_cross_audit_and_strategic_review",
   "scientific_state": {
     "H": "closed_partial_user_approved_local_mechanisms_association_unresolved",
     "H08b19": "passed_local_witness",
@@ -31,16 +31,16 @@
     "26000..26019"
   ],
   "blockers": [
-    "NSR02 muestreo sesgado: g inicial contexto0=0 en 64/64; 14 patrones iniciales; cierre instrumental incompleto.",
-    "NSR02 utilidad numérica falla en q.25; JOINT8 márgenes numéricos provisionales.",
-    "NSR01 adaptación rara BAYES8 inferior a BAYES64; no contraste neuronal aprobado."
+    "NSR02 original instrumental incompleto; NSR02b corregido: utilidad FAIL ruido alto, compacto PASS/STOP en familia conocida.",
+    "NSR01 riesgo de sesgo PRNG por auditar documentalmente; adaptación rara BAYES8 inferior a BAYES64.",
+    "No contraste neuronal aprobado; no se ha demostrado estructura adquirida ni escalabilidad."
   ],
-  "future_execution_dependency": "Corrección instrumental preregistrada y preflight válido antes de nuevo diagnóstico; nuevo contrato neuronal requiere aprobación específica.",
+  "future_execution_dependency": "Revisión documental autorizada; nuevo contrato neuronal requiere aprobación específica.",
   "audit_refs": [
     "AUDIT.md",
     "evidence/MIGRATION_VERIFICATION.md"
   ],
-  "last_confirmed_non_state_write": "0a8eef2f84553a4d66cecf4a30e0eaa7d44c34e9",
+  "last_confirmed_non_state_write": "07ccb7a44a4ccfa95c7d1fe0fe6770e30e588882",
   "evidence_refs": [
     "MIGRATION_MANIFEST.json",
     "evidence/ARCHIVE_MANIFEST.json",
@@ -130,7 +130,12 @@
     "protocols/NSR02.md",
     "experiments/nsr02.js",
     "evidence/NSR02_result.json",
-    "evidence/NSR02_result.md"
+    "evidence/NSR02_result.md",
+    "protocols/NSR02b.md",
+    "experiments/nsr02b.js",
+    "evidence/NSR02b_preflight.json",
+    "evidence/NSR02b_result.json",
+    "evidence/NSR02b_result.md"
   ],
   "migration": {
     "status": "operational_verified_archive_partial",
@@ -545,6 +550,35 @@
         6
       ],
       "distinct_initial_patterns": 14,
+      "neuronal_runs": 0,
+      "ci_jobs": 0
+    },
+    "nsr02b": {
+      "status": "STOP_known_structure_compact_baseline",
+      "instrument": "PASS",
+      "utility_gate": "FAIL",
+      "compact_gate": "PASS",
+      "seed_range": [
+        33000,
+        33063
+      ],
+      "preflight_seed_range": [
+        43000,
+        45047
+      ],
+      "preflight_checks": 62,
+      "preflight_max_abs_z": 1.7294833808251135,
+      "conditions": 4,
+      "worlds_per_condition": 64,
+      "steps_per_world": 384,
+      "decisions": 491520,
+      "elapsed_ms": 2168,
+      "transfer_gain_world": [
+        0.3966002028399233,
+        0.007974412055415325
+      ],
+      "joint8_max_world_regret": 0.0003926280884957043,
+      "joint8_max_world_accuracy_loss": 0.002938988095238182,
       "neuronal_runs": 0,
       "ci_jobs": 0
     }
