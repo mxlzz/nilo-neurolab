@@ -1,0 +1,39 @@
+"use strict";
+function run(streams,partition){
+const t0=Date.now(),U=4294967296,parts=[[3,12],[5,10],[9,6]],pairs=[3,5,9,6,10,12],ids=pairs.map(m=>[0,1,2,3].filter(x=>m&(1<<x))),pairIx=parts.map(a=>a.map(m=>pairs.indexOf(m))),pairFor=pairIx.map(a=>[0,1,2,3].map(x=>a.find(i=>pairs[i]&(1<<x)))),bit=(s,x)=>(s>>x)&1,pc=s=>bit(s,0)+bit(s,1)+bit(s,2)+bit(s,3),sum=a=>a.reduce((s,x)=>s+x,0),assert=(b,m)=>{if(!b)throw Error(m)},arms=["LOCAL","FULL","FACT32","PARITY","ORACLE"],keys=["all","probe","valid","transfer","falseprop","local"],cp=[96,384,1536];
+function norm(a){let v=sum(a);assert(v>0&&Number.isFinite(v),"mass");return a.map(x=>x/v)}
+function pk(g,e){let k=Array(4).fill(0);for(let a=0;a<2;a++)for(let b=0;b<4;b++)k[b^(a?3:0)]+=(a?g:1-g)*e**pc(b)*(1-e)**(2-pc(b));return k}
+function dk(g,e,H){let k=Array(16).fill(0);for(let a=0;a<4;a++)for(let b=0;b<16;b++)k[b^(bit(a,0)?parts[H][0]:0)^(bit(a,1)?parts[H][1]:0)]+=g**pc(a)*(1-g)**(2-pc(a))*e**pc(b)*(1-e)**(4-pc(b));return k}
+function init(){return {p:Array.from({length:6},()=>Array(4).fill(.25)),w:Array(3).fill(1/3)}}
+function copy(f){return {p:f.p.map(a=>a.slice()),w:f.w.slice()}}
+function trans(f,k){for(let i=0;i<6;i++){let a=norm(f.p[i]);f.p[i]=[0,1,2,3].map(s=>a[0]*k[s]+a[1]*k[s^1]+a[2]*k[s^2]+a[3]*k[s^3])}f.w=norm(f.w)}
+function probPair(f,i,x){let a=f.p[i],b=ids[i][0]===x?0:1;return (a[1<<b]+a[3])/sum(a)}
+function prob(f,x,w=f.w){let v=0,s=sum(w);for(let H=0;H<3;H++)v+=w[H]/s*probPair(f,pairFor[H][x],x);return v}
+function observe(f,x,z,q,weights=true){let ev=Array(6).fill(1);if(z!==null)for(let i=0;i<6;i++){let b=ids[i].indexOf(x);if(b<0)continue;let a=f.p[i].map((v,s)=>v*(bit(s,b)===z?1-q:q));ev[i]=sum(a);f.p[i]=norm(a)}if(weights)f.w=norm(f.w.map((v,H)=>v*ev[pairFor[H][x]]))}
+function round(f){f.p=f.p.map(a=>norm(a).map(Math.fround));f.w=norm(f.w).map(Math.fround);assert(f.p.every(a=>Math.abs(sum(a)-1)<1e-6)&&Math.abs(sum(f.w)-1)<1e-6,"f32")}
+function masses(f){let w=norm(f.w);return parts.map((_,H)=>Array.from({length:16},(_,s)=>{let v=w[H];for(let i of pairIx[H]){let j=bit(s,ids[i][0])+2*bit(s,ids[i][1]);v*=f.p[i][j]/sum(f.p[i])}return v}))}
+let fixtures=[];for(let g of [0,.03])for(let q of [.1,.25,.5]){let k=pk(g,.01),f=init(),dense=parts.map(()=>Array(16).fill(1/48)),kernels=parts.map((_,H)=>dk(g,.01,H)),err=0,n=0;
+for(let t=0;t<12;t++){let x=[0,1,0,1,0,2,0,2,0,3,0,3][t],z=t%5===0?null:(t>>1)&1;trans(f,k);dense=dense.map((a,H)=>Array.from({length:16},(_,s)=>a.reduce((v,p,u)=>v+p*kernels[H][s^u],0)));let check=()=>{let a=masses(f);for(let H=0;H<3;H++)for(let s=0;s<16;s++){err=Math.max(err,Math.abs(a[H][s]-dense[H][s]));n++}let p=dense.reduce((v,a)=>v+a.reduce((r,p,s)=>r+p*bit(s,x),0),0);err=Math.max(err,Math.abs(p-prob(f,x)));n++};check();observe(f,x,z,q);if(z!==null){dense=dense.map(a=>a.map((p,s)=>p*(bit(s,x)===z?1-q:q)));let s=dense.reduce((r,a)=>r+sum(a),0);dense=dense.map(a=>a.map(p=>p/s))}check();if(g===0||q===.5)assert(f.w.every(v=>Math.abs(v-1/3)<1e-10),"null partition")}
+assert(err<1e-10,"dense fixture");fixtures.push({g,q,n,err})}
+function soft(a){let m=Math.max(...a);return norm(a.map(v=>Math.exp(v-m)))}
+function idmetric(w,H){w=norm(w);let m=Math.max(...w),ties=w.filter(v=>m-v<=1e-12).length;return [m-w[H]<=1e-12?1/ties:0,w[H],m,-Math.log(Math.max(w[H],1e-300)),sum(w.map((v,i)=>(v-+(i===H))**2))]}
+function parityLR(g,e,q){let a=1-2*g,b=1-2*e,c=1-2*q,m=c*c*a*a*b*b,u=c**4*a*a*b**4,v=c**4*a**4*b**4;let dist=k=>[(1+2*m+k)/4,(1-k)/2,(1-2*m+k)/4],P=dist(u),Q=dist(v);return P.map((p,i)=>Math.log(p/Q[i]))}
+function world(seed,g,q){let e=.01,k=pk(g,e),h=g+e-2*g*e,lr=parityLR(g,e,q),rng=streams(seed),H=partition(rng[0]),y=0;for(let i=0;i<4;i++)y|=+(rng[1]()/U<.5)<<i;
+let partner=[0,1,2,3].map(x=>[0,1,2,3].find(j=>j!==x&&parts[H].some(m=>bit(m,x)&&bit(m,j)))),group=[0,1,2,3].map(x=>parts[H].findIndex(m=>bit(m,x))),initial=y;
+let S={y,loc:Array(4).fill(.5),full:init(),small:init(),last:Array.from({length:4},()=>({t:-1,y:0,par:0})),gt:[-1,-1],gp:[0,0],lt:Array(4).fill(-1),scores:[0,0,0],buf:[],time:0},M=arms.map(()=>keys.map(()=>[0,0,0,0])),ident=[],checksum=2166136261;
+function clone(s){return {y:s.y,loc:s.loc.slice(),full:copy(s.full),small:copy(s.small),last:s.last.map(v=>({...v})),gt:s.gt.slice(),gp:s.gp.slice(),lt:s.lt.slice(),scores:s.scores.slice(),buf:s.buf.slice(),time:s.time}}
+function step(s,x,probe,j,idx){let t=s.time++,rt=rng[probe?4:2],mask=0;for(let a=0;a<2;a++)if(rt()/U<g){mask^=parts[H][a];s.gt[a]=t;s.gp[a]^=1}for(let i=0;i<4;i++)if(rt()/U<e){mask^=1<<i;s.lt[i]=t}s.y^=mask;let yy=bit(s.y,x),z=probe?null:yy^+(rng[3]()/U<q),L=s.last[x],J=s.last[partner[x]],G=group[x],has=L.t>=0,common=s.gt[G],loc=s.lt[x],lp=s.lt[partner[x]];
+let flags=[true,probe,probe&&has&&yy===L.y,has&&s.gp[G]!==L.par&&loc<=L.t&&common<t&&J.t>common&&J.t>L.t,has&&common<=L.t&&loc<=L.t&&lp>L.t&&J.t>=lp&&J.t<t,has&&common<=L.t&&loc>L.t&&yy!==L.y]; // last feedback at same tick as partner local flip is legitimate.
+s.loc=s.loc.map(p=>h+(1-2*h)*p);trans(s.full,k);trans(s.small,k);let w=soft(s.scores),p=[s.loc[x],prob(s.full,x),prob(s.small,x),prob(s.full,x,w),probPair(s.full,pairFor[H][x],x)],a=p.map(v=>+(v>.5+1e-12)),ref=p[1];if(g===0)assert(Math.abs(p[0]-ref)<1e-10,"null local");
+for(let i=0;i<arms.length;i++){let reward=probe?null:(a[i]===z?1:-1),seen=reward===null?null:reward===1?a[i]:1-a[i];assert(seen===z,"feedback");let regret=Math.max(ref,1-ref)-(a[i]?ref:1-ref);for(let m=0;m<keys.length;m++)if(flags[m]){let v=M[i][m];v[0]++;v[1]+=+(a[i]===yy);v[2]+=regret;v[3]+=+(a[0]===yy&&a[i]!==yy)}}
+if(!probe){let p0=s.loc[x],a=p0*(z?1-q:q),b=(1-p0)*(z?q:1-q);s.loc[x]=a/(a+b)}
+observe(s.full,x,z,q);observe(s.small,x,z,q);round(s.small);
+if(!probe){s.buf.push(z);if(idx===3){let d=(s.buf[0]^s.buf[2])+(s.buf[1]^s.buf[3]);s.scores[j-1]+=lr[d];s.buf=[]}s.last[x]={t,y:yy,par:s.gp[G]}}
+checksum=Math.imul(checksum^((mask<<8)|(s.y<<4)|(x<<2)|(z===null?2:z)),16777619)>>>0;
+if(g===0)assert(s.full.w.every(v=>Math.abs(v-1/3)<1e-10)&&s.scores.every(v=>Math.abs(v)<1e-12),"null id")}
+for(let b=0;b<384;b++){let j=1+b%3;for(let i=0;i<4;i++)step(S,i%2?j:0,false,j,i);let n=(b+1)*4;if(cp.includes(n)){ident.push([idmetric(S.full.w,H),idmetric(S.small.w,H),idmetric(soft(S.scores),H)]);let before=JSON.stringify(S),P=clone(S);for(let x=0;x<4;x++)step(P,x,true,0,0);assert(before===JSON.stringify(S),"probe mutation")}}
+assert(M.every(a=>a[0][0]===1548&&a[1][0]===12&&a.every((m,i)=>m[0]===M[0][i][0])),"counts");if(g===0)assert(M.every(a=>a[3][0]===0),"null transfer");return {seed,H,initial,checksum:checksum.toString(16).padStart(8,"0"),M,ident}}
+let conditions=[];for(let q of [.1,.25])for(let g of [0,.03]){let worlds=[];for(let seed=34000;seed<34128;seed++){worlds.push(world(seed,g,q));assert(Date.now()-t0<59000,"budget")}let summary=arms.map((_,i)=>keys.map((_,j)=>{let v=worlds.map(w=>w.M[i][j]).filter(x=>x[0]),n=v.reduce((s,x)=>s+x[0],0),m=v.length;return {n,worlds:m,acc:m?v.reduce((s,x)=>s+x[1]/x[0],0)/m:null,reg:m?v.reduce((s,x)=>s+x[2]/x[0],0)/m:null,discrepancy_error:m?v.reduce((s,x)=>s+x[3]/x[0],0)/m:null,pooled_acc:n?v.reduce((s,x)=>s+x[1],0)/n:null,pooled_reg:n?v.reduce((s,x)=>s+x[2],0)/n:null}}));let identification=cp.map((_,j)=>[0,1,2].map(i=>[0,1,2,3,4].map(k=>worlds.reduce((s,w)=>s+w.ident[j][i][k],0)/worlds.length)));conditions.push({q,g,worlds,summary,identification})}
+return {stage:"NSR03.1",arms,keys,cp,id_fields:["map","true_mass","max_mass","logloss","brier"],logical_bytes:[32,216,108,218,65],metrics_fields:["n","correct","regret_sum","discrepancy_error_count"],fixtures,conditions,elapsed_ms:Date.now()-t0}
+}
+if(typeof module!=="undefined"&&require.main===module){const {streams,partition,preflight}=require("./nsr03_rng.js");const p=preflight();if(!p.pass)throw Error("preflight");const d=run(streams,partition);if(d.elapsed_ms+p.elapsed_ms>60000)throw Error("budget");process.stdout.write(JSON.stringify(d)+"\n")}
