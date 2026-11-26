@@ -1,0 +1,13 @@
+"use strict";
+// PCG32 reused from NSR02b blob ec930621db1c239ec16a6c59481a79236c989f83
+function pcg(initstate,initseq){
+let state=0n,inc=2n*BigInt(initseq)+1n,mask=(1n<<64n)-1n;
+function next(){let old=state;state=(old*6364136223846793005n+inc)&mask;let x=Number(((old^(old>>18n))>>27n)&0xffffffffn),rot=Number(old>>59n);return ((x>>>rot)|(x<<((-rot)&31)))>>>0}
+next();state=(state+BigInt(initstate))&mask;next();return next;
+}
+function streams(seed){const a=Array.from({length:5},(_,d)=>pcg(0x853c49e6748fea9bn+BigInt(seed),8n*BigInt(seed)+BigInt(d)));return a}
+function partition(next){let x;do{x=next()}while(x>=4294967295);return x%3}
+function preflight(){let t0=Date.now(),N=2048,T=64,ex=["a15c02b7","7b47f409","ba1d3330","83d2f293","bfa4784b","cbed606e"],next=pcg(42n,54n),actual=ex.map(()=>next().toString(16).padStart(8,"0")),hc=Array(3).fill(0),ic=Array(4).fill(0),ip=Array.from({length:4},()=>Array(4).fill(0)),hi=Array.from({length:3},()=>Array(4).fill(0)),rates=Array(14).fill(0),half=Array(13).fill(0),pairs=Array.from({length:13},()=>Array(13).fill(0)),lag=Array(13).fill(0),U=4294967296;
+for(let seed=46000;seed<48048;seed++){let s=streams(seed),h=partition(s[0]),b=Array.from({length:4},()=>+(s[1]()/U<.5));hc[h]++;for(let i=0;i<4;i++){ic[i]+=b[i];hi[h][i]+=b[i];for(let j=i+1;j<4;j++)ip[i][j]+=b[i]*b[j]}let prev=null;for(let t=0;t<T;t++){let u=[...Array.from({length:6},()=>s[2]()/U),s[3]()/U,...Array.from({length:6},()=>s[4]()/U)];let a=[...u.slice(0,6).map((v,i)=>+(v<(i<2?.03:.01))),+(u[6]<.1),+(u[6]<.25),...u.slice(7).map((v,i)=>+(v<(i<2?.03:.01)))];a.forEach((v,i)=>rates[i]+=v);let z=u.map(v=>+(v<.5));for(let i=0;i<13;i++){half[i]+=z[i];for(let j=i+1;j<13;j++)pairs[i][j]+=z[i]*z[j];if(prev)lag[i]+=prev[i]*z[i]}prev=z}}
+let checks=[];function test(name,n,k,p){let z=(k-n*p)/Math.sqrt(n*p*(1-p));checks.push({name,n,k,p,z,pass:Math.abs(z)<=5})}hc.forEach((v,i)=>test("H"+i,N,v,1/3));for(let i=0;i<4;i++){test("init"+i,N,ic[i],.5);for(let j=i+1;j<4;j++)test("init_pair"+i+"_"+j,N,ip[i][j],.25);for(let h=0;h<3;h++)test("H_init"+h+"_"+i,N,hi[h][i],1/6)}rates.forEach((v,i)=>test("rate"+i,N*T,v,[.03,.03,.01,.01,.01,.01,.1,.25,.03,.03,.01,.01,.01,.01][i]));for(let i=0;i<13;i++){test("half"+i,N*T,half[i],.5);test("lag"+i,N*(T-1),lag[i],.25);for(let j=i+1;j<13;j++)test("pair"+i+"_"+j,N*T,pairs[i][j],.25)}return {seed_range:[46000,48047],expected:ex,actual,checks,pass:actual.every((v,i)=>v===ex[i])&&checks.every(v=>v.pass),max_abs_z:Math.max(...checks.map(v=>Math.abs(v.z))),elapsed_ms:Date.now()-t0}}
+if(typeof module!=="undefined")module.exports={streams,partition,preflight};
