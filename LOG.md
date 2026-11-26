@@ -101,3 +101,6 @@
 
 
 - 26/11 NSR02b prereg a486c7d, PCG32 código82014d0, preflight16cdd13 PASS62/62 y6/6 vector, max z1.729484, 378ms. Nuevo lote33000..33063, salida81092fb, 491520 decisiones/2168ms, 432 fixtures, 120 agregados recálculo exacto. Utilidad FAIL (+39.66pp/+0.80pp), compacto PASS (16B, max regret .000392628, pérdida .002938988), STOP familia conocida. NSR02 previo instrumental intacto, 0 CI/red/originales/pago. Próxima revisión documental de muestreo NSR01 y síntesis/contraste discriminante; no rescatar ni reabrir NR01.
+
+
+- 26/11 revisión transversal: inspección de RNG NSR01 sin ejecutar agentes (032834b/4bfac9b), iniciales64 distintos, 65536 pares, XOR determinista por índice, 0 violaciones, coocurrencias próximas a producto marginal. Limitación empírica registrada, STOP preservado. Síntesis y fuentes nuevas en 5e5d3de: LCNet, causas latentes, clustering bandits y switching. Propuesta NSR03 (dependencias de cambios adquiridas, no encoder NR01) pendiente aprobación; ninguna corrida ni reserva.
